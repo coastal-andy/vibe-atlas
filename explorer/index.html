@@ -509,7 +509,7 @@ function renderAll(){
   const cnt=s=>IMAGES.filter(i=>i.src===s).length; const ia=cnt("ia");
   $("#brandCount").textContent=`${STYLES.length} styles · ${IMAGES.length.toLocaleString()} images from 4 sources`;
   $("#cGallery").textContent=IMAGES.length.toLocaleString(); $("#cStyles").textContent=STYLES.length; $("#cArchive").textContent=ia||"…";
-  $("#gSrc").querySelectorAll("[data-src]").forEach(b=>{ const s=b.dataset.src; if(s!=="all"){ const n=cnt(s); b.textContent=`${({pin:"Pinterest",cari:"CARI",gura:"Gurafiku",ia:"Archive"})[s]} ${n?n.toLocaleString():"–"}`; } });
+  $("#gSrc").querySelectorAll("[data-src]").forEach(b=>{ const s=b.dataset.src; if(s!=="all"){ const n=cnt(s); b.textContent=`${({pin:"Pinterest",cari:"CARI",gura:"Gurafiku",ia:"Archive"})[s]} ${n?n.toLocaleString():(s==="cari"?"· local only":"–")}`; } });
   $("#gSaved").hidden = MODE!=="local";
   updateTrayCount(); renderGalleryRail(); renderGallery(true); renderStyleRail(); netUI(); route();
 }
@@ -579,7 +579,7 @@ function renderGallery(reset){
   const sa=$("#gSaveAll"); if(sa) sa.onclick=()=>enqueue(savable.slice(0,500));
   const ta=$("#gTrayAll"); if(ta) ta.onclick=()=>{ savable.slice(0,12).forEach(im=>addTray(im,true)); toast("Added to tray"); refreshTiles(); };
   const si=$("#gStyleInfo"); if(si) si.onclick=()=>openDrawer(G.style);
-  $("#more").innerHTML = G.shown<G.list.length ? `<button class="btn" id="moreBtn" type="button">Show more (${(G.list.length-G.shown).toLocaleString()} left)</button>` : (G.list.length?"":`<div class="empty">Nothing here yet.${G.savedOnly?" Turn off “Saved on disk only”, or save some images first.":""}</div>`);
+  $("#more").innerHTML = G.shown<G.list.length ? `<button class="btn" id="moreBtn" type="button">Show more (${(G.list.length-G.shown).toLocaleString()} left)</button>` : (G.list.length?"":(G.src==="cari"&&!CARI.length)?`<div class="empty" style="text-align:left;max-width:60ch;margin:0 auto"><b>CARI is only in the local version.</b><br><br>CARI (Consumer Aesthetics Research Institute) asks that its images be used for inspiration and analysis, credited to the original creators, and not redistributed as assets, so this public site doesn’t publish its data.<br><br>On your Mac, double-click <b>Vibe Atlas.command</b> to browse all 89 CARI aesthetics here, or read them on <a href="https://cari.institute/aesthetics" target="_blank" rel="noopener">cari.institute ↗</a>.</div>`:`<div class="empty">Nothing here yet.${G.savedOnly?" Turn off “Saved on disk only”, or save some images first.":""}</div>`);
   const mb=$("#moreBtn"); if(mb){ mb.onclick=()=>renderGallery(false); moreObs.observe(mb); }
 }
 const moreObs=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ moreObs.unobserve(e.target); renderGallery(false); } }),{rootMargin:"800px"});
