@@ -1,0 +1,24 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Vibe Atlas · receive</title>
+<p id="s">Waiting for data…</p>
+<script>
+// A source site's tab navigates here with its data in the URL hash: {target, data}.
+// target "pins" -> /api/pins (legacy Pinterest payload); others -> /api/ingest?target=…
+const s = document.getElementById("s");
+(async () => {
+  if (location.hash.length < 10) return;
+  try {
+    const msg = JSON.parse(decodeURIComponent(location.hash.slice(1)));
+    history.replaceState(null, "", location.pathname);
+    const target = msg.target || "pins", data = msg.data || msg;
+    const n = (data.items || data.pins || []).length;
+    s.textContent = `Received ${n} ${target} records, saving…`;
+    const url = target === "pins" ? "/api/pins" : `/api/ingest?target=${encodeURIComponent(target)}`;
+    const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
+    const j = await r.json();
+    s.textContent = j.saved != null ? `Saved ${j.saved} ${target} records.` : `Error: ${j.error}`;
+    document.title = j.saved != null ? `saved ${target} ${j.saved}` : "error";
+  } catch (err) { s.textContent = "Could not read the data: " + err.message; document.title = "error"; }
+})();
+</script>

@@ -1,0 +1,1078 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vibe Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Inter+Tight:wght@400;500;600;800;900&family=JetBrains+Mono:wght@400;600&family=Anton&family=Archivo+Black&family=Baloo+2:wght@500;800&family=Bebas+Neue&family=Chakra+Petch:wght@500;700&family=DM+Serif+Display&family=Fraunces:opsz,wght@9..144,400;9..144,900&family=IBM+Plex+Mono:wght@400;600&family=Michroma&family=Nunito:wght@400;800&family=Orbitron:wght@500;900&family=Pirata+One&family=Righteous&family=Rubik:wght@400;700&family=Rubik+Mono+One&family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&family=Syne:wght@500;800&family=VT323&family=Exo+2:wght@300;600;900&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&display=swap">
+<style>
+/* Layout: sticky top bar with 5 views. Gallery = filter rail + masonry + lightbox + download queue bar.
+   Studio = tray | artboard | layer inspector. Chrome stays neutral so the references carry the color. */
+:root{
+  --bg:#f3f3f1; --panel:#ffffff; --ink:#16171a; --muted:#6b6d73; --line:#dcdcd8; --accent:#3a5bff; --accent-ink:#ffffff; --hover:#ebebe7; --ok:#1f9d55; --warn:#c77700;
+  --f-display:"Unbounded", "Arial Black", system-ui, sans-serif;
+  --f-body:"Inter Tight", system-ui, -apple-system, sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:#0f1012; --panel:#17181b; --ink:#ecebe7; --muted:#8d8f96; --line:#2a2b30; --accent:#7d93ff; --accent-ink:#0f1012; --hover:#202126; --ok:#4ad08a; --warn:#f0a63a; color-scheme:dark } }
+:root[data-theme="dark"]{ --bg:#0f1012; --panel:#17181b; --ink:#ecebe7; --muted:#8d8f96; --line:#2a2b30; --accent:#7d93ff; --accent-ink:#0f1012; --hover:#202126; --ok:#4ad08a; --warn:#f0a63a; color-scheme:dark }
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:14px/1.45 var(--f-body)}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+[hidden]{display:none!important}
+
+.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;gap:18px;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));flex-wrap:wrap}
+.brand{font:800 17px/1 var(--f-display);letter-spacing:-.02em;display:flex;align-items:baseline;gap:8px}
+.brand small{font:500 11px var(--f-mono);color:var(--muted)}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.tab{border:0;background:none;padding:7px 12px;border-radius:999px;cursor:pointer;color:var(--muted);font-weight:600}
+.tab:hover{background:var(--hover);color:var(--ink)}
+.tab[aria-current="page"]{background:var(--ink);color:var(--bg)}
+.tab .count{font:600 10px var(--f-mono);margin-left:6px;opacity:.7}
+.spacer{flex:1}
+.pill{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:5px 10px;font:600 11px var(--f-mono);cursor:pointer;white-space:nowrap}
+.net{display:inline-flex;align-items:center;gap:6px}
+.net i{width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.net.off i{background:var(--warn)}
+
+main{padding:18px max(16px,env(safe-area-inset-right,0px)) 110px max(16px,env(safe-area-inset-left,0px))}
+h1.title{font:800 clamp(22px,3vw,32px)/1.05 var(--f-display);letter-spacing:-.03em;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0}
+.toolbar{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.search{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.rail{position:sticky;top:70px;display:flex;flex-direction:column;gap:14px;max-height:calc(100vh - 90px);overflow:auto;padding-right:4px}
+.rail h3,.panel h3,.sec h4{font:600 10px var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:4px 0 6px}
+.seg{display:flex;flex-wrap:wrap;gap:4px}
+.chip{border:1px solid var(--line);background:var(--panel);padding:4px 9px;border-radius:999px;cursor:pointer;font-size:12px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.fam{display:flex;justify-content:space-between;align-items:center;gap:8px;border:0;background:none;text-align:left;padding:5px 9px;border-radius:8px;cursor:pointer;width:100%}
+.fam:hover{background:var(--hover)}
+.fam[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.fam .n{font:500 11px var(--f-mono);opacity:.65}
+.fam .lbl{display:flex;align-items:center;gap:8px;min-width:0}
+.fam .lbl span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+.stylelist{display:flex;flex-direction:column;max-height:340px;overflow:auto;border:1px solid var(--line);border-radius:10px;padding:4px;background:var(--panel)}
+.btn{border:1px solid var(--line);background:var(--panel);padding:8px 14px;border-radius:999px;cursor:pointer;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.sm{padding:5px 10px;font-size:12px}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btns{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tag{font:500 10.5px var(--f-mono);padding:2px 7px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.tag.hot{border-color:var(--accent);color:var(--accent)}
+.empty{padding:36px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px}
+
+/* gallery */
+.g-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:26px;align-items:start}
+.masonry{columns:5 210px;column-gap:12px}
+.tile{position:relative;break-inside:avoid;margin:0 0 12px;border-radius:10px;overflow:hidden;background:var(--hover);cursor:zoom-in}
+.tile img{display:block;width:100%;height:auto}
+.tile .ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:8px;opacity:0;transition:opacity .12s;background:linear-gradient(rgba(0,0,0,.35),transparent 30%,transparent 65%,rgba(0,0,0,.55))}
+.tile:hover .ov,.tile.sel .ov,.tile:focus-within .ov{opacity:1}
+.ov-top,.ov-bot{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.ov-bot span{color:#fff;font:600 11px var(--f-mono);text-shadow:0 1px 2px rgba(0,0,0,.6);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tbtn{width:30px;height:30px;border-radius:999px;border:0;background:rgba(255,255,255,.92);color:#111;cursor:pointer;font-weight:800;display:grid;place-items:center;flex:none}
+.tbtn[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.tile.sel{outline:3px solid var(--accent);outline-offset:-3px}
+.badge{position:absolute;right:8px;top:8px;font:700 10px var(--f-mono);background:var(--ok);color:#fff;border-radius:999px;padding:2px 6px;z-index:2}
+.tile .ov ~ .badge{right:46px}
+.more{display:flex;justify-content:center;padding:20px}
+
+.selbar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:35;background:var(--ink);color:var(--bg);border-radius:999px;padding:8px 8px 8px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 12px 30px -10px rgba(0,0,0,.5);max-width:calc(100% - 32px);flex-wrap:wrap}
+.selbar .btn{background:var(--bg);color:var(--ink);border-color:transparent}
+.selbar .btn.primary{background:var(--accent);color:var(--accent-ink)}
+.queue{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:34;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px;width:min(320px,calc(100% - 32px));box-shadow:0 12px 30px -14px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:8px}
+.queue .bar{height:6px;background:var(--hover);border-radius:999px;overflow:hidden}
+.queue .bar i{display:block;height:100%;background:var(--accent);width:0}
+.queue .row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:12px}
+.queue small{color:var(--muted);font:11px var(--f-mono)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(8,8,10,.92);display:grid;grid-template-columns:minmax(0,1fr) 300px}
+.lb-img{display:flex;align-items:center;justify-content:center;padding:24px;min-width:0;position:relative}
+.lb-img img{max-width:100%;max-height:calc(100vh - 48px);object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:999px;border:0;background:rgba(255,255,255,.12);color:#fff;font-size:20px;cursor:pointer}
+.lb-nav:hover{background:rgba(255,255,255,.22)}
+.lb-prev{left:14px}.lb-next{right:14px}
+.lb-side{background:var(--panel);padding:20px 18px calc(20px + env(safe-area-inset-bottom,0px));overflow:auto;display:flex;flex-direction:column;gap:14px;padding-right:max(18px,env(safe-area-inset-right,0px))}
+.lb-side h2{font:800 22px/1.1 var(--f-display);letter-spacing:-.02em;margin:0}
+.lb-side .x{align-self:flex-end}
+.x{border:1px solid var(--line);background:var(--panel);border-radius:999px;width:34px;height:34px;cursor:pointer;font-size:16px;flex:none}
+.kv{display:grid;grid-template-columns:80px 1fr;gap:4px 10px;font-size:12.5px}
+.kv dt{color:var(--muted);font:500 11px var(--f-mono)}
+.kv dd{margin:0;word-break:break-all}
+.lb-side .btn{justify-content:center}
+
+/* styles */
+.s-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:26px;align-items:start}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer;transition:transform .15s ease, box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 28px -14px rgba(0,0,0,.35)}
+.mosaic{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr;aspect-ratio:4/3;gap:2px;background:var(--line)}
+.mosaic img{width:100%;height:100%;object-fit:cover;display:block}
+.mosaic img:first-child{grid-row:span 2}
+.strip{display:flex;height:8px}.strip i{flex:1}
+.card-b{padding:10px 12px 12px;display:flex;flex-direction:column;gap:6px}
+.card-b b{font-size:15px;letter-spacing:-.01em}
+.meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:40}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(720px,100%);background:var(--panel);z-index:41;overflow:auto;border-left:1px solid var(--line);padding:22px max(16px,env(safe-area-inset-right,0px)) 40px 24px;display:flex;flex-direction:column;gap:20px}
+.d-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.d-head h2{font:800 30px/1 var(--f-display);letter-spacing:-.03em;margin:0 0 8px}
+.gallery{columns:3 160px;column-gap:8px}
+.gallery img{width:100%;display:block;margin-bottom:8px;border-radius:8px;cursor:zoom-in}
+.swatches{display:flex;gap:8px;flex-wrap:wrap}
+.sw{border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;background:var(--panel);padding:0;width:88px;text-align:left}
+.sw i{display:block;height:46px}
+.sw span{display:block;font:500 11px var(--f-mono);padding:5px 7px}
+.recipe{display:grid;grid-template-columns:100px 1fr;gap:6px 14px;font-size:13px}
+.recipe dt{color:var(--muted);font:500 11px var(--f-mono);padding-top:2px}
+.recipe dd{margin:0}
+.ia-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.ia{display:flex;flex-direction:column;gap:6px;text-decoration:none;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--panel)}
+.ia img{width:100%;aspect-ratio:3/4;object-fit:cover;background:var(--hover);display:block}
+.ia div{padding:0 9px 9px;font-size:12px}
+.ia b{display:block;font-size:12.5px;line-height:1.25;margin-bottom:3px}
+.ia small{color:var(--muted);display:block;line-height:1.3}
+
+/* studio */
+.st-layout{display:grid;grid-template-columns:260px minmax(0,1fr) 300px;gap:20px;align-items:start}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:12px}
+.tray{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;max-height:46vh;overflow:auto}
+.tray button{position:relative;padding:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;aspect-ratio:1;background:var(--hover)}
+.tray img{width:100%;height:100%;object-fit:cover;display:block}
+.tray .rm{position:absolute;top:2px;right:2px;width:20px;height:20px;border-radius:999px;background:rgba(0,0,0,.65);color:#fff;font-size:11px;display:grid;place-items:center}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{font:500 11px var(--f-mono);color:var(--muted)}
+.field input,.field select,.field textarea{border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:7px 9px;width:100%}
+.field input[type=range]{padding:0}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pal{display:flex;gap:4px;flex-wrap:wrap}
+.pal button{width:24px;height:24px;border-radius:6px;border:1px solid var(--line);cursor:pointer;padding:0}
+.pal button[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:1px}
+.stage{display:flex;flex-direction:column;align-items:center;gap:12px;position:sticky;top:70px}
+.artwrap{width:min(100%,calc((100vh - 170px) * var(--ar-w) / var(--ar-h)));max-width:600px}
+.art{position:relative;width:100%;overflow:hidden;container-type:inline-size;box-shadow:0 30px 60px -30px rgba(0,0,0,.5);user-select:none;touch-action:none}
+.layer{position:absolute;transform-origin:center center;cursor:move}
+.layer img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.layer .tx{white-space:pre;line-height:.92;pointer-events:none}
+.layer.selected{outline:1.5px dashed var(--accent);outline-offset:2px}
+.handle{position:absolute;right:-7px;bottom:-7px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:2px solid #fff;cursor:nwse-resize}
+.art .tex{position:absolute;inset:0;pointer-events:none;z-index:999}
+.layers{display:flex;flex-direction:column;gap:4px;max-height:180px;overflow:auto}
+.layers button{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:4px 6px;cursor:pointer;text-align:left;font-size:12px}
+.layers button[aria-pressed="true"]{border-color:var(--accent)}
+.layers img{width:26px;height:26px;object-fit:cover;border-radius:4px}
+.tokens{font:11.5px/1.5 var(--f-mono);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px;white-space:pre;overflow:auto;max-height:220px}
+.saved{display:flex;flex-direction:column;gap:6px}
+.saved button{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:6px 10px;cursor:pointer;text-align:left;gap:8px;font-size:12px}
+
+/* archive & sources */
+.cluster{margin-bottom:40px}
+.cluster h2{font:800 24px/1.1 var(--f-display);letter-spacing:-.03em;margin:0 0 6px}
+.ia-style{margin:22px 0 10px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.ia-style b{font-size:16px}
+.reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+.reel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.reel .who{font:600 12px var(--f-mono);color:var(--muted)}
+.reel h3{margin:0;font-size:17px}
+.reel p{margin:0}
+.toast{position:fixed;left:50%;top:calc(70px + env(safe-area-inset-top,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-weight:600;z-index:70}
+
+@media (max-width:1180px){ .st-layout{grid-template-columns:240px minmax(0,1fr)} .st-layout .insp{grid-column:1 / -1} }
+@media (max-width:860px){
+  .g-layout,.s-layout,.st-layout{grid-template-columns:1fr}
+  .rail{position:static;max-height:none}
+  .stage{position:static}
+  .lb{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto}
+  .lb-side{max-height:45vh}
+  .lb-img{padding:12px;min-height:0}
+  .lb-img img{max-height:calc(55vh - 24px)}
+  .drawer{padding-left:16px}
+}
+@media (prefers-reduced-motion:reduce){ .card,.tile .ov{transition:none} .card:hover{transform:none} }
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <div class="brand">Vibe Atlas <small id="brandCount"></small></div>
+  <nav class="tabs" aria-label="Views">
+    <button class="tab" data-view="gallery">Gallery<span class="count" id="cGallery"></span></button>
+    <button class="tab" data-view="styles">Styles<span class="count" id="cStyles"></span></button>
+    <button class="tab" data-view="studio">Studio<span class="count" id="cTray"></span></button>
+    <button class="tab" data-view="archive">Archive<span class="count" id="cArchive"></span></button>
+    <button class="tab" data-view="sources">Libraries</button>
+  </nav>
+  <div class="spacer"></div>
+  <span class="pill net" id="net" title="Connection"><i></i><span>online</span></span>
+  <button class="pill" id="themeBtn" type="button">theme: auto</button>
+</div></header>
+
+<main>
+<!-- GALLERY -->
+<section class="view" id="view-gallery">
+  <div class="g-layout">
+    <aside class="rail">
+      <input class="search" id="gq" type="search" placeholder="Find a style…" aria-label="Find a style">
+      <div><h3>Source</h3><div class="seg" id="gSrc">
+        <button class="chip" data-src="all" aria-pressed="true">All</button>
+        <button class="chip" data-src="pin" aria-pressed="false">Pinterest</button>
+        <button class="chip" data-src="cari" aria-pressed="false">CARI</button>
+        <button class="chip" data-src="gura" aria-pressed="false">Gurafiku</button>
+        <button class="chip" data-src="ia" aria-pressed="false">Archive</button>
+      </div></div>
+      <div><h3>Show</h3><div class="seg">
+        <button class="chip" id="gSaved" aria-pressed="false">Saved on disk only</button>
+        <button class="chip" id="gShuffle" aria-pressed="false">Shuffle</button>
+      </div></div>
+      <div><h3>Family</h3><div id="gFams"></div></div>
+      <div><h3>Style</h3><div class="stylelist" id="gStyles"></div></div>
+    </aside>
+    <div>
+      <div class="toolbar">
+        <div><h1 class="title" id="gTitle">Everything</h1><p class="sub" id="gSub"></p></div>
+        <div class="btns" id="gActions"></div>
+      </div>
+      <div class="masonry" id="masonry"></div>
+      <div class="more" id="more"></div>
+    </div>
+  </div>
+</section>
+
+<!-- STYLES -->
+<section class="view" id="view-styles" hidden>
+  <div class="s-layout">
+    <aside class="rail">
+      <input class="search" id="sq" type="search" placeholder="Search 174 styles…" aria-label="Search styles">
+      <div><h3>Sort</h3><div class="seg" id="sSort">
+        <button class="chip" data-sort="board" aria-pressed="true">Board order</button>
+        <button class="chip" data-sort="hue" aria-pressed="false">Hue</button>
+        <button class="chip" data-sort="light" aria-pressed="false">Light→dark</button>
+        <button class="chip" data-sort="sat" aria-pressed="false">Vivid first</button>
+        <button class="chip" data-sort="az" aria-pressed="false">A–Z</button>
+      </div></div>
+      <div><h3>Show</h3><div class="seg"><button class="chip" id="sReels" aria-pressed="false">From my reels</button></div></div>
+      <div><h3>Family</h3><div id="sFams"></div></div>
+    </aside>
+    <div>
+      <div class="toolbar"><div><h1 class="title" id="sTitle">All styles</h1><p class="sub" id="sSub"></p></div></div>
+      <div class="grid" id="sGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section class="view" id="view-studio" hidden>
+  <div class="st-layout">
+    <div class="panel">
+      <h3>Tray</h3>
+      <div class="tray" id="tray"></div>
+      <p class="sub" id="trayHint" style="font-size:12px;margin:0"></p>
+      <div class="btns">
+        <button class="btn primary" id="mix" type="button">Mix it</button>
+        <button class="btn" id="addText" type="button">+ Text</button>
+        <button class="btn sm" id="clearTray" type="button">Empty tray</button>
+      </div>
+      <div class="field"><label for="mixMode">Mix layout</label>
+        <select id="mixMode"><option value="random">Surprise me</option><option value="grid">Swiss grid</option><option value="collage">Collage</option><option value="flyer">Rave flyer</option><option value="overlay">Full-bleed overlay</option><option value="specimen">System cover</option></select></div>
+      <div class="field"><label for="mixFonts">Type pairing</label><select id="mixFonts"></select></div>
+      <div class="field"><label for="mixTitle">Headline</label><input id="mixTitle" value="SOFT CLUB"></div>
+      <div class="field"><label for="mixSub">Small text</label><input id="mixSub" value="Fri 21.11 — doors 22:00 — Bucharest"></div>
+    </div>
+    <div class="stage">
+      <div class="artwrap" id="artwrap"><div class="art" id="art"></div></div>
+      <div class="btns">
+        <select class="pill" id="artSize" aria-label="Poster size"><option value="1:1.414">A-series portrait</option><option value="1:1.25">4:5 post</option><option value="1:1">Square</option><option value="9:16">Story 9:16</option><option value="1.414:1">Landscape</option></select>
+        <button class="btn primary" id="exportPng" type="button">Export PNG</button>
+        <button class="btn" id="saveComp" type="button">Save</button>
+        <button class="btn" id="undoBtn" type="button">Undo</button>
+      </div>
+      <p class="sub" id="exportMsg" style="font-size:12px;margin:0"></p>
+    </div>
+    <div class="panel insp">
+      <h3>Background & texture</h3>
+      <div class="pal" id="bgPal"></div>
+      <div class="field"><label for="tex">Texture</label><select id="tex"><option value="none">None</option><option value="grain">Grain</option><option value="halftone">Halftone</option><option value="scan">Scanlines</option></select></div>
+      <h3>Layers</h3>
+      <div class="layers" id="layers"></div>
+      <div id="insp"></div>
+      <h3>Design tokens</h3>
+      <div class="tokens" id="tokens"></div>
+      <button class="btn sm" id="copyTok" type="button">Copy tokens</button>
+      <h3>Saved posters</h3>
+      <div class="saved" id="savedComps"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ARCHIVE -->
+<section class="view" id="view-archive" hidden>
+  <div class="toolbar"><div><h1 class="title">Internet Archive finds</h1><p class="sub">Scans of real printed material. Open an item to page through it on archive.org; thumbnails also appear in the Gallery under “Archive”.</p></div></div>
+  <input class="search" id="qa" type="search" placeholder="Filter archive finds…" aria-label="Filter archive finds" style="max-width:420px;margin-bottom:24px">
+  <div id="archive"></div>
+</section>
+
+<!-- SOURCES -->
+<section class="view" id="view-sources" hidden>
+  <div class="toolbar"><div><h1 class="title">Libraries</h1><p class="sub">Reference sites you collected, what’s pulled into the atlas, and how each one may be used.</p></div></div>
+  <div class="reels" id="libs" style="margin-bottom:40px"></div>
+  <div class="toolbar"><div><h1 class="title">Where it started</h1><p class="sub">The reels you sent, and the styles each one points to.</p></div></div>
+  <div class="reels" id="reels"></div>
+</section>
+</main>
+
+<div id="lbRoot"></div>
+<div id="drawerRoot"></div>
+<div id="selRoot"></div>
+<div id="queueRoot"></div>
+<div id="toastRoot"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+/* ================= data maps ================= */
+const FAMILIES = {
+  digital:{name:"Digital & Y2K", color:"#5ea8fe", styles:["Webcore","2000s Web","Internet Awesomesauce","Neo Y2K","Y2K Outline","McBling","Frutiger Metro","Frutiger Aero Revival","Gen X Soft Club","IOS core","Holographic Iridescence","Chrome Heart","Cyberdelia","Cyberpunk","8-Bit","Pix Bug","ASCII","Pixel Lace","Glitch Gradients","Dirty Gradients","Camera Interface","VHS","Cassette Futurism","Low Poly","3D Drain","Claymorphism","PNG Collectables","Abstract Tech","Techno Magic","Electro Biomorph","Organic Tech","New Liquid","Blob World","The Blob","Neon Ooze","Multilayer","Retro Glow","Low Poly Fear"]},
+  modern:{name:"Modernist & systems", color:"#e26268", styles:["Suprematic","Lettrism","Bauhaus","Geometric Hard-Edge","Shape Design","Color Fields","Arial Rebirth","Scandi Functional","Utilitarian","Infographic","Numbers","Industrial","Clean Girl Brutalism","Dotted Font","Heatmap","Color Spaces","Sense of Science","Microbiology","Utopian Scholastic"]},
+  print:{name:"Print & handmade", color:"#e27b2b", styles:["Mezzotint","Cyanotype","Scanography","Mail Art","Zine","Risograph","Handmade","Newspaper","Magazine Collage","Embossing","Ink Bleed","Scrapbook","Cutting Out","Crossword","Weaving Patterns","Mosaic","Pottery","Naive","Anti AI","Junk","Analog","Photo-first"]},
+  retro:{name:"Retro pop & Americana", color:"#f1cb09", styles:["Googie","Pop Art","Classic Advertising","Adventure Pulp","70s Sci-Fi","Art Deco","Disco Deco","Satriale's Pork Store","Suburbia","Mac & Cheese Nostalgia","One Dollar Store","Bumper Stickers","Stickers","Vinyl Stickers","Sports Car","Biker","Beatnik","Ivy League","The Riviera","The Grand Budapest","Vintage Stamps","New Paperback Chic","Good Food","Factory Pomo","Corporate Hippie","Corporate Grunge","New Genericana","Hipness Purgatory"]},
+  folk:{name:"Folk & cultural", color:"#ed282e", styles:["Slavic Folk","Gzhel","Soviet Union Books","Sots Art","Partisan","Arabian","Asian Chic","Afrofuturism","Tropicália","Fresh Ethno","Pastel Southwestern","Catholic Kitsch","Ancient","Renaissance Revival","Alegria Renaissance","Art Nouveau Garden","Fairy Tale","DORFic"]},
+  dark:{name:"Dark & gothic", color:"#8a6f70", styles:["EC Horror Comics","Body Horror","Asian Horror","Memento Mori","Horrorcore","Witchcraft","Whimsigothic","Decadence","New Medieval","Dark Academia","Visual Kei","Leopard Grunge","Cabaret"]},
+  soft:{name:"Soft, cute & dreamy", color:"#f3a9e4", styles:["Kawaii","Kidcore","Pre-K","Hopecore","Angelcore","Dreamcore","Hyper Bloom","Flower Mist","Curly Girly","Girlhood","Cozy Blanket","Confetti","ADHD Design","Airbrush Surrealism","Xpiritualism","Liminal","Midnight Sun","Urban Void","2026 Austurbane","Acubi","Avant Basic","Wabi-Sabi","Solarpunk"]},
+  street:{name:"Street & subculture", color:"#0d69b9", styles:["Wildstyle","Skate Culture","Acid House","Indie Sleaze","2000s Preppy","Pacific Punk Wave","Spray","Retro Gorpcore","Outdoor","FIFA","High Fashion","Feminism 2nd Wave","Faces"]}
+};
+const PAIRS = {
+  "Michroma / Exo 2 (soft club)":["Michroma","Exo 2",400],
+  "Unbounded / Inter Tight":["Unbounded","Inter Tight",800],
+  "Orbitron / Chakra Petch":["Orbitron","Chakra Petch",900],
+  "VT323 / Space Mono":["VT323","Space Mono",400],
+  "Syne / Space Grotesk":["Syne","Space Grotesk",800],
+  "Inter Tight Black / Inter Tight":["Inter Tight","Inter Tight",900],
+  "Archivo Black / IBM Plex Mono":["Archivo Black","IBM Plex Mono",400],
+  "Anton / IBM Plex Mono":["Anton","IBM Plex Mono",400],
+  "Bebas Neue / Space Mono":["Bebas Neue","Space Mono",400],
+  "Righteous / Rubik":["Righteous","Rubik",400],
+  "DM Serif Display / Rubik":["DM Serif Display","Rubik",400],
+  "Bodoni Moda / Inter Tight":["Bodoni Moda","Inter Tight",900],
+  "Fraunces / Rubik":["Fraunces","Rubik",900],
+  "Pirata One / IBM Plex Mono":["Pirata One","IBM Plex Mono",400],
+  "Baloo 2 / Nunito":["Baloo 2","Nunito",800],
+  "Rubik Mono One / Space Mono":["Rubik Mono One","Space Mono",400]
+};
+const FAM_PAIR = {digital:"Michroma / Exo 2 (soft club)",modern:"Inter Tight Black / Inter Tight",print:"Anton / IBM Plex Mono",retro:"Righteous / Rubik",folk:"Fraunces / Rubik",dark:"Pirata One / IBM Plex Mono",soft:"Baloo 2 / Nunito",street:"Rubik Mono One / Space Mono"};
+const RECIPES = {
+  digital:{type:"Wide techno sans or pixel faces; tight caps; small monospace data labels", texture:"Scanlines, CRT glow, chrome bevels, translucent frosted panels", layout:"Centered emblem or UI-window framing, HUD corners, negative space", radius:6},
+  modern:{type:"Neo-grotesk at extreme weights; flush-left ragged-right; big numerals", texture:"Flat color; precision rules and grids", layout:"Strict column grid, asymmetric blocks, info as ornament", radius:0},
+  print:{type:"Condensed display + typewriter mono; hand lettering welcome", texture:"Halftone, photocopy noise, misregistration, paper fibers", layout:"Cut-and-paste collage, tape, overprint, crooked alignments", radius:0},
+  retro:{type:"Script or rounded display faces, chunky sans, badge lettering", texture:"Paper grain, sun-faded print, off-register spot color", layout:"Badges, starbursts, framed panels, product-hero compositions", radius:14},
+  folk:{type:"Soft serifs with character, Cyrillic-friendly faces, decorative initials", texture:"Woodcut and stitch textures, ornamental borders", layout:"Symmetry, repeat patterns, ornament frames around a motif", radius:2},
+  dark:{type:"Blackletter or sharp serif display with cold mono details", texture:"Heavy grain, ink, mezzotint darkness, film burn", layout:"Central figure, vignette, stacked title", radius:0},
+  soft:{type:"Rounded friendly sans, bubbly display, lowercase", texture:"Soft focus, airbrush gradients, sparkle and bloom", layout:"Floating stickers and blobs, generous padding", radius:24},
+  street:{type:"Heavy mono-width display, graffiti tags, stencil", texture:"Spray mist, grain, xerox", layout:"Loud full-bleed photo, stacked type, sticker slaps", radius:4}
+};
+const REELS = [
+  {id:"Df-_-wOP7vv", who:"djbaskin", title:"Bryce 3D Live", text:"Bryce 3D (90s 3D landscape software) live event in SF with one of the original interface designers. Playful skeuomorphic UI: chrome spheres, texture swatch grids, sculpted controls.", styles:["Gen X Soft Club","Chrome Heart","Holographic Iridescence","Low Poly","Cyberdelia"]},
+  {id:"DdjEJoXuaKd", who:"fakeplasticbrands", title:"Internet Archive flyer & zine dig", text:"Scanned 90s rave flyers, zines and record-store flyers (Atmosphere, Stellar Awareness, Mission, Frontpage 1993).", styles:["Zine","Acid House","Mail Art","Risograph","Newspaper"]},
+  {id:"DfShoLJMTll", who:"jamesabadi_design", title:"Fire Design Trends pt. 2", text:"Acidwave, Y2K Futurism, K-Design, Dreamscape, Halftone, Hyperbloom, Neo-Brutalism, Neo-Swiss, Synthwave, Vector-Surrealism.", styles:["Hyper Bloom","Neo Y2K","Dreamcore","Risograph","Clean Girl Brutalism","Arial Rebirth","Retro Glow","Airbrush Surrealism","Acid House"]},
+  {id:"DeOoQCuAay1", who:"studioaaacom", title:"Simple glitch app", text:"Desktop app for dithering, pixel art, ASCII and duotone scanline effects on portraits.", styles:["ASCII","Pix Bug","Glitch Gradients","Pixel Lace","8-Bit"]},
+  {id:"DcvgxvjuOCQ", who:"vinny_creative", title:"Niche Visual Styles pt. 3", text:"Pix Bug, Microbiology, Slavic Folk, Visual Kei, 3D Drain, ASCII, Stickers, Art Deco. Source board: EF // visual cores (174 sections), which feeds this atlas.", styles:["Pix Bug","Microbiology","Slavic Folk","Visual Kei","3D Drain","ASCII","Stickers","Art Deco"]},
+  {id:"DcHfQC3I7GA", who:"vividcereal", title:"Navigating Flickr pt. 2", text:"Flickr albums of vintage ephemera: matchbox labels, fruit wrappers, luggage and firecracker labels, die cuts, old ads, logos.", styles:["Vintage Stamps","Classic Advertising","One Dollar Store","Good Food","Stickers"]},
+  {id:"Dd6xUCTsu0Q", who:"xhoanakristo + hualafana", title:"Iskra design", text:"Yugoslav electronics brand Iskra, 70s–80s: orange hairdryer, ETA 90 phone, TV ads, the rare blue wall clock.", styles:["Factory Pomo","Googie","Scandi Functional","Industrial","Soviet Union Books","Cassette Futurism"]}
+];
+const IA_FILES = [["underground-print","Underground print & club culture"],["digital-softtech","90s–00s digital & soft-tech"],["eastern-folk-modernism","Eastern European & folk modernism"],["classic-print-science","Classic print, ephemera & science"]];
+
+/* ================= helpers ================= */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store = { get(k,d){ try{ const v=localStorage.getItem(k); return v?JSON.parse(v):d }catch{ return d } }, set(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)) }catch{} } };
+const pinUrl = (h,e,size="736x") => `https://i.pinimg.com/${size}/${h.slice(0,2)}/${h.slice(2,4)}/${h.slice(4,6)}/${h}.${size==="originals"?e:(e==="gif"?"jpg":e)}`;
+function hex2rgb(h){ h=(h||"888888").replace("#",""); if(h.length<6) h="888888"; return [0,2,4].map(i=>parseInt(h.slice(i,i+2),16)); }
+function rgb2hsl([r,g,b]){ r/=255;g/=255;b/=255; const mx=Math.max(r,g,b),mn=Math.min(r,g,b); let h=0,s=0; const l=(mx+mn)/2; if(mx!==mn){ const d=mx-mn; s=l>.5?d/(2-mx-mn):d/(mx+mn); h=mx===r?(g-b)/d+(g<b?6:0):mx===g?(b-r)/d+2:(r-g)/d+4; h*=60; } return [h,s,l]; }
+const hsl = h => rgb2hsl(hex2rgb(h));
+const lum = h => { const [r,g,b]=hex2rgb(h).map(v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)}); return .2126*r+.7152*g+.0722*b; };
+const contrast = (a,b) => { const x=lum(a),y=lum(b); return (Math.max(x,y)+.05)/(Math.min(x,y)+.05); };
+const dist = (a,b) => { const p=hex2rgb(a),q=hex2rgb(b); return Math.hypot(p[0]-q[0],p[1]-q[1],p[2]-q[2]); };
+const norm = s => String(s||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]+/g," ").trim();
+const slugify = s => norm(s).replace(/ /g,"-");
+const rnd = a => a[Math.floor(Math.random()*a.length)];
+const uid = () => Math.random().toString(36).slice(2,9);
+function toast(msg){ const r=$("#toastRoot"); r.innerHTML=`<div class="toast" role="status">${esc(msg)}</div>`; clearTimeout(toast.t); toast.t=setTimeout(()=>r.innerHTML="",2000); }
+async function copy(text){ try{ await navigator.clipboard.writeText(text); toast("Copied"); }catch{ const t=document.createElement("textarea"); t.value=text; document.body.appendChild(t); t.select(); try{document.execCommand("copy"); toast("Copied");}catch{ toast("Select and copy manually"); } t.remove(); } }
+
+/* ================= state ================= */
+let STYLES=[], STYLE_BY={}, IMAGES=[], IA=[], SAVED=new Set(), CARI=[], CARI_BY={}, GURA=[], GURA_TAGS=[];
+const famOf={}; for(const [k,f] of Object.entries(FAMILIES)) f.styles.forEach(n=>famOf[n]=k);
+const reelStyles=new Set(REELS.flatMap(r=>r.styles));
+const G={ q:"", src:"all", fam:null, style:null, savedOnly:false, shuffle:false, shown:0, list:[], sel:new Set() };
+const SS={ q:"", fam:null, sort:"board", reels:false };
+let TRAY=store.get("va.tray",[]);
+
+/* ================= load ================= */
+async function load(){
+  let full=null;
+  try{ const r=await fetch("../refs/pinterest_all_pins.json"); if(r.ok) full=await r.json(); }catch{}
+  const txt = await fetch("../refs/pinterest_ef_visual_cores.txt").then(r=>r.text()).catch(()=> "");
+  const preview = {};
+  txt.trim().split("\n").filter(Boolean).forEach((line,i)=>{ const [name,slug,n,pins]=line.split("|"); preview[slug]={name,slug,n:+n,i,items:pins.split(",").map(p=>{ const [h,c]=p.split(":"); const [hash,ext="jpg"]=h.split("."); return {h:hash,e:ext,c:"#"+(c||"888888")}; })}; });
+  const sections = full ? full.sections : Object.values(preview).map(p=>({t:p.name,slug:p.slug,n:p.n}));
+  STYLES = sections.map((s,i)=>{ const pv=preview[s.slug]; const colors=pv?pv.items.map(x=>x.c):[];
+    const avgL=colors.length?colors.reduce((a,c)=>a+hsl(c)[2],0)/colors.length:.5, avgS=colors.length?colors.reduce((a,c)=>a+hsl(c)[1],0)/colors.length:0;
+    const key=[...colors].sort((a,b)=>hsl(b)[1]*(1-Math.abs(hsl(b)[2]-.5))-hsl(a)[1]*(1-Math.abs(hsl(a)[2]-.5)))[0]||"#888888";
+    return {i, name:s.t, slug:s.slug, n:s.n, fam:famOf[s.t]||"print", colors, key, avgL, avgS, preview:pv?pv.items:[]}; });
+  STYLES.forEach(s=>STYLE_BY[s.slug]=s);
+  if(full){
+    IMAGES = full.pins.map(p=>{ const [si,he,w,h,c,id]=p; const [hash,ext="jpg"]=String(he).split("."); const s=STYLES[si];
+      return {key:"p:"+hash, src:"pin", style:s.slug, h:hash, e:ext, w:w||600, ht:h||800, c:"#"+(c||"888888"), pinId:id}; });
+  } else {
+    IMAGES = STYLES.flatMap(s=>s.preview.map(x=>({key:"p:"+x.h, src:"pin", style:s.slug, h:x.h, e:x.e, w:600, ht:750, c:x.c})));
+  }
+  window.__fullBoard = !!full;
+  IA = await Promise.all(IA_FILES.map(async ([f,label])=>{ try{ const r=await fetch(`../refs/ia/${f}.json`); if(!r.ok) throw 0; return {file:f,label,data:await r.json()}; }catch{ return {file:f,label,data:null}; } }));
+  const seenIA=new Set();
+  for(const c of IA){ if(!c.data) continue;
+    const add=(it,styleName)=>{ if(!it.identifier||seenIA.has(it.identifier)) return; seenIA.add(it.identifier);
+      IMAGES.push({key:"a:"+it.identifier, src:"ia", style:"archive-"+c.file, iaStyle:styleName, cluster:c.label, id:it.identifier, title:it.title, year:it.year, why:it.why, url:it.url||("https://archive.org/details/"+it.identifier), w:180, ht:240, c:"#9a958c"}); };
+    (c.data.collections||[]).forEach(it=>add(it,"Collections")); (c.data.styles||[]).forEach(st=>(st.items||[]).forEach(it=>add(it,st.style)));
+  }
+  // CARI (Consumer Aesthetics Research Institute): view-only, credited
+  try{ const r=await fetch("../refs/cari.json"); if(r.ok){ const j=await r.json(); CARI=j.items||[];
+    for(const a of CARI){ CARI_BY["cari-"+a.slug]=a; (a.imgs||[]).forEach(([k,title,credit])=>IMAGES.push({key:"c:"+k, src:"cari", style:"cari-"+a.slug, ak:k, title, credit, c:"#b9b4ad"})); } } }catch{}
+  // Gurafiku (Japanese graphic design blog)
+  try{ const r=await fetch("../refs/gurafiku.json"); if(r.ok){ const j=await r.json(); GURA=j.items||[];
+    const tc={}; for(const p of GURA){ (p.tags||[]).forEach(t=>tc[t]=(tc[t]||0)+1); (p.ph||[]).forEach(([path,w,h],k)=>IMAGES.push({key:"g:"+path, src:"gura", style:"gurafiku", path, w:w||600, ht:h||800, cap:p.cap, tags:p.tags||[], post:`https://gurafiku.tumblr.com/post/${p.id}`, c:"#c9c3b8"})); }
+    GURA_TAGS=Object.entries(tc).filter(([,n])=>n>=8).sort((a,b)=>b[1]-a[1]).slice(0,80); } }catch{}
+  await refreshSaved();
+  STYLES.forEach(s=>{ s.ia=iaFor(s); s.cari=cariFor(s); });
+  renderAll();
+  queueResume();
+}
+// MODE: "local" = explorer/server.py is running (saves to refs/images, exports to posters/)
+//       "web"   = static hosting (GitHub Pages): browser downloads + zip, PNG export as a download
+let MODE="web";
+async function refreshSaved(){ try{ const r=await fetch("/api/saved"); if(!r.ok) throw 0; const j=await r.json(); SAVED=new Set(Object.entries(j).flatMap(([f,names])=>names.map(n=>f+"/"+n))); MODE="local"; }catch{ MODE="web"; } document.documentElement.dataset.mode=MODE; }
+const wsrv = (u,w) => "https://wsrv.nl/?url="+encodeURIComponent(u)+(w?`&w=${w}&we`:"");
+// a URL the browser may read pixels from (needed for downloads and PNG export on the web)
+const DL = t => MODE==="local" ? t : t.replace(/^Save original to disk$/,"Download original").replace(/^Save /,"Download ").replace(/ to disk$/,"");
+function corsUrl(im,w){ if(im.src==="gura") return TUMBLR+im.path; if(im.src==="pin") return wsrv(pinUrl(im.h,im.e,"originals"),w); if(im.src==="ia") return wsrv(`https://archive.org/services/img/${im.id}`); return null; }
+function iaFor(s){ const words=norm(s.name).split(" ").filter(w=>w.length>3); const out=[];
+  for(const im of IMAGES){ if(im.src!=="ia"||!im.iaStyle) continue; const sn=norm(im.iaStyle);
+    if(sn===norm(s.name) || words.some(w=>sn.split(" ").some(x=>x.length>3&&(x.startsWith(w.slice(0,6))||w.startsWith(x.slice(0,6)))))) out.push(im); }
+  return out; }
+
+function cariFor(s){ const a=norm(s.name); if(a.length<4) return null;
+  return CARI.find(c=>norm(c.name)===a) || CARI.find(c=>{ const b=norm(c.name); return b.length>=5&&a.length>=5&&(b.includes(a)||a.includes(b)); }) || null; }
+
+/* image urls */
+const TUMBLR="https://64.media.tumblr.com/";
+function arenaUrl(key,w){ if(/^https?:/.test(key)) return key; const spec={bucket:"arena_images",key,edits:{resize:{width:w,height:w,fit:"inside",withoutEnlargement:true},webp:{quality:75},jpeg:{quality:75},rotate:null}}; return "https://images.are.na/"+btoa(JSON.stringify(spec)); }
+const canSave = im => im.src!=="cari";
+function fileFor(im){
+  if(im.src==="pin") return {folder:im.style, name:`${im.h}.${im.e}`, url:pinUrl(im.h,im.e,"originals")};
+  if(im.src==="gura") return {folder:"gurafiku", name:im.path.split("/").filter(Boolean).slice(-2).join("_").replace(/[^a-zA-Z0-9._-]/g,"-"), url:TUMBLR+im.path};
+  if(im.src==="cari") return {folder:im.style, name:"", url:""};
+  return {folder:im.style, name:`${im.id}.jpg`, url:`https://archive.org/services/img/${im.id}`}; }
+function localOf(im){ if(!canSave(im)) return null; const f=fileFor(im); return SAVED.has(f.folder+"/"+f.name) ? `/refs/images/${f.folder}/${f.name}` : null; }
+function remoteOf(im,big){
+  if(im.src==="pin") return pinUrl(im.h,im.e,big?"736x":"236x");
+  if(im.src==="cari") return arenaUrl(im.ak,big?1200:400);
+  if(im.src==="gura") return TUMBLR+(big?im.path:im.path.replace(/_1280\.(\w+)$/,"_400.$1"));
+  return `https://archive.org/services/img/${im.id}`; }
+function thumbOf(im){ return localOf(im) || remoteOf(im,false); }
+function bigOf(im){ return localOf(im) || remoteOf(im,true); }
+function styleName(im){
+  if(im.src==="pin") return (STYLE_BY[im.style]||{}).name;
+  if(im.src==="cari") return `${(CARI_BY[im.style]||{}).name||"CARI"} · CARI`;
+  if(im.src==="gura") return (im.cap||"Gurafiku").split(/[.:]/)[0];
+  return `${im.iaStyle} · Archive`; }
+
+/* ================= routing / theme / network ================= */
+const VIEWS=["gallery","styles","studio","archive","sources"];
+function route(){ const v=VIEWS.includes(location.hash.slice(1))?location.hash.slice(1):"gallery";
+  VIEWS.forEach(x=>{ $("#view-"+x).hidden=x!==v; document.querySelector(`.tab[data-view="${x}"]`).setAttribute("aria-current",x===v?"page":"false"); });
+  if(v==="studio") renderStudio(); if(v==="archive") renderArchive(); if(v==="sources") renderSources(); if(v==="styles") renderStyleGrid();
+  renderSelbar(); }
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{ location.hash=b.dataset.view; });
+window.addEventListener("hashchange",route);
+const themes=["auto","light","dark"]; let th=store.get("va.theme","auto");
+function applyTheme(){ if(th==="auto") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme",th); $("#themeBtn").textContent="theme: "+th; }
+$("#themeBtn").onclick=()=>{ th=themes[(themes.indexOf(th)+1)%3]; store.set("va.theme",th); applyTheme(); }; applyTheme();
+function netUI(){ const on=navigator.onLine; $("#net").classList.toggle("off",!on); $("#net span").textContent=(on?"online":"offline · showing saved")+(MODE==="local"?" · local":" · web"); if(on) queueResume(); }
+window.addEventListener("online",netUI); window.addEventListener("offline",netUI);
+
+function renderAll(){
+  const cnt=s=>IMAGES.filter(i=>i.src===s).length; const ia=cnt("ia");
+  $("#brandCount").textContent=`${STYLES.length} styles · ${IMAGES.length.toLocaleString()} images from 4 sources`;
+  $("#cGallery").textContent=IMAGES.length.toLocaleString(); $("#cStyles").textContent=STYLES.length; $("#cArchive").textContent=ia||"…";
+  $("#gSrc").querySelectorAll("[data-src]").forEach(b=>{ const s=b.dataset.src; if(s!=="all"){ const n=cnt(s); b.textContent=`${({pin:"Pinterest",cari:"CARI",gura:"Gurafiku",ia:"Archive"})[s]} ${n?n.toLocaleString():"–"}`; } });
+  $("#gSaved").hidden = MODE!=="local";
+  updateTrayCount(); renderGalleryRail(); renderGallery(true); renderStyleRail(); netUI(); route();
+}
+
+/* ================= GALLERY ================= */
+function famButtons(target,current,onPick,countFn){
+  const all=`<button class="fam" data-fam="" aria-pressed="${!current}"><span class="lbl"><span>All</span></span><span class="n">${countFn(null)}</span></button>`;
+  target.innerHTML=all+Object.entries(FAMILIES).map(([k,f])=>`<button class="fam" data-fam="${k}" aria-pressed="${current===k}"><span class="lbl"><i class="dot" style="background:${f.color}"></i><span>${esc(f.name)}</span></span><span class="n">${countFn(k)}</span></button>`).join("");
+  target.querySelectorAll(".fam").forEach(b=>b.onclick=()=>onPick(b.dataset.fam||null));
+}
+function renderGalleryRail(){
+  $("#gFams").parentElement.hidden = G.src==="cari"||G.src==="gura"||G.src==="ia";
+  famButtons($("#gFams"),G.fam,f=>{ G.fam=f; G.style=null; renderGalleryRail(); renderGallery(true); }, k=>k?STYLES.filter(s=>s.fam===k).length:STYLES.length);
+  const q=norm(G.q); const countBy={}; IMAGES.forEach(i=>{ countBy[i.style]=(countBy[i.style]||0)+1; });
+  let rows;
+  if(G.src==="cari") rows=CARI.filter(a=>!q||norm(a.name).includes(q)).map(a=>({k:"cari-"+a.slug,name:a.name,n:countBy["cari-"+a.slug]||0,dot:"#b9b4ad",sub:a.start}));
+  else if(G.src==="gura") rows=GURA_TAGS.filter(([t])=>!q||norm(t).includes(q)).map(([t,n])=>({k:"gt:"+t,name:t,n,dot:"#c9c3b8"}));
+  else if(G.src==="ia") rows=[...new Set(IMAGES.filter(i=>i.src==="ia").map(i=>i.iaStyle))].filter(t=>!q||norm(t).includes(q)).map(t=>({k:"ia:"+t,name:t,n:IMAGES.filter(i=>i.iaStyle===t).length,dot:"#9a958c"}));
+  else rows=STYLES.filter(s=>(!G.fam||s.fam===G.fam)&&(!q||norm(s.name).includes(q))).map(s=>({k:s.slug,name:s.name,n:(countBy[s.slug]||0)+(s.cari?(countBy["cari-"+s.cari.slug]||0):0)+s.ia.length,dot:s.key}));
+  const label={cari:"All CARI aesthetics",gura:"All Gurafiku tags",ia:"All archive groups"}[G.src]||"All styles";
+  $("#gStyles").previousElementSibling.textContent = {cari:"CARI aesthetic",gura:"Gurafiku tag",ia:"Archive group"}[G.src]||"Style";
+  $("#gStyles").innerHTML=`<button class="fam" data-style="" aria-pressed="${!G.style}"><span class="lbl"><span>${label}</span></span></button>`+rows.map(r=>`<button class="fam" data-style="${esc(r.k)}" aria-pressed="${G.style===r.k}"><span class="lbl"><i class="dot" style="background:${r.dot}"></i><span>${esc(r.name)}</span></span><span class="n">${r.n}</span></button>`).join("");
+  $("#gStyles").querySelectorAll("[data-style]").forEach(b=>b.onclick=()=>{ G.style=b.dataset.style||null; renderGalleryRail(); renderGallery(true); });
+}
+$("#gq").addEventListener("input",e=>{ G.q=e.target.value; renderGalleryRail(); });
+$("#gSrc").addEventListener("click",e=>{ const b=e.target.closest("[data-src]"); if(!b) return; G.src=b.dataset.src; G.style=null; $("#gSrc").querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b)); renderGalleryRail(); renderGallery(true); });
+$("#gSaved").onclick=e=>{ G.savedOnly=!G.savedOnly; e.target.setAttribute("aria-pressed",G.savedOnly); renderGallery(true); };
+$("#gShuffle").onclick=e=>{ G.shuffle=!G.shuffle; e.target.setAttribute("aria-pressed",G.shuffle); renderGallery(true); };
+
+function galleryList(){
+  const st=G.style||"";
+  let list=IMAGES.filter(im=>{
+    if(G.src!=="all"&&im.src!==G.src) return false;
+    if(st.startsWith("gt:")){ if(!(im.tags||[]).includes(st.slice(3))) return false; }
+    else if(st.startsWith("ia:")){ if(im.iaStyle!==st.slice(3)) return false; }
+    else if(st){ if(im.style!==st) return false; }
+    else if(G.fam){ if(im.src!=="pin"||(STYLE_BY[im.style]||{}).fam!==G.fam) return false; }
+    if(G.savedOnly&&!localOf(im)) return false;
+    return true; });
+  // a Pinterest style also pulls in its matching CARI aesthetic and archive finds
+  const s=STYLE_BY[st];
+  if(s&&G.src==="all"){ const extra=[...(s.cari?IMAGES.filter(i=>i.style==="cari-"+s.cari.slug):[]), ...s.ia].filter(x=>!G.savedOnly||localOf(x)); list=list.concat(extra.filter(x=>!list.includes(x))); }
+  if(G.shuffle){ list=[...list]; for(let i=list.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [list[i],list[j]]=[list[j],list[i]]; } }
+  return list;
+}
+const PAGE=90;
+function tileHTML(im,idx){
+  const saved=!!localOf(im), inTray=TRAY.some(t=>t.key===im.key), sel=G.sel.has(im.key);
+  const ratio=(im.w&&im.ht)?Math.max(.4,Math.min(2.6,im.ht/im.w)):null; const ok=canSave(im);
+  return `<figure class="tile${sel?" sel":""}" data-idx="${idx}" style="${ratio?`aspect-ratio:1/${ratio.toFixed(3)};`:"min-height:120px;"}background:${im.c}">
+    <img loading="lazy" decoding="async" src="${esc(thumbOf(im))}" alt="${esc(styleName(im))}" onerror="this.dataset.err=1;this.style.opacity=.15">
+    ${saved?'<span class="badge" title="Saved on disk">✓ disk</span>':""}
+    <div class="ov"><div class="ov-top">${ok?`<button class="tbtn" data-act="sel" aria-pressed="${sel}" title="Select">${sel?"✓":"○"}</button><button class="tbtn" data-act="tray" aria-pressed="${inTray}" title="${inTray?"In tray":"Add to Studio tray"}">${inTray?"★":"+"}</button>`:`<span class="tag" style="background:rgba(0,0,0,.55);color:#fff;border-color:transparent">CARI · view only</span>`}</div>
+    <div class="ov-bot"><span>${esc(styleName(im))}</span>${ok?`<button class="tbtn" data-act="save" title="${DL('Save original to disk')}">↓</button>`:""}</div></div></figure>`;
+}
+function renderGallery(reset){
+  if(reset){ G.list=galleryList(); G.shown=0; $("#masonry").innerHTML=""; window.scrollTo({top:0}); }
+  const next=G.list.slice(G.shown,G.shown+PAGE);
+  $("#masonry").insertAdjacentHTML("beforeend",next.map((im,i)=>tileHTML(im,G.shown+i)).join(""));
+  G.shown+=next.length;
+  const s=G.style?STYLE_BY[G.style]:null;
+  const st=G.style||""; const ca=CARI_BY[st];
+  $("#gTitle").textContent = s ? s.name : ca ? ca.name : st.startsWith("gt:") ? `Gurafiku · ${st.slice(3)}` : st.startsWith("ia:") ? st.slice(3) : G.fam ? FAMILIES[G.fam].name : ({ia:"Archive scans",cari:"CARI aesthetics",gura:"Gurafiku: Japanese graphic design",pin:"EF // visual cores"})[G.src] || "Everything";
+  const savable=G.list.filter(canSave); const savedN=savable.filter(im=>localOf(im)).length;
+  $("#gSub").textContent = ca ? `${ca.start||""}–${ca.end||""} · ${G.list.length} images · view only, credit CARI and the original creators` : `${G.list.length.toLocaleString()} images · ${savedN.toLocaleString()} saved on disk`;
+  $("#gActions").innerHTML = savable.length ? `<button class="btn" id="gSaveAll" type="button">↓ ${DL("Save "+(savable.length>500?"first 500":"all "+savable.length)+" to disk")}</button><button class="btn" id="gTrayAll" type="button">+ ${Math.min(12,savable.length)} to tray</button>${s?`<button class="btn" id="gStyleInfo" type="button">Style notes</button>`:""}` : (ca?`<a class="btn" href="https://cari.institute/aesthetics/${esc(ca.slug)}" target="_blank" rel="noopener">Read on CARI ↗</a>${ca.arena?`<a class="btn" href="${esc(ca.arena)}" target="_blank" rel="noopener">Are.na channel ↗</a>`:""}`:"");
+  const sa=$("#gSaveAll"); if(sa) sa.onclick=()=>enqueue(savable.slice(0,500));
+  const ta=$("#gTrayAll"); if(ta) ta.onclick=()=>{ savable.slice(0,12).forEach(im=>addTray(im,true)); toast("Added to tray"); refreshTiles(); };
+  const si=$("#gStyleInfo"); if(si) si.onclick=()=>openDrawer(G.style);
+  $("#more").innerHTML = G.shown<G.list.length ? `<button class="btn" id="moreBtn" type="button">Show more (${(G.list.length-G.shown).toLocaleString()} left)</button>` : (G.list.length?"":`<div class="empty">Nothing here yet.${G.savedOnly?" Turn off “Saved on disk only”, or save some images first.":""}</div>`);
+  const mb=$("#moreBtn"); if(mb){ mb.onclick=()=>renderGallery(false); moreObs.observe(mb); }
+}
+const moreObs=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ moreObs.unobserve(e.target); renderGallery(false); } }),{rootMargin:"800px"});
+function refreshTiles(){ $("#masonry").querySelectorAll(".tile").forEach(t=>{ const im=G.list[+t.dataset.idx]; if(im) t.outerHTML=tileHTML(im,+t.dataset.idx); }); renderSelbar(); }
+$("#masonry").addEventListener("click",e=>{
+  const t=e.target.closest(".tile"); if(!t) return; const im=G.list[+t.dataset.idx]; if(!im) return;
+  const act=e.target.closest("[data-act]")?.dataset.act;
+  if(act==="sel"){ G.sel.has(im.key)?G.sel.delete(im.key):G.sel.add(im.key); t.outerHTML=tileHTML(im,+t.dataset.idx); renderSelbar(); return; }
+  if(act==="tray"){ addTray(im); t.outerHTML=tileHTML(im,+t.dataset.idx); return; }
+  if(act==="save"){ enqueue([im]); return; }
+  if(e.shiftKey||e.metaKey){ G.sel.has(im.key)?G.sel.delete(im.key):G.sel.add(im.key); t.outerHTML=tileHTML(im,+t.dataset.idx); renderSelbar(); return; }
+  openLightbox(+t.dataset.idx);
+});
+function selected(){ const m=new Map(IMAGES.map(i=>[i.key,i])); return [...G.sel].map(k=>m.get(k)).filter(Boolean); }
+function renderSelbar(){
+  const n=G.sel.size, onGallery=!$("#view-gallery").hidden;
+  $("#selRoot").innerHTML = n&&onGallery ? `<div class="selbar"><b>${n} selected</b><button class="btn primary sm" id="sbSave">↓ ${DL("Save to disk")}</button><button class="btn sm" id="sbTray">+ Tray</button><button class="btn sm" id="sbClear">Clear</button></div>` : "";
+  if(!n||!onGallery) return;
+  $("#sbSave").onclick=()=>{ enqueue(selected()); };
+  $("#sbTray").onclick=()=>{ selected().forEach(im=>addTray(im,true)); toast(`Added ${n} to tray`); G.sel.clear(); refreshTiles(); };
+  $("#sbClear").onclick=()=>{ G.sel.clear(); refreshTiles(); };
+}
+
+/* ================= lightbox ================= */
+let LB=-1;
+function openLightbox(i){ LB=i; const im=G.list[i]; if(!im) return;
+  if(im.src==="cari"||im.src==="gura") return openLightbox2(i,im);
+  const f=fileFor(im), loc=localOf(im), s=STYLE_BY[im.style];
+  $("#lbRoot").innerHTML=`<div class="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lb-img"><button class="lb-nav lb-prev" aria-label="Previous">‹</button><img src="${esc(bigOf(im))}" alt="${esc(styleName(im))}"><button class="lb-nav lb-next" aria-label="Next">›</button></div>
+    <aside class="lb-side"><button class="x" data-close aria-label="Close">✕</button>
+      <h2>${esc(im.src==="pin"?s?.name:im.title||im.id)}</h2>
+      <div class="meta">${im.src==="pin"?`<span class="tag">${esc(FAMILIES[s?.fam]?.name||"")}</span>`:`<span class="tag">${esc(im.cluster)}</span><span class="tag">${esc(im.iaStyle)}</span>`}${loc?'<span class="tag hot">saved on disk</span>':""}</div>
+      ${im.why?`<p style="margin:0">${esc(im.why)}</p>`:""}
+      <dl class="kv"><dt>Position</dt><dd>${i+1} of ${G.list.length.toLocaleString()}</dd>${im.src==="pin"?`<dt>Size</dt><dd>${im.w}×${im.ht}px original</dd>`:""}<dt>Color</dt><dd><button class="chip" data-copy="${im.c}" style="border-left:14px solid ${im.c}">${im.c}</button></dd><dt>On disk</dt><dd>${loc?esc("refs/images/"+f.folder+"/"+f.name):"not saved yet"}</dd></dl>
+      <button class="btn primary" data-act="save">${loc?"✓ Saved on disk":"↓ "+DL("Save original to disk")}</button>
+      ${loc?`<a class="btn" href="${esc(loc)}" download="${esc(f.name)}">Save a copy as…</a>`:""}
+      <button class="btn" data-act="tray">${TRAY.some(t=>t.key===im.key)?"★ In Studio tray":"+ Add to Studio tray"}</button>
+      ${im.src==="pin"?`<a class="btn" href="${esc(pinUrl(im.h,im.e,"originals"))}" target="_blank" rel="noopener">Open original ↗</a>${im.pinId?`<a class="btn" href="https://www.pinterest.com/pin/${esc(im.pinId)}/" target="_blank" rel="noopener">Pin on Pinterest ↗</a>`:""}<button class="btn" data-act="style">More from ${esc(s?.name||"this style")}</button>`:`<a class="btn" href="${esc(im.url)}" target="_blank" rel="noopener">Page through on archive.org ↗</a>`}
+      <p class="sub" style="font-size:11px;margin:0">← → to browse · S save · T tray · Esc close</p>
+    </aside></div>`;
+  const r=$("#lbRoot");
+  r.querySelector("[data-close]").onclick=closeLightbox;
+  r.querySelector(".lb-prev").onclick=()=>openLightbox(Math.max(0,LB-1));
+  r.querySelector(".lb-next").onclick=()=>{ if(LB+1>=G.shown&&G.shown<G.list.length) renderGallery(false); openLightbox(Math.min(G.list.length-1,LB+1)); };
+  r.querySelector('[data-act="save"]').onclick=()=>enqueue([im]);
+  r.querySelector('[data-act="tray"]').onclick=()=>{ addTray(im); openLightbox(LB); refreshTiles(); };
+  const st=r.querySelector('[data-act="style"]'); if(st) st.onclick=()=>{ closeLightbox(); G.style=im.style; G.fam=null; renderGalleryRail(); renderGallery(true); };
+  r.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>copy(b.dataset.copy));
+  r.querySelector(".lb-img").onclick=e=>{ if(e.target.classList.contains("lb-img")) closeLightbox(); };
+}
+function openLightbox2(i,im){
+  const isC=im.src==="cari", a=CARI_BY[im.style], loc=localOf(im), f=fileFor(im);
+  const linked=isC?STYLES.find(s=>s.cari===a):null;
+  $("#lbRoot").innerHTML=`<div class="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="lb-img"><button class="lb-nav lb-prev" aria-label="Previous">‹</button><img src="${esc(bigOf(im))}" alt="${esc(styleName(im))}"><button class="lb-nav lb-next" aria-label="Next">›</button></div>
+    <aside class="lb-side"><button class="x" data-close aria-label="Close">✕</button>
+    ${isC?`<h2>${esc(im.title||a?.name)}</h2>
+      <div class="meta"><span class="tag hot">CARI · ${esc(a?.name)}</span><span class="tag">${esc(a?.start||"")}–${esc(a?.end||"")}</span></div>
+      ${im.credit?`<p style="margin:0;font-size:13px">${esc(im.credit)}</p>`:""}
+      <p class="sub" style="margin:0;font-size:12px">CARI asks that its images be used for inspiration and analysis, credited to the original creators, not as free assets. Saving and the Studio tray are turned off for CARI images.</p>
+      <a class="btn primary" href="https://cari.institute/aesthetics/${esc(a?.slug)}" target="_blank" rel="noopener">Read “${esc(a?.name)}” on CARI ↗</a>
+      ${a?.arena?`<a class="btn" href="${esc(a.arena)}" target="_blank" rel="noopener">Are.na channel ↗</a>`:""}
+      <button class="btn" data-act="cari">All ${esc(a?.name)} images</button>
+      ${linked?`<button class="btn" data-act="pin">Matching Pinterest style: ${esc(linked.name)}</button>`:""}`
+    :`<h2>${esc((im.cap||"Gurafiku").split(/\. /)[0])}</h2>
+      <p style="margin:0;font-size:13px">${esc(im.cap||"")}</p>
+      <div class="seg">${(im.tags||[]).map(t=>`<button class="chip" data-tag="${esc(t)}">${esc(t)}</button>`).join("")}</div>
+      <dl class="kv"><dt>Position</dt><dd>${i+1} of ${G.list.length.toLocaleString()}</dd><dt>Size</dt><dd>${im.w}×${im.ht}px</dd><dt>On disk</dt><dd>${loc?esc("refs/images/"+f.folder+"/"+f.name):"not saved yet"}</dd></dl>
+      <button class="btn primary" data-act="save">${loc?"✓ Saved on disk":"↓ "+DL("Save to disk")}</button>
+      <button class="btn" data-act="tray">${TRAY.some(t=>t.key===im.key)?"★ In Studio tray":"+ Add to Studio tray"}</button>
+      <a class="btn" href="${esc(im.post)}" target="_blank" rel="noopener">Post on Gurafiku ↗</a>`}
+      <p class="sub" style="font-size:11px;margin:0">← → to browse · Esc close</p></aside></div>`;
+  const r=$("#lbRoot");
+  r.querySelector("[data-close]").onclick=closeLightbox;
+  r.querySelector(".lb-prev").onclick=()=>openLightbox(Math.max(0,LB-1));
+  r.querySelector(".lb-next").onclick=()=>{ if(LB+1>=G.shown&&G.shown<G.list.length) renderGallery(false); openLightbox(Math.min(G.list.length-1,LB+1)); };
+  r.querySelector(".lb-img").onclick=e=>{ if(e.target.classList.contains("lb-img")) closeLightbox(); };
+  const on=(sel,fn)=>{ const el=r.querySelector(sel); if(el) el.onclick=fn; };
+  on('[data-act="save"]',()=>enqueue([im]));
+  on('[data-act="tray"]',()=>{ addTray(im); openLightbox(LB); refreshTiles(); });
+  on('[data-act="cari"]',()=>{ closeLightbox(); setSrc("cari"); G.style=im.style; renderGalleryRail(); renderGallery(true); });
+  on('[data-act="pin"]',()=>{ closeLightbox(); setSrc("all"); G.style=linked.slug; renderGalleryRail(); renderGallery(true); });
+  r.querySelectorAll("[data-tag]").forEach(b=>b.onclick=()=>{ closeLightbox(); setSrc("gura"); G.style="gt:"+b.dataset.tag; renderGalleryRail(); renderGallery(true); });
+}
+function setSrc(s){ G.src=s; $("#gSrc").querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x.dataset.src===s)); }
+function closeLightbox(){ LB=-1; $("#lbRoot").innerHTML=""; }
+document.addEventListener("keydown",e=>{
+  if(e.target.matches("input,textarea,select")) return;
+  if(LB>=0){ const im=G.list[LB];
+    if(e.key==="Escape") closeLightbox(); else if(e.key==="ArrowRight") $(".lb-next").click(); else if(e.key==="ArrowLeft") $(".lb-prev").click();
+    else if(e.key==="s") enqueue([im]); else if(e.key==="t"){ addTray(im); openLightbox(LB); }
+    return; }
+  if(e.key==="Escape") closeDrawer();
+  if(!$("#view-studio").hidden) studioKeys(e);
+});
+
+/* ================= download queue (resumable) ================= */
+let Q=store.get("va.queue",{items:[],done:0,failed:[],total:0}); let QRUN=false, QPAUSE=false;
+/* web mode: download straight to the browser's Downloads folder (one file, or a zip for several) */
+async function fetchBlob(url){ let last; for(let t=0;t<4;t++){ try{ const r=await fetch(url,{mode:"cors"}); if(!r.ok) throw new Error("HTTP "+r.status); return await r.blob(); }catch(e){ last=e; await new Promise(r=>setTimeout(r,1500*(t+1))); } } throw last; }
+function saveBlob(blob,name){ const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(a.href),4000); }
+let WEBDL=false;
+async function webDownload(list){
+  list=list.filter(canSave).slice(0,300); if(!list.length){ toast("Nothing downloadable here"); return; }
+  if(WEBDL){ toast("A download is already running"); return; } WEBDL=true;
+  const show=(m,p)=>{ $("#queueRoot").innerHTML=`<div class="queue" role="status"><div class="row"><b>${esc(m)}</b></div><div class="bar"><i style="width:${p}%"></i></div><small>Retries automatically if the connection drops.</small></div>`; };
+  try{
+    if(list.length===1){ const im=list[0], f=fileFor(im); show("Downloading…",30); saveBlob(await fetchBlob(corsUrl(im)), `${f.folder}__${f.name}`); }
+    else {
+      const zip=new JSZip(); let done=0, failed=0;
+      for(const im of list){ const f=fileFor(im); try{ zip.folder(f.folder).file(f.name, await fetchBlob(corsUrl(im))); }catch{ failed++; } done++; show(`Fetching ${done}/${list.length}${failed?` · ${failed} failed`:""}`, Math.round(85*done/list.length)); }
+      show("Packing zip…",92);
+      const blob=await zip.generateAsync({type:"blob"}); const name=slugify($("#gTitle").textContent||"vibe-atlas")||"vibe-atlas";
+      saveBlob(blob, `vibe-atlas-${name}.zip`); if(failed) toast(`${failed} image(s) could not be fetched`);
+    }
+    show("✓ Sent to your Downloads",100); setTimeout(()=>$("#queueRoot").innerHTML="",3000);
+  }catch(e){ show("Download failed: "+e.message,0); setTimeout(()=>$("#queueRoot").innerHTML="",5000); }
+  WEBDL=false;
+}
+function enqueue(list){
+  if(MODE==="web") return webDownload(list);
+  const have=new Set(Q.items.map(x=>x.key));
+  const add=list.filter(im=>canSave(im)&&!localOf(im)&&!have.has(im.key)).map(im=>({key:im.key,...fileFor(im)}));
+  if(!add.length){ toast(list.length===1?"Already saved":"All of these are already saved"); return; }
+  Q.items.push(...add); Q.total+=add.length; store.set("va.queue",Q); toast(`Queued ${add.length} image${add.length>1?"s":""}`); runQueue();
+}
+function queueResume(){ if(MODE!=="local") return; if(Q.items.length&&!QRUN) runQueue(); renderQueue(); }
+async function runQueue(){
+  if(QRUN) return; QRUN=true; renderQueue();
+  let streak=0;
+  while(Q.items.length&&!QPAUSE){
+    if(!navigator.onLine){ renderQueue("Waiting for connection…"); await new Promise(r=>setTimeout(r,4000)); continue; }
+    const batch=Q.items.slice(0,6);
+    try{
+      const ctl=new AbortController(); const to=setTimeout(()=>ctl.abort(),180000);
+      const r=await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({items:batch.map(b=>({url:b.url,folder:b.folder,name:b.name}))}),signal:ctl.signal});
+      clearTimeout(to); const j=await r.json();
+      j.results.forEach((res,k)=>{ const b=batch[k]; if(res.local){ SAVED.add(b.folder+"/"+b.name); Q.done++; } else { b.tries=(b.tries||0)+1; if(b.tries>=3||/HTTP 4|not allowed/.test(res.status)) Q.failed.push({...b,err:res.status}); else Q.items.push(b); } });
+      Q.items.splice(0,batch.length); streak=0;
+    }catch(err){ streak++; renderQueue(`Connection hiccup, retrying (${streak})…`); await new Promise(r=>setTimeout(r,Math.min(30000,2000*streak))); }
+    store.set("va.queue",Q); renderQueue();
+  }
+  QRUN=false;
+  if(!Q.items.length){ refreshTiles(); if(LB>=0) openLightbox(LB); }
+  renderQueue();
+}
+function renderQueue(msg){
+  const pending=Q.items.length, done=Q.done, failed=Q.failed.length, total=Math.max(1,Q.total);
+  if(!pending&&!failed&&!msg){ if(done&&Q.total){ $("#queueRoot").innerHTML=`<div class="queue"><div class="row"><b>✓ Saved ${done} image${done>1?"s":""}</b><button class="btn sm" id="qClose">Close</button></div><small>In refs/images/&lt;style&gt;/</small></div>`; $("#qClose").onclick=()=>{ Q={items:[],done:0,failed:[],total:0}; store.set("va.queue",Q); $("#queueRoot").innerHTML=""; }; } else $("#queueRoot").innerHTML=""; return; }
+  $("#queueRoot").innerHTML=`<div class="queue" role="status"><div class="row"><b>${pending?`Saving… ${done}/${Q.total}`:`Done: ${done} saved`}</b><span class="btns">${pending?`<button class="btn sm" id="qPause">${QPAUSE?"Resume":"Pause"}</button>`:""}${failed?`<button class="btn sm" id="qRetry">Retry ${failed} failed</button>`:""}<button class="btn sm" id="qClose">✕</button></span></div>
+    <div class="bar"><i style="width:${Math.round(100*done/total)}%"></i></div>
+    <small>${esc(msg|| (pending?`${pending} left · keeps going if the connection drops, and resumes after reload`:`${failed} could not be saved`))}</small></div>`;
+  const p=$("#qPause"); if(p) p.onclick=()=>{ QPAUSE=!QPAUSE; if(!QPAUSE) runQueue(); renderQueue(); };
+  const rt=$("#qRetry"); if(rt) rt.onclick=()=>{ Q.items.push(...Q.failed.map(f=>({...f,tries:0}))); Q.failed=[]; store.set("va.queue",Q); runQueue(); };
+  $("#qClose").onclick=()=>{ if(pending){ QPAUSE=true; } Q={items:pending?Q.items:[],done:0,failed:[],total:pending?Q.items.length:0}; store.set("va.queue",Q); $("#queueRoot").innerHTML=""; };
+}
+
+/* ================= STYLES view ================= */
+function renderStyleRail(){ famButtons($("#sFams"),SS.fam,f=>{ SS.fam=f; renderStyleRail(); renderStyleGrid(); }, k=>k?STYLES.filter(s=>s.fam===k).length:STYLES.length); }
+function renderStyleGrid(){
+  const q=norm(SS.q);
+  let list=STYLES.filter(s=>(!SS.fam||s.fam===SS.fam)&&(!q||norm(s.name+" "+FAMILIES[s.fam].name).includes(q))&&(!SS.reels||reelStyles.has(s.name)));
+  const by={board:(a,b)=>a.i-b.i,az:(a,b)=>a.name.localeCompare(b.name),light:(a,b)=>b.avgL-a.avgL,sat:(a,b)=>b.avgS-a.avgS,hue:(a,b)=>{ const A=hsl(a.key),B=hsl(b.key),ga=A[1]<.12,gb=B[1]<.12; if(ga!==gb) return ga?1:-1; return ga?B[2]-A[2]:A[0]-B[0]; }};
+  list.sort(by[SS.sort]);
+  $("#sTitle").textContent=SS.fam?FAMILIES[SS.fam].name:"All styles"; $("#sSub").textContent=`${list.length} styles`;
+  $("#sGrid").innerHTML=list.map(s=>{ const ims=s.preview.slice(0,5);
+    return `<article class="card" data-slug="${esc(s.slug)}" tabindex="0"><div class="mosaic">${ims.map((x,i)=>`<img loading="lazy" src="${pinUrl(x.h,x.e,i?"236x":"474x")}" alt="" style="background:${x.c}">`).join("")}</div>
+      <div class="strip">${[...s.colors].sort((a,b)=>hsl(b)[2]-hsl(a)[2]).map(c=>`<i style="background:${c}"></i>`).join("")}</div>
+      <div class="card-b"><b>${esc(s.name)}</b><div class="meta"><span class="tag">${esc(FAMILIES[s.fam].name)}</span><span class="tag">${s.n} pins</span>${reelStyles.has(s.name)?'<span class="tag hot">in your reels</span>':""}${s.ia.length?`<span class="tag">${s.ia.length} archive</span>`:""}</div></div></article>`; }).join("") || `<div class="empty">No styles match.</div>`;
+}
+$("#sGrid").addEventListener("click",e=>{ const c=e.target.closest(".card"); if(c) openDrawer(c.dataset.slug); });
+$("#sGrid").addEventListener("keydown",e=>{ if(e.key==="Enter"){ const c=e.target.closest(".card"); if(c) openDrawer(c.dataset.slug); } });
+$("#sq").addEventListener("input",e=>{ SS.q=e.target.value; renderStyleGrid(); });
+$("#sSort").addEventListener("click",e=>{ const b=e.target.closest("[data-sort]"); if(!b) return; SS.sort=b.dataset.sort; $("#sSort").querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b)); renderStyleGrid(); });
+$("#sReels").onclick=e=>{ SS.reels=!SS.reels; e.target.setAttribute("aria-pressed",SS.reels); renderStyleGrid(); };
+
+function openDrawer(slug){
+  const s=STYLE_BY[slug]; if(!s) return; const r=RECIPES[s.fam]; const reels=REELS.filter(x=>x.styles.includes(s.name));
+  const ims=IMAGES.filter(i=>i.style===slug);
+  $("#drawerRoot").innerHTML=`<div class="scrim" data-close></div><aside class="drawer" role="dialog" aria-modal="true" aria-label="${esc(s.name)}">
+    <div class="d-head"><div><h2>${esc(s.name)}</h2><div class="meta"><span class="tag">${esc(FAMILIES[s.fam].name)}</span><span class="tag">${ims.length} images here · ${s.n} on Pinterest</span>${reels.map(x=>`<span class="tag hot">@${esc(x.who)}</span>`).join("")}</div></div><button class="x" data-close aria-label="Close">✕</button></div>
+    <div class="btns"><button class="btn primary" data-go>Open in gallery</button><button class="btn" data-save>↓ ${DL("Save all "+ims.length+" to disk")}</button><button class="btn" data-tray>+ 6 to tray</button>
+      <a class="btn" href="https://www.pinterest.com/electroformaint/ef-visual-cores/${encodeURIComponent(slug)}/" target="_blank" rel="noopener">Pinterest ↗</a></div>
+    <div class="gallery">${ims.slice(0,12).map(im=>`<img loading="lazy" src="${esc(bigOf(im))}" alt="" style="background:${im.c}">`).join("")}</div>
+    <div class="sec"><h4>Dominant colors (click to copy)</h4><div class="swatches">${[...s.colors].sort((a,b)=>hsl(b)[2]-hsl(a)[2]).map(c=>`<button class="sw" data-copy="${c}"><i style="background:${c}"></i><span>${c}</span></button>`).join("")}</div></div>
+    <div class="sec"><h4>Recipe</h4><dl class="recipe"><dt>Type</dt><dd>${esc(r.type)}<br><span style="color:var(--muted)">Try: ${esc(FAM_PAIR[s.fam])}</span></dd><dt>Texture</dt><dd>${esc(r.texture)}</dd><dt>Layout</dt><dd>${esc(r.layout)}</dd><dt>Corners</dt><dd>${r.radius}px</dd></dl></div>
+    ${s.cari?`<div class="sec"><h4>CARI research · ${esc(s.cari.name)} (${esc(s.cari.start||"")}–${esc(s.cari.end||"")})</h4>
+      <p style="margin:0 0 10px;font-size:13px;line-height:1.55">${esc((s.cari.desc||"").slice(0,520))}${(s.cari.desc||"").length>520?"…":""}</p>
+      <div class="btns"><button class="btn sm" data-cari>View ${(s.cari.imgs||[]).length} CARI images</button><a class="btn sm" href="https://cari.institute/aesthetics/${esc(s.cari.slug)}" target="_blank" rel="noopener">Read on CARI ↗</a></div></div>`:""}
+    <div class="sec"><h4>Search other libraries</h4><div class="btns">
+      <a class="btn sm" href="https://designreviewed.com/?s=${encodeURIComponent(s.name)}" target="_blank" rel="noopener">Design Reviewed ↗</a>
+      <a class="btn sm" href="https://archive.org/search?query=${encodeURIComponent(s.name)}" target="_blank" rel="noopener">archive.org ↗</a>
+      <a class="btn sm" href="https://www.are.na/search/${encodeURIComponent(s.name)}" target="_blank" rel="noopener">Are.na ↗</a></div></div>
+    <div class="sec"><h4>Archive finds${s.ia.length?` · ${s.ia.length}`:""}</h4>${s.ia.length?`<div class="ia-list">${s.ia.slice(0,12).map(iaCard).join("")}</div>`:`<p class="sub" style="margin:0">No archive items matched by name. <a href="https://archive.org/search?query=${encodeURIComponent(s.name)}" target="_blank" rel="noopener">Search archive.org ↗</a></p>`}</div></aside>`;
+  const R=$("#drawerRoot");
+  R.querySelectorAll("[data-close]").forEach(b=>b.onclick=closeDrawer);
+  R.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>copy(b.dataset.copy));
+  R.querySelector("[data-go]").onclick=()=>{ closeDrawer(); G.style=slug; G.fam=null; G.src="all"; location.hash="gallery"; renderGalleryRail(); renderGallery(true); };
+  R.querySelector("[data-save]").onclick=()=>enqueue(ims);
+  const cb=R.querySelector("[data-cari]"); if(cb) cb.onclick=()=>{ closeDrawer(); location.hash="gallery"; setSrc("cari"); G.style="cari-"+s.cari.slug; renderGalleryRail(); renderGallery(true); };
+  R.querySelector("[data-tray]").onclick=()=>{ ims.slice(0,6).forEach(im=>addTray(im,true)); toast("Added to tray"); };
+  R.querySelector(".x").focus();
+}
+function closeDrawer(){ $("#drawerRoot").innerHTML=""; }
+const iaCard=it=>`<a class="ia" href="${esc(it.url||("https://archive.org/details/"+(it.identifier||it.id)))}" target="_blank" rel="noopener"><img loading="lazy" src="https://archive.org/services/img/${esc(it.identifier||it.id)}" alt=""><div><b>${esc(it.title||it.identifier||it.id)}</b><small>${esc([it.year,it.why].filter(Boolean).join(" · "))}</small></div></a>`;
+
+/* ================= TRAY ================= */
+function addTray(im,silent){
+  if(!canSave(im)){ if(!silent) toast("CARI images are view-only"); return; }
+  const i=TRAY.findIndex(t=>t.key===im.key);
+  if(i>=0){ if(!silent){ TRAY.splice(i,1); toast("Removed from tray"); } }
+  else { TRAY.push({key:im.key,src:im.src,style:im.style,c:im.c,w:im.w,ht:im.ht,h:im.h,e:im.e,id:im.id}); if(!silent) toast("Added to Studio tray"); }
+  store.set("va.tray",TRAY); updateTrayCount();
+}
+function updateTrayCount(){ $("#cTray").textContent=TRAY.length||""; }
+const trayIm = t => IMAGES.find(i=>i.key===t.key) || t;
+
+/* ================= STUDIO ================= */
+let COMP=store.get("va.comp",null), HIST=[], SELL=null;
+const BLENDS=["normal","multiply","screen","overlay","difference","luminosity","hard-light","color-burn"];
+const FILTERS={none:"",mono:"grayscale(1) contrast(1.1)",hi:"grayscale(1) contrast(1.9) brightness(1.05)",duo:"grayscale(1) contrast(1.2)",warm:"sepia(.6) saturate(1.4)",invert:"invert(1)"};
+function trayPalette(){ const cols=TRAY.map(t=>t.c).concat(TRAY.flatMap(t=>(STYLE_BY[t.style]?.colors)||[])); const out=[]; for(const c of cols){ if(c&&!out.some(o=>dist(o,c)<36)) out.push(c); } out.sort((a,b)=>hsl(b)[2]-hsl(a)[2]); return [...out.slice(0,12),"#111111","#f5f5f2"]; }
+function newComp(){ return {ar:"1:1.414", bg:"#e6dfdb", tex:"grain", layers:[]}; }
+function commit(){ HIST.push(JSON.stringify(COMP)); if(HIST.length>60) HIST.shift(); store.set("va.comp",COMP); }
+function setComp(c){ COMP=c; store.set("va.comp",COMP); renderArt(); renderInspector(); renderTokens(); }
+function arNums(ar){ const [w,h]=ar.split(":").map(Number); return {w,h}; }
+
+function renderStudio(){
+  if(!COMP) COMP=newComp();
+  const sel=$("#mixFonts"); if(!sel.options.length){ sel.innerHTML=Object.keys(PAIRS).map(k=>`<option>${esc(k)}</option>`).join(""); const fam=TRAY[0]?STYLE_BY[TRAY[0].style]?.fam:null; if(fam) sel.value=FAM_PAIR[fam]; }
+  $("#artSize").value=COMP.ar; $("#tex").value=COMP.tex;
+  $("#tray").innerHTML=TRAY.map((t,i)=>`<button data-i="${i}" title="Click to add to poster"><img src="${esc(thumbOf(trayIm(t)))}" alt=""><span class="rm" data-rm="${i}">✕</span></button>`).join("");
+  $("#trayHint").textContent=TRAY.length?`${TRAY.length} images. Click one to drop it on the poster, or press Mix it.`:"Tray is empty. In the Gallery, hover an image and press + (or select several and “+ Tray”).";
+  $("#tray").querySelectorAll("[data-i]").forEach(b=>b.onclick=e=>{ if(e.target.dataset.rm!==undefined){ TRAY.splice(+e.target.dataset.rm,1); store.set("va.tray",TRAY); updateTrayCount(); renderStudio(); return; } addImageLayer(trayIm(TRAY[+b.dataset.i])); });
+  renderBgPal(); renderArt(); renderInspector(); renderTokens(); renderSavedComps();
+}
+function renderBgPal(){ const pal=trayPalette(); $("#bgPal").innerHTML=pal.map(c=>`<button style="background:${c}" data-c="${c}" aria-pressed="${COMP.bg===c}" title="${c}"></button>`).join("");
+  $("#bgPal").querySelectorAll("[data-c]").forEach(b=>b.onclick=()=>{ commit(); COMP.bg=b.dataset.c; setComp(COMP); renderBgPal(); }); }
+function layerSrc(L){ const im=IMAGES.find(i=>i.key===L.key); if(im) return localOf(im)||remoteOf(im,true); return L.src==="pin"?pinUrl(L.h,L.e,"736x"):`https://archive.org/services/img/${L.id2}`; }
+function addImageLayer(im,opts={}){ commit(); const ar=(im.ht||1)/(im.w||1); const {w:AW,h:AH}=arNums(COMP.ar);
+  const w=opts.w||46; const L={id:uid(),type:"img",key:im.key,src:im.src,h:im.h,e:im.e,id2:im.id,c:im.c,ar, x:opts.x??(27+Math.random()*10), y:opts.y??(20+Math.random()*20), w, rot:opts.rot||0, op:1, blend:opts.blend||"normal", filt:opts.filt||"none", tint:opts.tint||null, radius:0};
+  L.id=uid(); COMP.layers.push(L); SELL=L.id; setComp(COMP); }
+function addTextLayer(opts={}){ commit(); const [disp,body,w]=PAIRS[$("#mixFonts").value]||PAIRS["Unbounded / Inter Tight"];
+  const L={id:uid(),type:"text",text:opts.text||"HEADLINE",font:opts.font||disp,weight:opts.weight||w,size:opts.size||14,color:opts.color||(contrast("#111111",COMP.bg)>contrast("#f5f5f2",COMP.bg)?"#111111":"#f5f5f2"),x:opts.x??8,y:opts.y??8,w:0,rot:opts.rot||0,op:1,blend:opts.blend||"normal",ls:opts.ls??-2,upper:opts.upper??true,align:opts.align||"left",bgc:opts.bgc||null};
+  COMP.layers.push(L); SELL=L.id; setComp(COMP); }
+$("#addText").onclick=()=>addTextLayer({text:$("#mixTitle").value||"HEADLINE"});
+$("#artSize").onchange=e=>{ commit(); COMP.ar=e.target.value; setComp(COMP); };
+$("#tex").onchange=e=>{ commit(); COMP.tex=e.target.value; setComp(COMP); };
+$("#undoBtn").onclick=()=>{ const p=HIST.pop(); if(p){ COMP=JSON.parse(p); store.set("va.comp",COMP); renderStudio(); } else toast("Nothing to undo"); };
+$("#clearTray").onclick=()=>{ TRAY=[]; store.set("va.tray",TRAY); updateTrayCount(); renderStudio(); };
+
+function texStyle(t,bg){
+  if(t==="grain") return `background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:multiply;opacity:.5`;
+  if(t==="halftone") return `background-image:radial-gradient(#000 22%, transparent 24%);background-size:0.9cqw 0.9cqw;mix-blend-mode:multiply;opacity:.16`;
+  if(t==="scan") return `background-image:repeating-linear-gradient(0deg, rgba(0,0,0,.16) 0 .15cqw, transparent .15cqw .5cqw);mix-blend-mode:multiply`;
+  return "display:none";
+}
+function layerHTML(L){
+  const common=`left:${L.x}%;top:${L.y}%;transform:rotate(${L.rot}deg);opacity:${L.op};mix-blend-mode:${L.blend};z-index:${COMP.layers.indexOf(L)+1}`;
+  if(L.type==="img"){ const {w:AW,h:AH}=arNums(COMP.ar); const hPct=L.w*L.ar*AW/AH;
+    return `<div class="layer${SELL===L.id?" selected":""}" data-id="${L.id}" style="${common};width:${L.w}%;height:${hPct}%;${L.filt==="duo"?`background:${L.tint||COMP.bg};`:""}border-radius:${L.radius||0}cqw;overflow:hidden">
+      <img src="${esc(layerSrc(L))}" alt="" style="filter:${FILTERS[L.filt]||""};${L.filt==="duo"?"mix-blend-mode:multiply;":""}">${SELL===L.id?'<span class="handle"></span>':""}</div>`; }
+  return `<div class="layer${SELL===L.id?" selected":""}" data-id="${L.id}" style="${common}">
+    <div class="tx" style="font-family:'${esc(L.font)}',sans-serif;font-weight:${L.weight};font-size:${L.size}cqw;color:${L.color};letter-spacing:${L.ls/100}em;text-transform:${L.upper?"uppercase":"none"};text-align:${L.align};${L.bgc?`background:${L.bgc};padding:.15em .3em;`:""}">${esc(L.text)}</div>${SELL===L.id?'<span class="handle"></span>':""}</div>`;
+}
+function renderArt(){
+  const {w,h}=arNums(COMP.ar); $("#artwrap").style.setProperty("--ar-w",w); $("#artwrap").style.setProperty("--ar-h",h);
+  const art=$("#art"); art.style.aspectRatio=`${w}/${h}`; art.style.background=COMP.bg;
+  art.innerHTML=COMP.layers.map(layerHTML).join("")+`<div class="tex" style="${texStyle(COMP.tex,COMP.bg)}"></div>`+(COMP.layers.length?"":`<div style="position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:10%;color:${contrast("#111",COMP.bg)>4?"#111":"#eee"};font:600 3.2cqw var(--f-body)">Add images from the tray, or press <b>&nbsp;Mix it&nbsp;</b> for an instant layout.</div>`);
+  renderLayersList();
+}
+/* drag / scale */
+let DRAG=null;
+$("#art").addEventListener("pointerdown",e=>{
+  const el=e.target.closest(".layer"); const art=$("#art");
+  if(!el){ SELL=null; renderArt(); renderInspector(); return; }
+  const L=COMP.layers.find(l=>l.id===el.dataset.id); if(!L) return;
+  if(SELL!==L.id){ SELL=L.id; renderArt(); renderInspector(); }
+  commit(); const r=art.getBoundingClientRect();
+  DRAG={L, mode:e.target.classList.contains("handle")?"scale":"move", sx:e.clientX, sy:e.clientY, x:L.x, y:L.y, w:L.w, size:L.size, rw:r.width, rh:r.height};
+  art.setPointerCapture(e.pointerId); e.preventDefault();
+});
+$("#art").addEventListener("pointermove",e=>{ if(!DRAG) return; const d=DRAG, dx=(e.clientX-d.sx)/d.rw*100, dy=(e.clientY-d.sy)/d.rh*100;
+  if(d.mode==="move"){ d.L.x=+(d.x+dx).toFixed(2); d.L.y=+(d.y+dy).toFixed(2); }
+  else if(d.L.type==="img"){ d.L.w=Math.max(4,+(d.w+dx).toFixed(2)); } else { d.L.size=Math.max(1,+(d.size*(1+dx/30)).toFixed(2)); }
+  const el=$(`#art .layer[data-id="${d.L.id}"]`); if(el) el.outerHTML=layerHTML(d.L); });
+$("#art").addEventListener("pointerup",()=>{ if(DRAG){ DRAG=null; store.set("va.comp",COMP); renderInspector(); renderTokens(); } });
+function studioKeys(e){ const L=COMP?.layers.find(l=>l.id===SELL); if(!L) return;
+  if(e.key==="Delete"||e.key==="Backspace"){ commit(); COMP.layers=COMP.layers.filter(l=>l!==L); SELL=null; setComp(COMP); e.preventDefault(); }
+  const step=e.shiftKey?5:.5; const mv={ArrowLeft:[-step,0],ArrowRight:[step,0],ArrowUp:[0,-step],ArrowDown:[0,step]}[e.key];
+  if(mv){ L.x+=mv[0]; L.y+=mv[1]; store.set("va.comp",COMP); renderArt(); e.preventDefault(); } }
+function renderLayersList(){
+  $("#layers").innerHTML=[...COMP.layers].reverse().map(L=>`<button data-id="${L.id}" aria-pressed="${SELL===L.id}">${L.type==="img"?`<img src="${esc(layerSrc(L))}" alt="">`:`<b style="width:26px;text-align:center">T</b>`}<span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${L.type==="img"?esc(STYLE_BY[L.style]?.name||"image"):esc(L.text.split("\n")[0])}</span><span class="tag">${L.blend}</span></button>`).join("")||`<p class="sub" style="margin:0;font-size:12px">No layers yet.</p>`;
+  $("#layers").querySelectorAll("[data-id]").forEach(b=>b.onclick=()=>{ SELL=b.dataset.id; renderArt(); renderInspector(); });
+}
+function renderInspector(){
+  const L=COMP?.layers.find(l=>l.id===SELL); const box=$("#insp");
+  if(!L){ box.innerHTML=`<p class="sub" style="margin:0;font-size:12px">Select a layer to edit it. Drag to move, pull the blue dot to resize, arrow keys to nudge, Delete to remove.</p>`; return; }
+  const pal=trayPalette();
+  const palBtns=(prop)=>`<div class="pal">${pal.map(c=>`<button style="background:${c}" data-prop="${prop}" data-c="${c}" aria-pressed="${L[prop]===c}" title="${c}"></button>`).join("")}</div>`;
+  box.innerHTML=`<div class="row2"><div class="field"><label for="iBlend">Blend</label><select id="iBlend">${BLENDS.map(b=>`<option ${L.blend===b?"selected":""}>${b}</option>`).join("")}</select></div>
+    <div class="field"><label for="iOp">Opacity</label><input id="iOp" type="range" min="0.1" max="1" step="0.05" value="${L.op}"></div></div>
+    <div class="field"><label for="iRot">Rotate ${L.rot}°</label><input id="iRot" type="range" min="-45" max="45" step="1" value="${L.rot}"></div>
+    ${L.type==="img"?`<div class="field"><label for="iFilt">Image treatment</label><select id="iFilt">${Object.keys(FILTERS).map(f=>`<option value="${f}" ${L.filt===f?"selected":""}>${{none:"Full color",mono:"Mono",hi:"High contrast",duo:"Duotone (uses tint)",warm:"Warm faded",invert:"Invert"}[f]}</option>`).join("")}</select></div>
+      ${L.filt==="duo"?`<div class="field"><label>Duotone tint</label>${palBtns("tint")}</div>`:""}
+      <div class="field"><label for="iRad">Corner radius</label><input id="iRad" type="range" min="0" max="20" step="1" value="${L.radius||0}"></div>`
+    :`<div class="field"><label for="iText">Text</label><textarea id="iText" rows="2">${esc(L.text)}</textarea></div>
+      <div class="row2"><div class="field"><label for="iFont">Font</label><select id="iFont">${[...new Set(Object.values(PAIRS).flatMap(p=>[p[0],p[1]]))].map(f=>`<option ${L.font===f?"selected":""}>${esc(f)}</option>`).join("")}</select></div>
+      <div class="field"><label for="iSize">Size</label><input id="iSize" type="range" min="1" max="40" step=".5" value="${L.size}"></div></div>
+      <div class="row2"><div class="field"><label for="iLs">Tracking</label><input id="iLs" type="range" min="-10" max="40" step="1" value="${L.ls}"></div>
+      <div class="field"><label for="iAlign">Align</label><select id="iAlign">${["left","center","right"].map(a=>`<option ${L.align===a?"selected":""}>${a}</option>`).join("")}</select></div></div>
+      <div class="btns"><button class="chip" id="iUpper" aria-pressed="${L.upper}">UPPERCASE</button><button class="chip" id="iBox" aria-pressed="${!!L.bgc}">Label box</button></div>
+      <div class="field"><label>Color</label>${palBtns("color")}</div>${L.bgc?`<div class="field"><label>Box color</label>${palBtns("bgc")}</div>`:""}`}
+    <div class="btns"><button class="btn sm" id="iUp">Bring forward</button><button class="btn sm" id="iDown">Send back</button><button class="btn sm" id="iDup">Duplicate</button><button class="btn sm" id="iDel">Delete</button></div>`;
+  const upd=(k,v,full)=>{ L[k]=v; store.set("va.comp",COMP); renderArt(); renderTokens(); if(full) renderInspector(); };
+  const on=(id,ev,fn)=>{ const el=$("#"+id); if(el) el.addEventListener(ev,fn); };
+  on("iBlend","change",e=>{ commit(); upd("blend",e.target.value); });
+  on("iOp","input",e=>upd("op",+e.target.value)); on("iOp","change",commit);
+  on("iRot","input",e=>{ upd("rot",+e.target.value); box.querySelector('label[for="iRot"]').textContent=`Rotate ${e.target.value}°`; });
+  on("iFilt","change",e=>{ commit(); upd("filt",e.target.value,true); });
+  on("iRad","input",e=>upd("radius",+e.target.value));
+  on("iText","input",e=>upd("text",e.target.value));
+  on("iFont","change",e=>{ commit(); upd("font",e.target.value); });
+  on("iSize","input",e=>upd("size",+e.target.value));
+  on("iLs","input",e=>upd("ls",+e.target.value));
+  on("iAlign","change",e=>upd("align",e.target.value));
+  on("iUpper","click",()=>{ commit(); upd("upper",!L.upper,true); });
+  on("iBox","click",()=>{ commit(); upd("bgc",L.bgc?null:(pal.find(c=>contrast(c,L.color)>3)||"#111111"),true); });
+  box.querySelectorAll("[data-prop]").forEach(b=>b.onclick=()=>{ commit(); upd(b.dataset.prop,b.dataset.c,true); });
+  on("iUp","click",()=>{ commit(); const i=COMP.layers.indexOf(L); if(i<COMP.layers.length-1){ COMP.layers.splice(i,1); COMP.layers.splice(i+1,0,L); } setComp(COMP); });
+  on("iDown","click",()=>{ commit(); const i=COMP.layers.indexOf(L); if(i>0){ COMP.layers.splice(i,1); COMP.layers.splice(i-1,0,L); } setComp(COMP); });
+  on("iDup","click",()=>{ commit(); const c={...L,id:uid(),x:L.x+3,y:L.y+3}; COMP.layers.push(c); SELL=c.id; setComp(COMP); });
+  on("iDel","click",()=>{ commit(); COMP.layers=COMP.layers.filter(l=>l!==L); SELL=null; setComp(COMP); });
+}
+
+/* ---- Mix it: auto-compose editable layers from the tray ---- */
+$("#mix").onclick=async()=>{
+  if(!TRAY.length){ toast("Add some images to the tray first"); return; }
+  { const [d,b,wt]=PAIRS[$("#mixFonts").value]; try{ await Promise.all([document.fonts.load(`${wt} 100px "${d}"`),document.fonts.load(`400 100px "${b}"`)]); }catch{} }
+  commit();
+  const mode=$("#mixMode").value==="random"?rnd(["grid","collage","flyer","overlay","specimen"]):$("#mixMode").value;
+  const [disp,body,w]=PAIRS[$("#mixFonts").value]; const pal=trayPalette();
+  const bg=rnd(pal); const ink=contrast("#111111",bg)>contrast("#f5f5f2",bg)?"#111111":"#f5f5f2";
+  const vivid=[...pal].filter(c=>c!==bg).sort((a,b)=>hsl(b)[1]-hsl(a)[1]); const acc=vivid[0]||ink, acc2=vivid[1]||acc;
+  const ims=[...TRAY].sort(()=>Math.random()-.5).map(trayIm); const pick=i=>ims[i%ims.length];
+  const title=$("#mixTitle").value||"UNTITLED", small=$("#mixSub").value||"";
+  COMP={ar:COMP.ar, bg, tex:rnd(["grain","halftone","scan","none"]), layers:[]};
+  const {w:AW,h:AH}=arNums(COMP.ar); const H=v=>v*AW/AH; // convert width-% to height-%
+  const img=(im,o)=>{ const ar=(im.ht||1)/(im.w||1); COMP.layers.push({id:uid(),type:"img",key:im.key,src:im.src,h:im.h,e:im.e,id2:im.id,c:im.c,style:im.style,ar,x:o.x,y:o.y,w:o.w,rot:o.rot||0,op:o.op||1,blend:o.blend||"normal",filt:o.filt||"none",tint:o.tint||null,radius:o.radius||0}); };
+  // shrink any text that would run past `maxW`% of the poster width (wide faces like Michroma overflow otherwise)
+  const mctx=document.createElement("canvas").getContext("2d");
+  const fit=L=>{ const maxW=(L.maxW??(100-L.x-5)); const font=L.font, wt=L.weight; mctx.font=`${wt} 100px "${font}", sans-serif`;
+    const lines=(L.upper?L.text.toUpperCase():L.text).split("\n"); const per100=Math.max(...lines.map(t=>mctx.measureText(t).width+Math.max(0,t.length-1)*(L.ls/100)*100));
+    if(per100>0){ const maxSize=maxW/(per100/100); if(L.size>maxSize) L.size=+maxSize.toFixed(2); } delete L.maxW; return L; };
+  const txt=o=>COMP.layers.push(fit({id:uid(),type:"text",font:disp,weight:w,color:ink,rot:0,op:1,blend:"normal",ls:-2,upper:true,align:"left",bgc:null,w:0,...o}));
+  if(mode==="grid"){
+    txt({text:title.split(" ").join("\n"),x:6,y:4,size:15,ls:-4});
+    const n=Math.min(4,ims.length); const cw=(88-(n-1)*2)/n;
+    for(let i=0;i<n;i++) img(pick(i),{x:6+i*(cw+2),y:52,w:cw,filt:rnd(["none","mono","hi"])});
+    txt({text:small,font:body,weight:400,size:2.2,ls:0,upper:false,x:6,y:92});
+    txt({text:String(Math.floor(Math.random()*90)+10),x:78,y:4,size:12,color:acc});
+  } else if(mode==="collage"){
+    for(let i=0;i<Math.min(6,ims.length+2);i++) img(pick(i),{x:[4,46,14,52,8,40][i],y:[4,8,30,38,58,64][i],w:30+Math.random()*16,rot:Math.round(Math.random()*16-8),filt:rnd(["none","none","hi","warm"])});
+    txt({text:title,x:6,y:74,size:12,rot:-3,maxW:78,bgc:acc,color:contrast(ink,acc)>contrast(bg,acc)?ink:bg});
+    txt({text:small,font:body,weight:400,size:2.4,ls:0,upper:false,x:7,y:90,bgc:bg});
+  } else if(mode==="flyer"){
+    img(pick(0),{x:0,y:28,w:100,filt:"duo",tint:acc,blend:"normal"});
+    txt({text:small.toUpperCase(),font:body,weight:400,size:2.2,ls:30,x:6,y:5});
+    txt({text:title,x:6,y:10,size:16,align:"left"});
+    txt({text:"✦ LIVE ✦",size:5,color:acc2,x:6,y:84});
+  } else if(mode==="overlay"){
+    img(pick(0),{x:-5,y:-5,w:110,filt:"hi",blend:"multiply"});
+    if(ims.length>1) img(pick(1),{x:46,y:44,w:46,blend:"screen",rot:6});
+    txt({text:title.split(" ").join("\n"),x:5,y:6,size:20,ls:-5,blend:"difference",color:"#f5f5f2"});
+    txt({text:small,font:body,weight:400,size:2.2,ls:0,upper:false,x:5,y:92});
+  } else {
+    txt({text:"Aa",x:5,y:4,size:40,ls:-6,upper:false});
+    txt({text:title,x:6,y:42,size:7});
+    txt({text:`${disp} · ${body}`,font:body,weight:400,size:2.2,ls:0,upper:false,x:6,y:52});
+    const n=Math.min(4,ims.length); for(let i=0;i<n;i++) img(pick(i),{x:6+i*22.5,y:64,w:20.5,radius:RECIPES[STYLE_BY[pick(i).style]?.fam||"modern"].radius/4});
+  }
+  SELL=null; setComp(COMP); renderBgPal(); $("#tex").value=COMP.tex;
+};
+
+/* ---- export PNG (draws from local copies so the canvas stays exportable) ---- */
+$("#exportPng").onclick=async()=>{
+  if(!COMP.layers.length){ toast("Nothing to export yet"); return; }
+  const msg=$("#exportMsg"); msg.textContent=MODE==="local"?"Saving source images to disk…":"Fetching images…";
+  const need=MODE==="local"?COMP.layers.filter(L=>L.type==="img").map(L=>IMAGES.find(i=>i.key===L.key)).filter(im=>im&&!localOf(im)):[];
+  if(need.length){
+    for(let tries=0;tries<4;tries++){
+      try{ const r=await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({items:need.map(fileFor)})}); const j=await r.json(); j.results.forEach((res,k)=>{ if(res.local){ const f=fileFor(need[k]); SAVED.add(f.folder+"/"+f.name); } }); break; }
+      catch{ msg.textContent=`Connection hiccup, retrying (${tries+1})…`; await new Promise(r=>setTimeout(r,2500*(tries+1))); }
+    }
+    const still=need.filter(im=>!localOf(im)); if(still.length){ msg.textContent=`${still.length} image(s) couldn't be downloaded. Check the connection and press Export again.`; return; }
+  }
+  msg.textContent="Rendering…";
+  const {w:AW,h:AH}=arNums(COMP.ar); const W=2400, Hh=Math.round(W*AH/AW);
+  const cv=document.createElement("canvas"); cv.width=W; cv.height=Hh; const ctx=cv.getContext("2d");
+  ctx.fillStyle=COMP.bg; ctx.fillRect(0,0,W,Hh);
+  const loadImg=src=>new Promise(async(res,rej)=>{ try{ let u=src; if(/^https?:/.test(src)){ u=URL.createObjectURL(await fetchBlob(src)); } const i=new Image(); i.onload=()=>res(i); i.onerror=rej; i.src=u; }catch(e){ rej(e); } });
+  for(const L of COMP.layers){
+    ctx.save(); ctx.globalAlpha=L.op; ctx.globalCompositeOperation=L.blend==="normal"?"source-over":L.blend;
+    const x=L.x/100*W, y=L.y/100*Hh;
+    if(L.type==="img"){
+      const im=IMAGES.find(i=>i.key===L.key); const src=im&&(localOf(im)||(MODE==="web"?corsUrl(im,2400):null)); if(!src){ ctx.restore(); continue; }
+      let pic; try{ pic=await loadImg(src); }catch{ msg.textContent="One image couldn't be fetched, so it was skipped."; ctx.restore(); continue; } const lw=L.w/100*W, lh=lw*L.ar;
+      ctx.translate(x+lw/2,y+lh/2); ctx.rotate(L.rot*Math.PI/180);
+      const off=document.createElement("canvas"); off.width=Math.max(1,Math.round(lw)); off.height=Math.max(1,Math.round(lh)); const o=off.getContext("2d");
+      if(L.filt==="duo"){ o.fillStyle=L.tint||COMP.bg; o.fillRect(0,0,off.width,off.height); o.globalCompositeOperation="multiply"; }
+      o.filter=FILTERS[L.filt]||"none";
+      const s=Math.max(off.width/pic.width, off.height/pic.height), dw=pic.width*s, dh=pic.height*s; // object-fit: cover
+      if(L.radius){ const r=L.radius/100*W; o.save(); o.beginPath(); o.roundRect(0,0,off.width,off.height,r); o.clip(); o.drawImage(pic,(off.width-dw)/2,(off.height-dh)/2,dw,dh); o.restore(); }
+      else o.drawImage(pic,(off.width-dw)/2,(off.height-dh)/2,dw,dh);
+      ctx.drawImage(off,-lw/2,-lh/2,lw,lh);
+    } else {
+      const px=L.size/100*W; await document.fonts.load(`${L.weight} ${px}px "${L.font}"`);
+      ctx.font=`${L.weight} ${px}px "${L.font}", sans-serif`; ctx.letterSpacing=`${L.ls/100*px}px`; ctx.textBaseline="top";
+      const lines=(L.upper?L.text.toUpperCase():L.text).split("\n"); const lh=px*.92; const widths=lines.map(t=>ctx.measureText(t).width); const bw=Math.max(...widths), bh=lh*lines.length;
+      ctx.translate(x+bw/2,y+bh/2); ctx.rotate(L.rot*Math.PI/180); ctx.translate(-bw/2,-bh/2);
+      if(L.bgc){ ctx.fillStyle=L.bgc; ctx.fillRect(-.3*px,-.15*px,bw+.6*px,bh+.3*px); }
+      ctx.fillStyle=L.color;
+      lines.forEach((t,i)=>{ const dx=L.align==="center"?(bw-widths[i])/2:L.align==="right"?bw-widths[i]:0; ctx.fillText(t,dx,i*lh+px*.04); });
+    }
+    ctx.restore();
+  }
+  if(COMP.tex!=="none"){ ctx.save(); ctx.globalCompositeOperation="multiply";
+    if(COMP.tex==="grain"){ const t=document.createElement("canvas"); t.width=t.height=256; const tc=t.getContext("2d"); const id=tc.createImageData(256,256); for(let i=0;i<id.data.length;i+=4){ const v=Math.random()*255; id.data[i]=id.data[i+1]=id.data[i+2]=v; id.data[i+3]=70; } tc.putImageData(id,0,0); ctx.fillStyle=ctx.createPattern(t,"repeat"); ctx.fillRect(0,0,W,Hh); }
+    if(COMP.tex==="halftone"){ ctx.globalAlpha=.16; ctx.fillStyle="#000"; const s=W*.009; for(let yy=0;yy<Hh;yy+=s) for(let xx=0;xx<W;xx+=s){ ctx.beginPath(); ctx.arc(xx+s/2,yy+s/2,s*.22,0,7); ctx.fill(); } }
+    if(COMP.tex==="scan"){ ctx.fillStyle="rgba(0,0,0,.16)"; const s=W*.005; for(let yy=0;yy<Hh;yy+=s) ctx.fillRect(0,yy,W,s*.3); }
+    ctx.restore(); }
+  try{
+    const name=(slugify(($("#mixTitle").value||"poster"))||"poster")+"-"+new Date().toISOString().slice(0,16).replace(/[:T]/g,"");
+    if(MODE==="web"){ cv.toBlob(b=>{ saveBlob(b,name+".png"); msg.textContent=`Downloaded ${name}.png (${W}×${Hh}px).`; },"image/png"); return; }
+    const r=await fetch("/api/export",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name,dataUrl:cv.toDataURL("image/png")})});
+    const j=await r.json(); if(j.path){ msg.innerHTML=`Saved <b>${esc(j.path)}</b> (${W}×${Hh}px). <a href="/${esc(j.path)}" target="_blank" rel="noopener">Open</a>`; } else msg.textContent="Export failed: "+(j.error||"unknown");
+  }catch(err){ msg.textContent="Export failed: "+err.message; }
+};
+
+/* ---- tokens & saved compositions ---- */
+function renderTokens(){
+  if(!COMP) return; const texts=COMP.layers.filter(l=>l.type==="text"); const imgs=COMP.layers.filter(l=>l.type==="img");
+  const fonts=[...new Set(texts.map(t=>t.font))]; const colors=[...new Set([COMP.bg,...texts.map(t=>t.color),...texts.map(t=>t.bgc).filter(Boolean),...imgs.map(i=>i.tint).filter(Boolean)])];
+  const fams=[...new Set(imgs.map(i=>STYLE_BY[i.style]?.fam).filter(Boolean))]; const radius=fams.length?RECIPES[fams[0]].radius:0;
+  $("#tokens").textContent=`:root {\n  --color-bg: ${COMP.bg};\n${colors.slice(1).map((c,i)=>`  --color-${i===0?"fg":"accent-"+i}: ${c};`).join("\n")}\n${trayPalette().slice(0,8).map((c,i)=>`  --palette-${i+1}: ${c};`).join("\n")}\n  --font-display: "${fonts[0]||"Unbounded"}", sans-serif;\n  --font-body: "${fonts[1]||fonts[0]||"Inter Tight"}", sans-serif;\n  --radius: ${radius}px;\n  --texture: ${COMP.tex};\n  /* styles: ${[...new Set(imgs.map(i=>STYLE_BY[i.style]?.name).filter(Boolean))].join(", ")||"–"} */\n}`;
+}
+$("#copyTok").onclick=()=>copy($("#tokens").textContent);
+$("#saveComp").onclick=()=>{ const list=store.get("va.comps",[]); list.unshift({id:Date.now(),name:$("#mixTitle").value||"Untitled",comp:COMP}); store.set("va.comps",list.slice(0,40)); renderSavedComps(); toast("Saved in this browser"); };
+function renderSavedComps(){ const list=store.get("va.comps",[]);
+  $("#savedComps").innerHTML=list.length?list.map(x=>`<button data-id="${x.id}"><span>${esc(x.name)}</span><small style="color:var(--muted)">${x.comp.layers.length} layers</small></button>`).join(""):`<p class="sub" style="margin:0;font-size:12px">Saved posters appear here (this browser only).</p>`;
+  $("#savedComps").querySelectorAll("[data-id]").forEach(b=>b.onclick=()=>{ const x=list.find(s=>String(s.id)===b.dataset.id); if(x){ commit(); SELL=null; setComp(JSON.parse(JSON.stringify(x.comp))); renderStudio(); } }); }
+
+/* ================= ARCHIVE / SOURCES ================= */
+function renderArchive(){
+  const q=norm($("#qa").value||""); const match=it=>!q||norm([it.title,it.why,it.identifier].join(" ")).includes(q);
+  $("#archive").innerHTML=IA.map(c=>{
+    if(!c.data) return `<div class="cluster"><h2>${esc(c.label)}</h2><p class="sub">Still being searched. Reload once refs/ia/${esc(c.file)}.json exists.</p></div>`;
+    const cols=(c.data.collections||[]).filter(match); const styles=(c.data.styles||[]).map(st=>({...st,items:(st.items||[]).filter(match)})).filter(st=>st.items.length);
+    if(!cols.length&&!styles.length) return "";
+    return `<div class="cluster"><h2>${esc(c.label)}</h2>${cols.length?`<div class="ia-style"><b>Big collections</b><span class="tag">${cols.length}</span></div><div class="ia-list">${cols.map(iaCard).join("")}</div>`:""}
+      ${styles.map(st=>`<div class="ia-style"><b>${esc(st.style)}</b><span class="tag">${st.items.length}</span><button class="btn sm" data-iastyle="${esc(st.style)}">View in gallery</button></div><div class="ia-list">${st.items.map(iaCard).join("")}</div>`).join("")}</div>`;
+  }).join("")||`<div class="empty">Nothing matches that filter.</div>`;
+  $("#archive").querySelectorAll("[data-iastyle]").forEach(b=>b.onclick=()=>{ G.src="ia"; G.style=null; G.fam=null; $("#gSrc").querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x.dataset.src==="ia")); location.hash="gallery"; renderGalleryRail(); renderGallery(true); const idx=G.list.findIndex(i=>i.iaStyle===b.dataset.iastyle); if(idx>=0) setTimeout(()=>openLightbox(idx),50); });
+}
+$("#qa").addEventListener("input",renderArchive);
+const LIBS=[
+  {name:"EF // visual cores", url:"https://www.pinterest.com/electroformaint/ef-visual-cores/", who:"Electroforma (Pinterest board)", what:"174 niche visual styles, about 25 pins each. The backbone of the Styles view.", src:"pin", use:"Reference images; credit the original makers when you publish."},
+  {name:"CARI", url:"https://cari.institute/aesthetics", who:"Consumer Aesthetics Research Institute", what:"89 researched consumer aesthetics from the 1970s on, each with namesake, era, research credits and an Are.na image channel. Matched to Pinterest styles where the names line up.", src:"cari", use:"View-only here: CARI asks for its images to be used for inspiration and analysis with credit, not as free assets."},
+  {name:"Gurafiku", url:"https://gurafiku.tumblr.com/", who:"Japanese graphic design research blog (Tumblr)", what:"About 2,500 posts of Japanese posters, book and album covers, logos and packaging, tagged by designer, decade and medium.", src:"gura", use:"Reference images of copyrighted work; keep them as study material and credit designers."},
+  {name:"Internet Archive", url:"https://archive.org/", who:"archive.org (found by the 4 search agents)", what:"Scanned zines, rave flyers, Soviet books, Bryce and KPT manuals, Emigre, pulp, Haeckel plates and more.", src:"ia", use:"Varies per item; much is public domain, check each item’s rights."},
+  {name:"Design Reviewed", url:"https://designreviewed.com/archive/", who:"Matt Lamont / Out of Place Studio", what:"8,000+ scanned artefacts from a 150-year print collection: posters, type specimens, catalogues, packaging, filterable by movement, decade, country and designer.", src:null, why:"Link only: the site blocks automated access to its archive data, so browse it directly. Each style panel has a “Design Reviewed” search link."},
+  {name:"Artvee", url:"https://artvee.com/", who:"Public-domain art library", what:"High-resolution public-domain paintings, illustration and posters, free to download.", src:null, why:"Link only: the site refused this connection (403), so nothing could be pulled. Open it in your own browser."},
+  {name:"eMuseum Zürich", url:"https://emuseum.ch/start", who:"Museum für Gestaltung Zürich collection", what:"The museum’s design collection, including its famous Swiss poster holdings.", src:null, why:"Link only: the site sits behind a bot check, which this app does not get around. Browse it directly."}
+];
+function renderLibs(){
+  const cnt=s=>IMAGES.filter(i=>i.src===s).length;
+  $("#libs").innerHTML=LIBS.map(l=>{ const n=l.src?cnt(l.src):0;
+    return `<article class="reel"><div class="who">${esc(l.who)}</div><h3>${esc(l.name)}</h3><p>${esc(l.what)}</p>
+      <div class="meta">${l.src?`<span class="tag ${n?"hot":""}">${n?n.toLocaleString()+" images in atlas":(l.src==="cari"&&MODE==="web"?"local version only":"not loaded yet")}</span>`:`<span class="tag">link only</span>`}</div>
+      <p class="sub" style="margin:0;font-size:12.5px">${esc(l.use||l.why)}</p>
+      <div class="btns">${l.src&&n?`<button class="btn sm" data-src-open="${l.src}">View in gallery</button>`:""}<a class="btn sm" href="${esc(l.url)}" target="_blank" rel="noopener">Open site ↗</a></div></article>`; }).join("");
+  $("#libs").querySelectorAll("[data-src-open]").forEach(b=>b.onclick=()=>{ setSrc(b.dataset.srcOpen); G.style=null; G.fam=null; location.hash="gallery"; renderGalleryRail(); renderGallery(true); });
+}
+function renderSources(){
+  renderLibs();
+  $("#reels").innerHTML=REELS.map(r=>`<article class="reel"><div class="who">@${esc(r.who)}</div><h3>${esc(r.title)}</h3><p>${esc(r.text)}</p>
+    <div class="seg">${r.styles.map(n=>{ const s=STYLES.find(x=>x.name===n); return s?`<button class="chip" data-open="${esc(s.slug)}">${esc(n)}</button>`:""; }).join("")}</div>
+    <a class="btn" href="https://www.instagram.com/reel/${esc(r.id)}/" target="_blank" rel="noopener" style="align-self:flex-start">Watch reel ↗</a></article>`).join("");
+  $("#reels").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>openDrawer(b.dataset.open));
+}
+
+load().catch(err=>{ $("#masonry").innerHTML=`<div class="empty">Couldn’t load the data (${esc(err.message)}). Start the app with <code>python3 explorer/server.py</code> and open /explorer/.</div>`; });
+</script>
+</body>
+</html>

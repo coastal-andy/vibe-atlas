@@ -1,0 +1,1198 @@
+{
+ "cluster": "90s–00s digital & soft-tech",
+ "collections": [
+  {
+   "identifier": "computermagazines",
+   "title": "Computer Magazines",
+   "url": "https://archive.org/details/computermagazines",
+   "thumb": "https://archive.org/services/img/computermagazines",
+   "why": "Huge umbrella of scanned computer magazines (Mac, PC, design, web) from the 80s-2000s."
+  },
+  {
+   "identifier": "magazine_rack",
+   "title": "The Magazine Rack",
+   "url": "https://archive.org/details/magazine_rack",
+   "thumb": "https://archive.org/services/img/magazine_rack",
+   "why": "The Magazine Rack: general scanned magazine collection incl. tech, games and culture titles."
+  },
+  {
+   "identifier": "cdromimages",
+   "title": "CD-ROM Images",
+   "url": "https://archive.org/details/cdromimages",
+   "thumb": "https://archive.org/services/img/cdromimages",
+   "why": "CD-ROM Images: disc images with cover art, UI and multimedia of 90s-00s software."
+  },
+  {
+   "identifier": "cdromsoftware",
+   "title": "CD-ROM Software Library",
+   "url": "https://archive.org/details/cdromsoftware",
+   "thumb": "https://archive.org/services/img/cdromsoftware",
+   "why": "CD-ROM Software Library: playable/browsable 90s-00s CD-ROM software, multimedia, creative tools."
+  },
+  {
+   "identifier": "gamemanuals",
+   "title": "Computer Game Manuals",
+   "url": "https://archive.org/details/gamemanuals",
+   "thumb": "https://archive.org/services/img/gamemanuals",
+   "why": "Computer Game Manuals: scanned manuals and box material, 8-bit through 90s."
+  },
+  {
+   "identifier": "softwarelibrary_mac",
+   "title": "Software Library: Macintosh",
+   "url": "https://archive.org/details/softwarelibrary_mac",
+   "thumb": "https://archive.org/services/img/softwarelibrary_mac",
+   "why": "Software Library: Macintosh. Classic Mac apps (Bryce, KPT era) emulated in-browser."
+  },
+  {
+   "identifier": "mondo2000magazine",
+   "title": "Mondo 2000 (Reality Hackers)",
+   "url": "https://archive.org/details/mondo2000magazine",
+   "thumb": "https://archive.org/services/img/mondo2000magazine",
+   "why": "Mondo 2000 / Reality Hackers full run: cyberdelic early-90s graphic design."
+  },
+  {
+   "identifier": "softwarelibrary_flash",
+   "title": "Software Library: Flash",
+   "url": "https://archive.org/details/softwarelibrary_flash",
+   "thumb": "https://archive.org/services/img/softwarelibrary_flash",
+   "why": "Software Library: Flash. Early-web Flash animations and sites."
+  }
+ ],
+ "styles": [
+  {
+   "style": "Gen X Soft Club",
+   "queries_used": [
+    "title:dreamcast AND mediatype:texts",
+    "title:(designers republic OR wipeout OR psygnosis)",
+    "title:dreamcast mediatype:image cover/box",
+    "dengeki/famitsu/gamest 1998-2001",
+    "sega saturn/dreamcast scans"
+   ],
+   "items": [
+    {
+     "identifier": "SEGADreamcastManuals_201812",
+     "title": "SEGA Dreamcast Manuals",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/SEGADreamcastManuals_201812",
+     "thumb": "https://archive.org/services/img/SEGADreamcastManuals_201812",
+     "why": "Dreamcast manuals set: swirl-logo, white/orange/blue clean-tech layouts."
+    },
+    {
+     "identifier": "OfficialSegaDreamcastMagazineUS",
+     "title": "Official Sega Dreamcast Magazine US",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/OfficialSegaDreamcastMagazineUS",
+     "thumb": "https://archive.org/services/img/OfficialSegaDreamcastMagazineUS",
+     "why": "Official Dreamcast Magazine US: late-90s translucent-tech print design."
+    },
+    {
+     "identifier": "dreamcastpresskitv1.0",
+     "title": "Dreamcast Digital Press Kit 1999",
+     "year": "2018",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/dreamcastpresskitv1.0",
+     "thumb": "https://archive.org/services/img/dreamcastpresskitv1.0",
+     "why": "Dreamcast Digital Press Kit 1999: launch-era branding and imagery."
+    },
+    {
+     "identifier": "dengeki-dreamcast-vol.-3-1999-01-14_202207",
+     "title": "Dengeki Dreamcast Vol. 3 ( 1999 01 14)",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/dengeki-dreamcast-vol.-3-1999-01-14_202207",
+     "thumb": "https://archive.org/services/img/dengeki-dreamcast-vol.-3-1999-01-14_202207",
+     "why": "Dengeki Dreamcast: Japanese Dreamcast-era magazine layouts."
+    },
+    {
+     "identifier": "famitsu-dc-dreamcast-23-7-14-2000",
+     "title": "Famitsu DC Dreamcast #23 ( 7-14-2000)",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/famitsu-dc-dreamcast-23-7-14-2000",
+     "thumb": "https://archive.org/services/img/famitsu-dc-dreamcast-23-7-14-2000",
+     "why": "Famitsu DC: dense Japanese Y2K game-mag typography."
+    },
+    {
+     "identifier": "FamDC07",
+     "title": "Famitsu Dreamcast 07",
+     "year": "2001",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/FamDC07",
+     "thumb": "https://archive.org/services/img/FamDC07",
+     "why": "Famitsu Dreamcast 07: Japanese Y2K print."
+    },
+    {
+     "identifier": "sega-dreamcast-box-scans",
+     "title": "Sega Dreamcast Box Scans",
+     "year": "2014",
+     "mediatype": "image",
+     "url": "https://archive.org/details/sega-dreamcast-box-scans",
+     "thumb": "https://archive.org/services/img/sega-dreamcast-box-scans",
+     "why": "Dreamcast box scans: white/silver spine-and-swirl packaging system."
+    },
+    {
+     "identifier": "CrazyTaxi-CompleteScans",
+     "title": "Crazy Taxi [51035] (Sega Dreamcast) - Complete Scans (1600 DPI)",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/CrazyTaxi-CompleteScans",
+     "thumb": "https://archive.org/services/img/CrazyTaxi-CompleteScans",
+     "why": "Crazy Taxi 1600dpi complete scans: box, disc, manual."
+    },
+    {
+     "identifier": "ChuChuRocket-CompleteScans",
+     "title": "ChuChu Rocket! [51049] (Sega Dreamcast) - Complete Scans (1600 DPI)",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ChuChuRocket-CompleteScans",
+     "thumb": "https://archive.org/services/img/ChuChuRocket-CompleteScans",
+     "why": "ChuChu Rocket complete scans: playful Dreamcast-era graphics."
+    },
+    {
+     "identifier": "sega-saturn-perfect-catalogue-97-images",
+     "title": "SEGA SATURN PERFECT CATALOGUE (JP) 1997 scan 600dpi",
+     "year": "1997",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/sega-saturn-perfect-catalogue-97-images",
+     "thumb": "https://archive.org/services/img/sega-saturn-perfect-catalogue-97-images",
+     "why": "Sega Saturn Perfect Catalogue 1997 600dpi: JP catalog pages."
+    },
+    {
+     "identifier": "wipeout2097_soundtrack",
+     "title": "WipeOut 2097 / XL Soundtrack",
+     "year": "1996",
+     "mediatype": "audio",
+     "url": "https://archive.org/details/wipeout2097_soundtrack",
+     "thumb": "https://archive.org/services/img/wipeout2097_soundtrack",
+     "why": "WipeOut 2097 soundtrack: TDR-designed Wipeout audio release page."
+    },
+    {
+     "identifier": "20240421_20240421_0412",
+     "title": "Psygnosis PC CD Image Collection",
+     "year": "2026",
+     "mediatype": "software",
+     "url": "https://archive.org/details/20240421_20240421_0412",
+     "thumb": "https://archive.org/services/img/20240421_20240421_0412",
+     "why": "Psygnosis PC CD collection: Wipeout-era Psygnosis/TDR packaging and UI."
+    },
+    {
+     "identifier": "msdos_WipEout_1995",
+     "title": "WipEout ",
+     "year": "1995",
+     "mediatype": "software",
+     "url": "https://archive.org/details/msdos_WipEout_1995",
+     "thumb": "https://archive.org/services/img/msdos_WipEout_1995",
+     "why": "WipEout PC (1995): Designers Republic UI/graphics, playable."
+    }
+   ]
+  },
+  {
+   "style": "Bryce 3D / KPT / MetaCreations",
+   "queries_used": [
+    "title:(bryce 3d)",
+    "title:(kais power tools OR metacreations)",
+    "title:(bryce) AND (metacreations OR corel)",
+    "kpt bryce book"
+   ],
+   "items": [
+    {
+     "identifier": "Bryce3DCD",
+     "title": "Bryce 3D for Windows 95/NT and Power Macintosh ",
+     "year": "1997",
+     "mediatype": "software",
+     "url": "https://archive.org/details/Bryce3DCD",
+     "thumb": "https://archive.org/services/img/Bryce3DCD",
+     "why": "Bryce 3D 1997 CD: full interface and bundled art, playable/browsable."
+    },
+    {
+     "identifier": "bryce4",
+     "title": "Bryce 4 for Power Macintosh and Windows 95/98/NT",
+     "year": "1999",
+     "mediatype": "software",
+     "url": "https://archive.org/details/bryce4",
+     "thumb": "https://archive.org/services/img/bryce4",
+     "why": "Bryce 4 (1999) disc: Metacreations interface and gallery."
+    },
+    {
+     "identifier": "Bryce_2_Powerful_3d_Creation_Made_Fun_MetaTools_1996",
+     "title": " Bryce 2 (Powerful 3d Creation Made Fun)(MetaTools)(1996)",
+     "year": "",
+     "mediatype": "software",
+     "url": "https://archive.org/details/Bryce_2_Powerful_3d_Creation_Made_Fun_MetaTools_1996",
+     "thumb": "https://archive.org/services/img/Bryce_2_Powerful_3d_Creation_Made_Fun_MetaTools_1996",
+     "why": "Bryce 2 MetaTools 1996 CD: original Kai Krause-era UI."
+    },
+    {
+     "identifier": "MC_Bryce3D-3",
+     "title": "Bryce 3D v3.1",
+     "year": "1997",
+     "mediatype": "software",
+     "url": "https://archive.org/details/MC_Bryce3D-3",
+     "thumb": "https://archive.org/services/img/MC_Bryce3D-3",
+     "why": "Bryce 3D v3.1 disc."
+    },
+    {
+     "identifier": "bryce3dhandbook0000rsha",
+     "title": "The Bryce 3D Handbook",
+     "year": "June",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bryce3dhandbook0000rsha",
+     "thumb": "https://archive.org/services/img/bryce3dhandbook0000rsha",
+     "why": "The Bryce 3D Handbook (1998): book scans full of Bryce renders."
+    },
+    {
+     "identifier": "kptbrycebook00kitc",
+     "title": "The KPT Bryce book",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/kptbrycebook00kitc",
+     "thumb": "https://archive.org/services/img/kptbrycebook00kitc",
+     "why": "The KPT Bryce Book (1995): classic Bryce landscapes + KPT UI."
+    },
+    {
+     "identifier": "bryce4userguidef00meta",
+     "title": "Bryce 4 : user guide for Macintosh and Windows",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bryce4userguidef00meta",
+     "thumb": "https://archive.org/services/img/bryce4userguidef00meta",
+     "why": "Bryce 4 user guide: manual with interface screenshots and art."
+    },
+    {
+     "identifier": "Metacreations_Kais_Power_Tools_5_-_User_Manual",
+     "title": " Metacreations Kais Power Tools 5   User Manual",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Metacreations_Kais_Power_Tools_5_-_User_Manual",
+     "thumb": "https://archive.org/services/img/Metacreations_Kais_Power_Tools_5_-_User_Manual",
+     "why": "KPT 5 user manual: chrome/glass Kai Krause interface."
+    },
+    {
+     "identifier": "metacreationskpt00meta",
+     "title": "MetaCreations KPT 6",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/metacreationskpt00meta",
+     "thumb": "https://archive.org/services/img/metacreationskpt00meta",
+     "why": "MetaCreations KPT 6 book/manual scan."
+    },
+    {
+     "identifier": "Kais_Photo_Soap_Clean_Up_Your_Image_MetaCreations_MetaTools_1997",
+     "title": " Kai's Photo Soap   Clean Up Your Image (MetaCreations)(MetaTools)(1997)",
+     "year": "",
+     "mediatype": "software",
+     "url": "https://archive.org/details/Kais_Photo_Soap_Clean_Up_Your_Image_MetaCreations_MetaTools_1997",
+     "thumb": "https://archive.org/services/img/Kais_Photo_Soap_Clean_Up_Your_Image_MetaCreations_MetaTools_1997",
+     "why": "Kai's Photo Soap 1997: whimsical skeuomorphic soap UI."
+    },
+    {
+     "identifier": "Poser_4_Application_CD-ROM_Z-PSR-C40-R-001_Metacreations_1999",
+     "title": " Poser 4 Application CD ROM (Z PSR C40 R 001)(Metacreations)(1999)",
+     "year": "",
+     "mediatype": "software",
+     "url": "https://archive.org/details/Poser_4_Application_CD-ROM_Z-PSR-C40-R-001_Metacreations_1999",
+     "thumb": "https://archive.org/services/img/Poser_4_Application_CD-ROM_Z-PSR-C40-R-001_Metacreations_1999",
+     "why": "Poser 4 CD: MetaCreations 1999 disc art and UI."
+    },
+    {
+     "identifier": "Ray_Dream_Studio_5.5_MetaCreations_1999",
+     "title": " Ray Dream Studio 5.5 (MetaCreations)(1999)",
+     "year": "",
+     "mediatype": "software",
+     "url": "https://archive.org/details/Ray_Dream_Studio_5.5_MetaCreations_1999",
+     "thumb": "https://archive.org/services/img/Ray_Dream_Studio_5.5_MetaCreations_1999",
+     "why": "Ray Dream Studio 5.5: MetaCreations 3D software."
+    },
+    {
+     "identifier": "MetaCreations_Bryce_4_Content_CD-ROM_Z-BRY-C40-R-002_MetaCreations_1999",
+     "title": " MetaCreations Bryce 4 (Content CD ROM)(Z BRY C40 R 002)(MetaCreations)(1999)",
+     "year": "",
+     "mediatype": "software",
+     "url": "https://archive.org/details/MetaCreations_Bryce_4_Content_CD-ROM_Z-BRY-C40-R-002_MetaCreations_1999",
+     "thumb": "https://archive.org/services/img/MetaCreations_Bryce_4_Content_CD-ROM_Z-BRY-C40-R-002_MetaCreations_1999",
+     "why": "Bryce 4 content CD: skies, textures, sample scenes."
+    },
+    {
+     "identifier": "abstract_202507",
+     "title": "3D Abstract with Bryce by Psamtik",
+     "year": "2003",
+     "mediatype": "image",
+     "url": "https://archive.org/details/abstract_202507",
+     "thumb": "https://archive.org/services/img/abstract_202507",
+     "why": "3D Abstract with Bryce (2003): contemporary Bryce render image item."
+    },
+    {
+     "identifier": "youtube-EGIwcPA1_34",
+     "title": "Bryce 3D: Making Surreal 'Trapper Keeper Art' on Windows 95",
+     "year": "2023",
+     "mediatype": "movies",
+     "url": "https://archive.org/details/youtube-EGIwcPA1_34",
+     "thumb": "https://archive.org/services/img/youtube-EGIwcPA1_34",
+     "why": "Video: surreal Trapper Keeper art in Bryce 3D on Windows 95."
+    }
+   ]
+  },
+  {
+   "style": "Frutiger Aero",
+   "queries_used": [
+    "title:(windows xp/vista/aqua)",
+    "windows xp wallpaper image",
+    "mac os x guides"
+   ],
+   "items": [
+    {
+     "identifier": "windows-xp-bliss-wallpaper",
+     "title": "Windows XP Bliss Wallpaper",
+     "year": "2001",
+     "mediatype": "image",
+     "url": "https://archive.org/details/windows-xp-bliss-wallpaper",
+     "thumb": "https://archive.org/services/img/windows-xp-bliss-wallpaper",
+     "why": "Windows XP Bliss: canonical aero-nature wallpaper."
+    },
+    {
+     "identifier": "WindowsXPExtractedIcons",
+     "title": "Windows XP Icons (.ico, .png)",
+     "year": "2001",
+     "mediatype": "image",
+     "url": "https://archive.org/details/WindowsXPExtractedIcons",
+     "thumb": "https://archive.org/services/img/WindowsXPExtractedIcons",
+     "why": "Windows XP icon set: glossy 2001 icons."
+    },
+    {
+     "identifier": "windows-xp-desktop-backgrounds",
+     "title": "Windows XP desktop backgrounds",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/windows-xp-desktop-backgrounds",
+     "thumb": "https://archive.org/services/img/windows-xp-desktop-backgrounds",
+     "why": "XP backgrounds: Luna-era nature/gradient wallpapers."
+    },
+    {
+     "identifier": "WindowsXPRoyaleTheme",
+     "title": "Windows XP Royale Theme",
+     "year": "2005",
+     "mediatype": "image",
+     "url": "https://archive.org/details/WindowsXPRoyaleTheme",
+     "thumb": "https://archive.org/services/img/WindowsXPRoyaleTheme",
+     "why": "XP Royale theme assets."
+    },
+    {
+     "identifier": "WindowsXPZuneTheme",
+     "title": "Windows XP Zune Theme",
+     "year": "2006",
+     "mediatype": "image",
+     "url": "https://archive.org/details/WindowsXPZuneTheme",
+     "thumb": "https://archive.org/services/img/WindowsXPZuneTheme",
+     "why": "XP Zune theme assets."
+    },
+    {
+     "identifier": "the-official-windows-xp-magazine-desktop-wallpaper-packs",
+     "title": "The Official Windows XP Magazine Desktop Wallpaper Packs",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/the-official-windows-xp-magazine-desktop-wallpaper-packs",
+     "thumb": "https://archive.org/services/img/the-official-windows-xp-magazine-desktop-wallpaper-packs",
+     "why": "Official Windows XP Magazine wallpaper packs: bubble/aero imagery."
+    },
+    {
+     "identifier": "windows-vista-default-wallpaper",
+     "title": "Windows Vista Default Wallpaper",
+     "year": "2007",
+     "mediatype": "image",
+     "url": "https://archive.org/details/windows-vista-default-wallpaper",
+     "thumb": "https://archive.org/services/img/windows-vista-default-wallpaper",
+     "why": "Vista default wallpaper: Aurora glass-era."
+    },
+    {
+     "identifier": "win-vista-quick-start-guide_202303",
+     "title": "Windows Vista: Quick Start Guide",
+     "year": "2007",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/win-vista-quick-start-guide_202303",
+     "thumb": "https://archive.org/services/img/win-vista-quick-start-guide_202303",
+     "why": "Windows Vista quick-start guide: Aero Glass UI screenshots."
+    },
+    {
+     "identifier": "bestofwindowsvis0000unse",
+     "title": "The best of Windows Vista--the official magazine : a real life guide to Windows Vista and your PC",
+     "year": "2008",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bestofwindowsvis0000unse",
+     "thumb": "https://archive.org/services/img/bestofwindowsvis0000unse",
+     "why": "Best of Windows Vista official magazine: 2008 Aero print."
+    },
+    {
+     "identifier": "mac-osx-10.2-welcome",
+     "title": "Mac OS X 10.2 Welcome (August 2002)",
+     "year": "2002",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/mac-osx-10.2-welcome",
+     "thumb": "https://archive.org/services/img/mac-osx-10.2-welcome",
+     "why": "Mac OS X 10.2 Welcome booklet: Aqua-era Apple print."
+    },
+    {
+     "identifier": "tiger-install-setup-guide",
+     "title": "Mac OS X Tiger Install Setup Guide (April 2005)",
+     "year": "2005",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/tiger-install-setup-guide",
+     "thumb": "https://archive.org/services/img/tiger-install-setup-guide",
+     "why": "Mac OS X Tiger setup guide: Aqua UI screenshots."
+    }
+   ]
+  },
+  {
+   "style": "Y2K futurism & McBling",
+   "queries_used": [
+    "title:(y2k OR bling OR aqua)",
+    "wallpaper 2000s",
+    "sony style catalog 2002",
+    "digimon/tamagotchi"
+   ],
+   "items": [
+    {
+     "identifier": "sony-style-catalog-winter-2002",
+     "title": "Sony Style Catalog Winter 2002",
+     "year": "2002",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/sony-style-catalog-winter-2002",
+     "thumb": "https://archive.org/services/img/sony-style-catalog-winter-2002",
+     "why": "Sony Style Catalog Winter 2002: silver/translucent Y2K consumer tech."
+    },
+    {
+     "identifier": "fs04b",
+     "title": "Ayumi Hamasaki - Promotional Wallpaper",
+     "year": "2000",
+     "mediatype": "image",
+     "url": "https://archive.org/details/fs04b",
+     "thumb": "https://archive.org/services/img/fs04b",
+     "why": "Ayumi Hamasaki promo wallpaper (2000): Japanese Y2K pop."
+    },
+    {
+     "identifier": "kingc-118_202507",
+     "title": "2000s windows wallpaper",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/kingc-118_202507",
+     "thumb": "https://archive.org/services/img/kingc-118_202507",
+     "why": "2000s windows wallpaper: Y2K desktop imagery."
+    },
+    {
+     "identifier": "64deHakkenTamagotchiMinnaDeTamagotchiWorldHiResOzidual",
+     "title": "64 de Hakken! Tamagotchi: Minna de Tamagotchi World Hi Res",
+     "year": "1997",
+     "mediatype": "image",
+     "url": "https://archive.org/details/64deHakkenTamagotchiMinnaDeTamagotchiWorldHiResOzidual",
+     "thumb": "https://archive.org/services/img/64deHakkenTamagotchiMinnaDeTamagotchiWorldHiResOzidual",
+     "why": "Tamagotchi N64 hi-res scans: 1997 digital-pet graphics."
+    },
+    {
+     "identifier": "gotchi-binder-2",
+     "title": "Tamagotchi ring binder inserts",
+     "year": "1997",
+     "mediatype": "image",
+     "url": "https://archive.org/details/gotchi-binder-2",
+     "thumb": "https://archive.org/services/img/gotchi-binder-2",
+     "why": "Tamagotchi ring binder inserts (1997): Y2K kawaii-tech."
+    },
+    {
+     "identifier": "manual-tamagotchi-win95",
+     "title": "Manual: Tamagotchi for Windows 95",
+     "year": "1997",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/manual-tamagotchi-win95",
+     "thumb": "https://archive.org/services/img/manual-tamagotchi-win95",
+     "why": "Tamagotchi for Windows 95 manual."
+    },
+    {
+     "identifier": "bato-koro",
+     "title": "Digimon Tamers Batokoro Collection",
+     "year": "2001",
+     "mediatype": "image",
+     "url": "https://archive.org/details/bato-koro",
+     "thumb": "https://archive.org/services/img/bato-koro",
+     "why": "Digimon Tamers Batokoro collection: 2001 Japanese tech-kid graphics."
+    },
+    {
+     "identifier": "digimontamersdigimonmedleywscolorhiresscans",
+     "title": "Digimon Tamers - Digimon Medley [SWJ-BANC14] (Bandai WonderSwan Color) - Manual Scans (600DPI)",
+     "year": "2001",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/digimontamersdigimonmedleywscolorhiresscans",
+     "thumb": "https://archive.org/services/img/digimontamersdigimonmedleywscolorhiresscans",
+     "why": "Digimon Tamers WonderSwan Color scans."
+    },
+    {
+     "identifier": "gotmilk_202604",
+     "title": "Got Milk? presents Britney Spears Flash Page",
+     "year": "2000",
+     "mediatype": "software",
+     "url": "https://archive.org/details/gotmilk_202604",
+     "thumb": "https://archive.org/services/img/gotmilk_202604",
+     "why": "Got Milk? Britney Spears Flash page (2000): Y2K pop web."
+    },
+    {
+     "identifier": "sharpzaurusmip1mip2",
+     "title": "SHARP Zaurus MI-P1 / MI-P2 取扱説明書",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/sharpzaurusmip1mip2",
+     "thumb": "https://archive.org/services/img/sharpzaurusmip1mip2",
+     "why": "Sharp Zaurus MI-P1/P2 manual (1999): Japanese PDA tech."
+    }
+   ]
+  },
+  {
+   "style": "2000s Web / Webcore",
+   "queries_used": [
+    "title:(web design) texts 1996-2004",
+    "html books",
+    "flash software",
+    "computer arts web design"
+   ],
+   "items": [
+    {
+     "identifier": "computer_arts_web_design",
+     "title": "Computer Arts Special 10: 100% Web Design",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/computer_arts_web_design",
+     "thumb": "https://archive.org/services/img/computer_arts_web_design",
+     "why": "Computer Arts Special 10: 100% Web Design (2000)."
+    },
+    {
+     "identifier": "robinwilliamsweb00toll",
+     "title": "Robin Williams Web design workshop",
+     "year": "2002",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/robinwilliamsweb00toll",
+     "thumb": "https://archive.org/services/img/robinwilliamsweb00toll",
+     "why": "Robin Williams Web Design Workshop (2002)."
+    },
+    {
+     "identifier": "creativehtmldesi00wein",
+     "title": "Creative HTML design : [ a hands-on html 4.0 web design tutorial]",
+     "year": "1998",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/creativehtmldesi00wein",
+     "thumb": "https://archive.org/services/img/creativehtmldesi00wein",
+     "why": "Creative HTML Design (1998): colourful tutorial book."
+    },
+    {
+     "identifier": "webdesigninnuts00nied",
+     "title": "Web design in a nutshell : a desktop quick reference",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/webdesigninnuts00nied",
+     "thumb": "https://archive.org/services/img/webdesigninnuts00nied",
+     "why": "Web Design in a Nutshell (1999)."
+    },
+    {
+     "identifier": "dynamichtmldefin00good",
+     "title": "Dynamic HTML : the definitive reference",
+     "year": "1998",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/dynamichtmldefin00good",
+     "thumb": "https://archive.org/services/img/dynamichtmldefin00good",
+     "why": "Dynamic HTML: Definitive Reference (1998)."
+    },
+    {
+     "identifier": "instanthtml00home",
+     "title": "Instant HTML",
+     "year": "1997",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/instanthtml00home",
+     "thumb": "https://archive.org/services/img/instanthtml00home",
+     "why": "Instant HTML (1997)."
+    },
+    {
+     "identifier": "htmlfordummies00titt",
+     "title": "HTML for dummies",
+     "year": "1996",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/htmlfordummies00titt",
+     "thumb": "https://archive.org/services/img/htmlfordummies00titt",
+     "why": "HTML for Dummies (1996)."
+    },
+    {
+     "identifier": "newmastersofflas00pete",
+     "title": "New masters of flash : the 2002 annual",
+     "year": "2001",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/newmastersofflas00pete",
+     "thumb": "https://archive.org/services/img/newmastersofflas00pete",
+     "why": "New Masters of Flash: 2002 Annual (design annual)."
+    },
+    {
+     "identifier": "htmlutopia000dans",
+     "title": "HTML utopia : designing without tables using CSS",
+     "year": "2004",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/htmlutopia000dans",
+     "thumb": "https://archive.org/services/img/htmlutopia000dans",
+     "why": "HTML Utopia (2004): web standards era."
+    },
+    {
+     "identifier": "neo_site_1999",
+     "title": "Neostream flash site (1999)",
+     "year": "1999",
+     "mediatype": "software",
+     "url": "https://archive.org/details/neo_site_1999",
+     "thumb": "https://archive.org/services/img/neo_site_1999",
+     "why": "Neostream Flash site (1999): archived Flash site."
+    },
+    {
+     "identifier": "html-javascript-2000",
+     "title": "最新実用カラー版詳解HTML&JAVASCRIPT辞典 (2000)",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/html-javascript-2000",
+     "thumb": "https://archive.org/services/img/html-javascript-2000",
+     "why": "Japanese colour HTML&JavaScript dictionary (2000)."
+    },
+    {
+     "identifier": "macromedia-director-8-shockwave-studio-8.0-2000-02-english-cd",
+     "title": "Macromedia Director 8 Shockwave Studio",
+     "year": "2000",
+     "mediatype": "software",
+     "url": "https://archive.org/details/macromedia-director-8-shockwave-studio-8.0-2000-02-english-cd",
+     "thumb": "https://archive.org/services/img/macromedia-director-8-shockwave-studio-8.0-2000-02-english-cd",
+     "why": "Macromedia Director 8 Shockwave Studio CD."
+    }
+   ]
+  },
+  {
+   "style": "Cyberdelia / early 90s cyberculture",
+   "queries_used": [
+    "title:mondo 2000",
+    "subject:cyberpunk texts 1990-99",
+    "title:boing boing",
+    "wired 1994-1999"
+   ],
+   "items": [
+    {
+     "identifier": "Mondo.2000.Issue.01.1989",
+     "title": "Mondo 2000 - Issue 01 (AKA Reality Hackers Issue 07)",
+     "year": "1989",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Mondo.2000.Issue.01.1989",
+     "thumb": "https://archive.org/services/img/Mondo.2000.Issue.01.1989",
+     "why": "Mondo 2000 #1: foundational cyberdelic layout."
+    },
+    {
+     "identifier": "Mondo.2000.Issue.03.1991",
+     "title": "Mondo 2000 - Issue 03",
+     "year": "1991",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Mondo.2000.Issue.03.1991",
+     "thumb": "https://archive.org/services/img/Mondo.2000.Issue.03.1991",
+     "why": "Mondo 2000 #3."
+    },
+    {
+     "identifier": "Mondo.2000.Issue.14.1995",
+     "title": "Mondo 2000 - Issue 14 (1995)",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Mondo.2000.Issue.14.1995",
+     "thumb": "https://archive.org/services/img/Mondo.2000.Issue.14.1995",
+     "why": "Mondo 2000 #14 (1995)."
+    },
+    {
+     "identifier": "Mondo2000-Issue6",
+     "title": "Mondo 2000 - Issue 06",
+     "year": "1992",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Mondo2000-Issue6",
+     "thumb": "https://archive.org/services/img/Mondo2000-Issue6",
+     "why": "Mondo 2000 #6 (1992)."
+    },
+    {
+     "identifier": "Future.Sex.Issue.01",
+     "title": "Future Sex Issue 1",
+     "year": "1992",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Future.Sex.Issue.01",
+     "thumb": "https://archive.org/services/img/Future.Sex.Issue.01",
+     "why": "Future Sex #1 (1992): cyber-erotic zine design."
+    },
+    {
+     "identifier": "Future.Sex.Issue.06",
+     "title": "Future Sex Issue 6",
+     "year": "1994",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Future.Sex.Issue.06",
+     "thumb": "https://archive.org/services/img/Future.Sex.Issue.06",
+     "why": "Future Sex #6 (1994)."
+    },
+    {
+     "identifier": "bOING.bOING.Issue.10",
+     "title": "bOING bOING Issue 10 - Sex Candy for Happy Mutants",
+     "year": "1993",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bOING.bOING.Issue.10",
+     "thumb": "https://archive.org/services/img/bOING.bOING.Issue.10",
+     "why": "bOING bOING #10 (1993)."
+    },
+    {
+     "identifier": "BoingBoing1",
+     "title": "bOING bOING Issue 01",
+     "year": "1989",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/BoingBoing1",
+     "thumb": "https://archive.org/services/img/BoingBoing1",
+     "why": "bOING bOING #1 (1989)."
+    },
+    {
+     "identifier": "wired-magazine-02.01-1994-january",
+     "title": "Wired Magazine 02.01 1994 January",
+     "year": "1994",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/wired-magazine-02.01-1994-january",
+     "thumb": "https://archive.org/services/img/wired-magazine-02.01-1994-january",
+     "why": "Wired 2.01 (1994): early Wired neon-fluoro design."
+    },
+    {
+     "identifier": "wired-magazine-03.06-1995-june",
+     "title": "Wired Magazine 03.06 1995 June",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/wired-magazine-03.06-1995-june",
+     "thumb": "https://archive.org/services/img/wired-magazine-03.06-1995-june",
+     "why": "Wired 3.06 (1995)."
+    },
+    {
+     "identifier": "wired-1999_02",
+     "title": "wired-1999_02",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/wired-1999_02",
+     "thumb": "https://archive.org/services/img/wired-1999_02",
+     "why": "Wired Feb 1999."
+    },
+    {
+     "identifier": "TheRealCyberpunkFakeBook",
+     "title": "The Real Cyberpunk Fake Book",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/TheRealCyberpunkFakeBook",
+     "thumb": "https://archive.org/services/img/TheRealCyberpunkFakeBook",
+     "why": "Real Cyberpunk Fake Book (1995)."
+    },
+    {
+     "identifier": "ChaosAndCyberCulture",
+     "title": "Chaos And Cyber Culture",
+     "year": "1994",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ChaosAndCyberCulture",
+     "thumb": "https://archive.org/services/img/ChaosAndCyberCulture",
+     "why": "Chaos and Cyber Culture (1994)."
+    },
+    {
+     "identifier": "The.Joy.Of.Cybersex.1993",
+     "title": "The Joy Of Cybersex",
+     "year": "1993",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/The.Joy.Of.Cybersex.1993",
+     "thumb": "https://archive.org/services/img/The.Joy.Of.Cybersex.1993",
+     "why": "Joy of Cybersex (1993)."
+    }
+   ]
+  },
+  {
+   "style": "Cassette futurism & VHS cover art",
+   "queries_used": [
+    "subject:vhs cover art",
+    "title:vhs sci-fi/horror image",
+    "title:vhs cover uk",
+    "sony service manuals"
+   ],
+   "items": [
+    {
+     "identifier": "the-matrix-vhs-cover-uk",
+     "title": "The Matrix (1999)",
+     "year": "1999",
+     "mediatype": "image",
+     "url": "https://archive.org/details/the-matrix-vhs-cover-uk",
+     "thumb": "https://archive.org/services/img/the-matrix-vhs-cover-uk",
+     "why": "The Matrix UK VHS cover (1999)."
+    },
+    {
+     "identifier": "EvilDeadSamRaimi1981AustralianVHSCoverArt",
+     "title": "Evil Dead ( Sam Raimi, 1981) Australian VHS Cover Art",
+     "year": "1986",
+     "mediatype": "image",
+     "url": "https://archive.org/details/EvilDeadSamRaimi1981AustralianVHSCoverArt",
+     "thumb": "https://archive.org/services/img/EvilDeadSamRaimi1981AustralianVHSCoverArt",
+     "why": "Evil Dead Australian VHS cover art."
+    },
+    {
+     "identifier": "speed-1994-vhs-cover",
+     "title": "Speed (1994 Film) VHS Cover (1995) (UK)",
+     "year": "1995",
+     "mediatype": "image",
+     "url": "https://archive.org/details/speed-1994-vhs-cover",
+     "thumb": "https://archive.org/services/img/speed-1994-vhs-cover",
+     "why": "Speed UK VHS cover."
+    },
+    {
+     "identifier": "E447D2F191C14A088992948CE6248648",
+     "title": "Star Blazers VHS advertisement (May 1990)",
+     "year": "1990",
+     "mediatype": "image",
+     "url": "https://archive.org/details/E447D2F191C14A088992948CE6248648",
+     "thumb": "https://archive.org/services/img/E447D2F191C14A088992948CE6248648",
+     "why": "Star Blazers VHS advertisement (1990)."
+    },
+    {
+     "identifier": "cursed-it-vhs-1990",
+     "title": "Cursed (1990) - Italian VHS Scan",
+     "year": "1990",
+     "mediatype": "image",
+     "url": "https://archive.org/details/cursed-it-vhs-1990",
+     "thumb": "https://archive.org/services/img/cursed-it-vhs-1990",
+     "why": "Cursed Italian VHS scan (1990)."
+    },
+    {
+     "identifier": "101-dalmatians-1961-vhs-cover-1996-uk",
+     "title": "101 Dalmatians (1961 film) VHS Cover (1996) (UK)",
+     "year": "1996",
+     "mediatype": "image",
+     "url": "https://archive.org/details/101-dalmatians-1961-vhs-cover-1996-uk",
+     "thumb": "https://archive.org/services/img/101-dalmatians-1961-vhs-cover-1996-uk",
+     "why": "UK VHS cover scan, 90s Disney."
+    },
+    {
+     "identifier": "AeonFluxTheHerodotusFile",
+     "title": "Aeon Flux: The Herodotus File",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/AeonFluxTheHerodotusFile",
+     "thumb": "https://archive.org/services/img/AeonFluxTheHerodotusFile",
+     "why": "Aeon Flux: Herodotus File (1995): 90s sci-fi print."
+    }
+   ]
+  },
+  {
+   "style": "8-bit / pixel art",
+   "queries_used": [
+    "gamemanuals",
+    "snes/nes manual archive",
+    "msx manuals",
+    "atari 8-bit"
+   ],
+   "items": [
+    {
+     "identifier": "snes_manual_archive",
+     "title": "SNES Manual Archive",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/snes_manual_archive",
+     "thumb": "https://archive.org/services/img/snes_manual_archive",
+     "why": "SNES Manual Archive."
+    },
+    {
+     "identifier": "nes-manual-archive",
+     "title": "NES Manual Archive",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/nes-manual-archive",
+     "thumb": "https://archive.org/services/img/nes-manual-archive",
+     "why": "NES Manual Archive."
+    },
+    {
+     "identifier": "LegendOfZeldaTheNESHiResScans",
+     "title": "Legend Of Zelda, The (NES) - Manual Scans (600DPI)",
+     "year": "1987",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/LegendOfZeldaTheNESHiResScans",
+     "thumb": "https://archive.org/services/img/LegendOfZeldaTheNESHiResScans",
+     "why": "Legend of Zelda NES manual 600dpi."
+    },
+    {
+     "identifier": "SuperMarioBros3NESHiResScans",
+     "title": "Super Mario Bros 3 (NES) - Manual Scans (600DPI)",
+     "year": "1990",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/SuperMarioBros3NESHiResScans",
+     "thumb": "https://archive.org/services/img/SuperMarioBros3NESHiResScans",
+     "why": "Super Mario Bros 3 NES manual 600dpi."
+    },
+    {
+     "identifier": "DragonWarriorNESHiResScans",
+     "title": "Dragon Warrior (NES) - Manual Scans (600DPI)",
+     "year": "1989",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/DragonWarriorNESHiResScans",
+     "thumb": "https://archive.org/services/img/DragonWarriorNESHiResScans",
+     "why": "Dragon Warrior NES manual 600dpi."
+    },
+    {
+     "identifier": "ultimatenesfamicommanualupload",
+     "title": "The Ultimate NES & Famicom Manual Upload",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ultimatenesfamicommanualupload",
+     "thumb": "https://archive.org/services/img/ultimatenesfamicommanualupload",
+     "why": "Ultimate NES & Famicom manual upload."
+    },
+    {
+     "identifier": "gamemanuals_atari8bit",
+     "title": "Atari 8-Bit Game Manuals",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/gamemanuals_atari8bit",
+     "thumb": "https://archive.org/services/img/gamemanuals_atari8bit",
+     "why": "Atari 8-bit game manuals collection."
+    },
+    {
+     "identifier": "gamemanuals_c64",
+     "title": "Commodore 64 Game Manuals",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/gamemanuals_c64",
+     "thumb": "https://archive.org/services/img/gamemanuals_c64",
+     "why": "Commodore 64 game manuals."
+    },
+    {
+     "identifier": "gamemanuals_msx",
+     "title": "MSX Game Manuals",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/gamemanuals_msx",
+     "thumb": "https://archive.org/services/img/gamemanuals_msx",
+     "why": "MSX game manuals."
+    },
+    {
+     "identifier": "cavenoiregbhiresscans",
+     "title": "Cave Noire [DMG-KNJ] (Nintendo Game Boy) - Box, Cart, Manual Scans (1600DPI)",
+     "year": "1991",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/cavenoiregbhiresscans",
+     "thumb": "https://archive.org/services/img/cavenoiregbhiresscans",
+     "why": "Cave Noire Game Boy box/manual scans."
+    },
+    {
+     "identifier": "gamemanuals_ephemera",
+     "title": "Computer Game Ephemera",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/gamemanuals_ephemera",
+     "thumb": "https://archive.org/services/img/gamemanuals_ephemera",
+     "why": "Computer Game Ephemera collection."
+    }
+   ]
+  },
+  {
+   "style": "Computer & design magazines",
+   "queries_used": [
+    "macworld",
+    "emigre",
+    "computer arts",
+    "raygun",
+    "next generation / CGW / GamePro / OPM"
+   ],
+   "items": [
+    {
+     "identifier": "LFAEmigre0001",
+     "title": "Emigre 1",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/LFAEmigre0001",
+     "thumb": "https://archive.org/services/img/LFAEmigre0001",
+     "why": "Emigre #1."
+    },
+    {
+     "identifier": "lfaemigre0043",
+     "title": "Emigre 43",
+     "year": "1997",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lfaemigre0043",
+     "thumb": "https://archive.org/services/img/lfaemigre0043",
+     "why": "Emigre #43 (1997)."
+    },
+    {
+     "identifier": "lfaemigre0050",
+     "title": "Emigre 50",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lfaemigre0050",
+     "thumb": "https://archive.org/services/img/lfaemigre0050",
+     "why": "Emigre #50 (1999)."
+    },
+    {
+     "identifier": "LFAEmigre0029",
+     "title": "Emigre 29",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/LFAEmigre0029",
+     "thumb": "https://archive.org/services/img/LFAEmigre0029",
+     "why": "Emigre #29."
+    },
+    {
+     "identifier": "lfaemigre0035",
+     "title": "Emigre 35",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lfaemigre0035",
+     "thumb": "https://archive.org/services/img/lfaemigre0035",
+     "why": "Emigre #35 (1995)."
+    },
+    {
+     "identifier": "MacWorld9603March1996",
+     "title": "Macworld March 1996",
+     "year": "1996",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/MacWorld9603March1996",
+     "thumb": "https://archive.org/services/img/MacWorld9603March1996",
+     "why": "Macworld March 1996."
+    },
+    {
+     "identifier": "MacWorld_9506_June_1995",
+     "title": " MacWorld 9506 June 1995",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/MacWorld_9506_June_1995",
+     "thumb": "https://archive.org/services/img/MacWorld_9506_June_1995",
+     "why": "Macworld June 1995."
+    },
+    {
+     "identifier": "MacWorld9711November1997",
+     "title": "Macworld November 1997",
+     "year": "1997",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/MacWorld9711November1997",
+     "thumb": "https://archive.org/services/img/MacWorld9711November1997",
+     "why": "Macworld Nov 1997."
+    },
+    {
+     "identifier": "MacWorld_UK_99_00_01_Mag_PDFs",
+     "title": "MacWorld UK Magazine PDFs from 1999, 2000, and 2001",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/MacWorld_UK_99_00_01_Mag_PDFs",
+     "thumb": "https://archive.org/services/img/MacWorld_UK_99_00_01_Mag_PDFs",
+     "why": "MacWorld UK 1999-2001 PDFs."
+    },
+    {
+     "identifier": "computer-arts-special-036-2002",
+     "title": "Computer Arts Special 1-46",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/computer-arts-special-036-2002",
+     "thumb": "https://archive.org/services/img/computer-arts-special-036-2002",
+     "why": "Computer Arts Specials 1-46."
+    },
+    {
+     "identifier": "computer_arts_2000",
+     "title": "Computer Arts (2000)",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/computer_arts_2000",
+     "thumb": "https://archive.org/services/img/computer_arts_2000",
+     "why": "Computer Arts (2000)."
+    },
+    {
+     "identifier": "computer-arts-051-2000-12",
+     "title": "Computer Arts 051 [ 2000 12]",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/computer-arts-051-2000-12",
+     "thumb": "https://archive.org/services/img/computer-arts-051-2000-12",
+     "why": "Computer Arts 051 (Dec 2000)."
+    },
+    {
+     "identifier": "computer-arts-creative-collection-03-2003",
+     "title": "Computer Arts Creative Collection 03 [2003]",
+     "year": "2003",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/computer-arts-creative-collection-03-2003",
+     "thumb": "https://archive.org/services/img/computer-arts-creative-collection-03-2003",
+     "why": "Computer Arts Creative Collection 03 (2003)."
+    },
+    {
+     "identifier": "eminem-raygun_99",
+     "title": "1999 Eminem in RAYGUN Magazine",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/eminem-raygun_99",
+     "thumb": "https://archive.org/services/img/eminem-raygun_99",
+     "why": "Raygun magazine 1999 Eminem feature."
+    },
+    {
+     "identifier": "nextgen-issue-021",
+     "title": "NEXT Generation Issue #21 September 1996",
+     "year": "1996",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/nextgen-issue-021",
+     "thumb": "https://archive.org/services/img/nextgen-issue-021",
+     "why": "Next Generation #21 (1996)."
+    },
+    {
+     "identifier": "Computer_Gaming_World_Issue_175",
+     "title": " Computer Gaming World Issue 175",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Computer_Gaming_World_Issue_175",
+     "thumb": "https://archive.org/services/img/Computer_Gaming_World_Issue_175",
+     "why": "CGW #175 (1999)."
+    },
+    {
+     "identifier": "GamePro9699.7z",
+     "title": "GamePro: 1996-1999",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/GamePro9699.7z",
+     "thumb": "https://archive.org/services/img/GamePro9699.7z",
+     "why": "GamePro 1996-1999."
+    },
+    {
+     "identifier": "Official_US_PlayStation_Magazine_Volume_1_Issue_1_1997-10_Ziff_Davis_US",
+     "title": "Official US PlayStation Magazine - Volume 1 Issue 1 (1997-10)(Ziff Davis)(US)",
+     "year": "1997",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Official_US_PlayStation_Magazine_Volume_1_Issue_1_1997-10_Ziff_Davis_US",
+     "thumb": "https://archive.org/services/img/Official_US_PlayStation_Magazine_Volume_1_Issue_1_1997-10_Ziff_Davis_US",
+     "why": "OPM US #1 (1997)."
+    },
+    {
+     "identifier": "Official_UK_Playstation_2_Magazine_Issue_001_2000_12_Future_Publishing_GB",
+     "title": "Official UK Playstation 2 Magazine - Issue 001 (2000-12)(Future Publishing)(GB)",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Official_UK_Playstation_2_Magazine_Issue_001_2000_12_Future_Publishing_GB",
+     "thumb": "https://archive.org/services/img/Official_UK_Playstation_2_Magazine_Issue_001_2000_12_Future_Publishing_GB",
+     "why": "OPM UK PS2 #1 (2000)."
+    },
+    {
+     "identifier": "george-magazine-february-1997-survival-guide-to-the-future-bill-gates-interview",
+     "title": "George Magazine February 1997 Survival Guide To The Future Bill Gates Interview JFK JR",
+     "year": "1997",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/george-magazine-february-1997-survival-guide-to-the-future-bill-gates-interview",
+     "thumb": "https://archive.org/services/img/george-magazine-february-1997-survival-guide-to-the-future-bill-gates-interview",
+     "why": "George Feb 1997 future issue."
+    },
+    {
+     "identifier": "gamest0260",
+     "title": "Gamest 0260",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/gamest0260",
+     "thumb": "https://archive.org/services/img/gamest0260",
+     "why": "Gamest #260 (1999)."
+    },
+    {
+     "identifier": "famitsu0570",
+     "title": "Famitsu 0570",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/famitsu0570",
+     "thumb": "https://archive.org/services/img/famitsu0570",
+     "why": "Famitsu #570 (1999)."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1198 @@
+{
+ "cluster": "Classic print, ephemera & science",
+ "collections": [
+  {
+   "identifier": "pulpmagazinearchive",
+   "title": "The Pulp Magazine Archive",
+   "url": "https://archive.org/details/pulpmagazinearchive",
+   "thumb": "https://archive.org/services/img/pulpmagazinearchive",
+   "why": "Pulp covers: SF, horror, adventure, westerns; umbrella for Amazing, Galaxy, Weird Tales, Warren"
+  },
+  {
+   "identifier": "biodiversity",
+   "title": "Biodiversity Heritage Library",
+   "url": "https://archive.org/details/biodiversity",
+   "thumb": "https://archive.org/services/img/biodiversity",
+   "why": "Scientific plates: botanical, zoological, Haeckel-era"
+  },
+  {
+   "identifier": "comics",
+   "title": "Comic Books and Graphic Novels",
+   "url": "https://archive.org/details/comics",
+   "thumb": "https://archive.org/services/img/comics",
+   "why": "Comic scans incl. golden-age and horror"
+  },
+  {
+   "identifier": "GraphicHorror",
+   "title": "Horror Comics & Graphic Novels",
+   "url": "https://archive.org/details/GraphicHorror",
+   "thumb": "https://archive.org/services/img/GraphicHorror",
+   "why": "Horror comic scans"
+  },
+  {
+   "identifier": "omni-archive",
+   "title": "OMNI Magazine Archive",
+   "url": "https://archive.org/details/omni-archive",
+   "thumb": "https://archive.org/services/img/omni-archive",
+   "why": "70s-90s airbrush sci-fi magazine"
+  },
+  {
+   "identifier": "weirdtalesmagazine",
+   "title": "Weird Tales Magazine",
+   "url": "https://archive.org/details/weirdtalesmagazine",
+   "thumb": "https://archive.org/services/img/weirdtalesmagazine",
+   "why": "Deco-era horror pulp covers"
+  }
+ ],
+ "styles": [
+  {
+   "style": "Art Deco",
+   "queries_used": [
+    "title:(art deco)",
+    "title:(art deco) AND title:(alphabets OR lettering OR ornament)",
+    "title:(posters) AND subject:(art deco)"
+   ],
+   "items": [
+    {
+     "identifier": "artdecopostersgr0000unse",
+     "title": "Art deco: posters and graphics",
+     "year": "1977",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/artdecopostersgr0000unse",
+     "thumb": "https://archive.org/services/img/artdecopostersgr0000unse",
+     "why": "Poster and graphics survey, strong period lettering"
+    },
+    {
+     "identifier": "artdecodisplayal0000unse",
+     "title": "Art deco display alphabets: 100 complete fonts",
+     "year": "1982",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/artdecodisplayal0000unse",
+     "thumb": "https://archive.org/services/img/artdecodisplayal0000unse",
+     "why": "Full deco display typefaces"
+    },
+    {
+     "identifier": "readytouseartdec00dans",
+     "title": "Ready-to-use art deco alphabets",
+     "year": "1986",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/readytouseartdec00dans",
+     "thumb": "https://archive.org/services/img/readytouseartdec00dans",
+     "why": "Decorative deco faces in multiple sizes"
+    },
+    {
+     "identifier": "artdecodesignsmo0000loeb",
+     "title": "Art deco designs & motifs",
+     "year": "1972",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/artdecodesignsmo0000loeb",
+     "thumb": "https://archive.org/services/img/artdecodesignsmo0000loeb",
+     "why": "Ornament/motif sourcebook"
+    },
+    {
+     "identifier": "artdecopatternsd0000atte",
+     "title": "Art deco patterns: a design source book",
+     "year": "1990",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/artdecopatternsd0000atte",
+     "thumb": "https://archive.org/services/img/artdecopatternsd0000atte",
+     "why": "Pattern sourcebook"
+    },
+    {
+     "identifier": "artnouveauearlya0000roma",
+     "title": "Art nouveau & early art deco type & design (Roman Scherer catalog)",
+     "year": "1972",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/artnouveauearlya0000roma",
+     "thumb": "https://archive.org/services/img/artnouveauearlya0000roma",
+     "why": "Period type and ornament"
+    },
+    {
+     "identifier": "artdeco191019390000unse",
+     "title": "Art deco 1910-1939",
+     "year": "2003",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/artdeco191019390000unse",
+     "thumb": "https://archive.org/services/img/artdeco191019390000unse",
+     "why": "V&A survey, wide visuals"
+    },
+    {
+     "identifier": "americanartdeco0000webe",
+     "title": "American art deco",
+     "year": "1992",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/americanartdeco0000webe",
+     "thumb": "https://archive.org/services/img/americanartdeco0000webe",
+     "why": "Architecture and graphics"
+    },
+    {
+     "identifier": "Art_Deco_by_Victor_Arwas_and_Frank_Russell",
+     "title": "Art Deco by Victor Arwas",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Art_Deco_by_Victor_Arwas_and_Frank_Russell",
+     "thumb": "https://archive.org/services/img/Art_Deco_by_Victor_Arwas_and_Frank_Russell",
+     "why": "Highly downloaded plates book"
+    },
+    {
+     "identifier": "artdecoof20s30s00hill",
+     "title": "Art deco of the 20s and 30s",
+     "year": "1985",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/artdecoof20s30s00hill",
+     "thumb": "https://archive.org/services/img/artdecoof20s30s00hill",
+     "why": "Overview with graphics"
+    }
+   ]
+  },
+  {
+   "style": "Art Nouveau",
+   "queries_used": [
+    "title:(art nouveau)",
+    "title:(jugendstil)",
+    "title:(Alphonse Mucha)"
+   ],
+   "items": [
+    {
+     "identifier": "bookofartnouveau0000unse",
+     "title": "Book of art nouveau alphabets & ornaments",
+     "year": "1990",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bookofartnouveau0000unse",
+     "thumb": "https://archive.org/services/img/bookofartnouveau0000unse",
+     "why": "Alphabets and ornament"
+    },
+    {
+     "identifier": "treasuryofartnou0000unse",
+     "title": "Treasury of art nouveau design & ornament (577 illustrations)",
+     "year": "1980",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/treasuryofartnou0000unse",
+     "thumb": "https://archive.org/services/img/treasuryofartnou0000unse",
+     "why": "Pictorial archive"
+    },
+    {
+     "identifier": "illustration_Alphonse_Mucha",
+     "title": "Illustration: Alphonse Mucha",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/illustration_Alphonse_Mucha",
+     "thumb": "https://archive.org/services/img/illustration_Alphonse_Mucha",
+     "why": "Period magazine plates of Mucha"
+    },
+    {
+     "identifier": "alphonsemuchacom0000much",
+     "title": "Alphonse Mucha, the complete graphic works",
+     "year": "1980",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/alphonsemuchacom0000much",
+     "thumb": "https://archive.org/services/img/alphonsemuchacom0000much",
+     "why": "Posters and decorative panels"
+    },
+    {
+     "identifier": "graphicworkofalp00much",
+     "title": "The graphic work of Alphonse Mucha",
+     "year": "1973",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/graphicworkofalp00much",
+     "thumb": "https://archive.org/services/img/graphicworkofalp00much",
+     "why": "Mucha graphics"
+    },
+    {
+     "identifier": "1903-versacrum-v-06-72dpi",
+     "title": "Ver Sacrum",
+     "year": "1903",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1903-versacrum-v-06-72dpi",
+     "thumb": "https://archive.org/services/img/1903-versacrum-v-06-72dpi",
+     "why": "Vienna Secession journal scan"
+    },
+    {
+     "identifier": "art-nouveau-ornament-l-aventurine",
+     "title": "Art Nouveau Ornament - Jugendstil Ornamente",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/art-nouveau-ornament-l-aventurine",
+     "thumb": "https://archive.org/services/img/art-nouveau-ornament-l-aventurine",
+     "why": "Ornament plates"
+    },
+    {
+     "identifier": "pakitanove_1905",
+     "title": "Art Nouveau collection 24",
+     "year": "2020",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/pakitanove_1905",
+     "thumb": "https://archive.org/services/img/pakitanove_1905",
+     "why": "Scans of period art nouveau periodicals (pakita series, collections 2-26)"
+    },
+    {
+     "identifier": "frick-31072001412883",
+     "title": "Alphonse Mucha et son oeuvre",
+     "year": "1897",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/frick-31072001412883",
+     "thumb": "https://archive.org/services/img/frick-31072001412883",
+     "why": "Period monograph"
+    },
+    {
+     "identifier": "internationalart00nati",
+     "title": "International art glass catalogue",
+     "year": "1914",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/internationalart00nati",
+     "thumb": "https://archive.org/services/img/internationalart00nati",
+     "why": "Beveled/art glass trade catalogue"
+    }
+   ]
+  },
+  {
+   "style": "Bauhaus & Swiss/International Style",
+   "queries_used": [
+    "title:(bauhaus)",
+    "title:(swiss) AND title:(graphic design OR typography)",
+    "title:(type specimen)"
+   ],
+   "items": [
+    {
+     "identifier": "bauhaus191919280000unse",
+     "title": "Bauhaus, 1919-1928",
+     "year": "1959",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bauhaus191919280000unse",
+     "thumb": "https://archive.org/services/img/bauhaus191919280000unse",
+     "why": "Classic Bauhaus catalogue"
+    },
+    {
+     "identifier": "bauhaus1919193300dros",
+     "title": "Bauhaus, 1919-1933",
+     "year": "1998",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bauhaus1919193300dros",
+     "thumb": "https://archive.org/services/img/bauhaus1919193300dros",
+     "why": "Comprehensive survey"
+    },
+    {
+     "identifier": "designformbas00itte",
+     "title": "Design and form: the basic course at the Bauhaus",
+     "year": "1975",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/designformbas00itte",
+     "thumb": "https://archive.org/services/img/designformbas00itte",
+     "why": "Itten teaching plates"
+    },
+    {
+     "identifier": "bauhausphotograp00bauh",
+     "title": "Bauhaus photography",
+     "year": "1985",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bauhausphotograp00bauh",
+     "thumb": "https://archive.org/services/img/bauhausphotograp00bauh",
+     "why": "Bauhaus photo"
+    },
+    {
+     "identifier": "josefmullerbrock0000mull",
+     "title": "Josef Müller-Brockmann, designer",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/josefmullerbrock0000mull",
+     "thumb": "https://archive.org/services/img/josefmullerbrock0000mull",
+     "why": "Swiss poster master"
+    },
+    {
+     "identifier": "swissgraphicdesi0000holl",
+     "title": "Swiss graphic design (Hollis)",
+     "year": "2006",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/swissgraphicdesi0000holl",
+     "thumb": "https://archive.org/services/img/swissgraphicdesi0000holl",
+     "why": "Origins of Swiss style"
+    },
+    {
+     "identifier": "swissgraphicdesi0000unse",
+     "title": "Swiss graphic design",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/swissgraphicdesi0000unse",
+     "thumb": "https://archive.org/services/img/swissgraphicdesi0000unse",
+     "why": "Swiss design survey"
+    },
+    {
+     "identifier": "LFAVenezky0103",
+     "title": "Helvetica Bold Type Specimen",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/LFAVenezky0103",
+     "thumb": "https://archive.org/services/img/LFAVenezky0103",
+     "why": "Lost Fonts Archive specimen"
+    },
+    {
+     "identifier": "lfatype0543",
+     "title": "Prisma Type Specimen",
+     "year": "1930",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lfatype0543",
+     "thumb": "https://archive.org/services/img/lfatype0543",
+     "why": "Lost Fonts Archive specimen"
+    },
+    {
+     "identifier": "gridstheirmeanin00vign",
+     "title": "Grids: their meaning and use for federal designers",
+     "year": "1978",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/gridstheirmeanin00vign",
+     "thumb": "https://archive.org/services/img/gridstheirmeanin00vign",
+     "why": "Grid systems, Vignelli"
+    }
+   ]
+  },
+  {
+   "style": "Type specimens (supporting all styles)",
+   "queries_used": [
+    "title:(type specimen)"
+   ],
+   "items": [
+    {
+     "identifier": "americanspecimen00amerrich",
+     "title": "American specimen book of type styles (ATF)",
+     "year": "1912",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/americanspecimen00amerrich",
+     "thumb": "https://archive.org/services/img/americanspecimen00amerrich",
+     "why": "Huge foundry specimen"
+    },
+    {
+     "identifier": "1923AmericanTypeFoundersSpecimenBookCatalogue-Hi-resolution",
+     "title": "1923 ATF Specimen Book - Hi-res",
+     "year": "1923",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1923AmericanTypeFoundersSpecimenBookCatalogue-Hi-resolution",
+     "thumb": "https://archive.org/services/img/1923AmericanTypeFoundersSpecimenBookCatalogue-Hi-resolution",
+     "why": "Deco-era faces, hi-res"
+    },
+    {
+     "identifier": "bookoftypespecim00barnrich",
+     "title": "Book of type specimens (Barnhart)",
+     "year": "1907",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bookoftypespecim00barnrich",
+     "thumb": "https://archive.org/services/img/bookoftypespecim00barnrich",
+     "why": "Ornaments and display faces"
+    },
+    {
+     "identifier": "monotypespecimen00lansrich",
+     "title": "Monotype specimen book of type faces",
+     "year": "1922",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/monotypespecimen00lansrich",
+     "thumb": "https://archive.org/services/img/monotypespecimen00lansrich",
+     "why": "Monotype catalog"
+    },
+    {
+     "identifier": "condensedspecime00bost",
+     "title": "Condensed specimen book, Boston Type Foundry",
+     "year": "1860",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/condensedspecime00bost",
+     "thumb": "https://archive.org/services/img/condensedspecime00bost",
+     "why": "Victorian display types"
+    }
+   ]
+  },
+  {
+   "style": "Googie / mid-century & Space Age",
+   "queries_used": [
+    "title:(googie)",
+    "title:(populuxe)",
+    "title:(roadside architecture)"
+   ],
+   "items": [
+    {
+     "identifier": "googiefiftiescof00hess",
+     "title": "Googie: fifties coffee shop architecture",
+     "year": "1986",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/googiefiftiescof00hess",
+     "thumb": "https://archive.org/services/img/googiefiftiescof00hess",
+     "why": "Canonical Googie book"
+    },
+    {
+     "identifier": "populuxe0000hine",
+     "title": "Populuxe",
+     "year": "1986",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/populuxe0000hine",
+     "thumb": "https://archive.org/services/img/populuxe0000hine",
+     "why": "1950s consumer design"
+    },
+    {
+     "identifier": "mainstreettomira0000lieb",
+     "title": "Main Street to Miracle Mile",
+     "year": "1985",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/mainstreettomira0000lieb",
+     "thumb": "https://archive.org/services/img/mainstreettomira0000lieb",
+     "why": "Roadside architecture and signs"
+    },
+    {
+     "identifier": "californiacrazyb0000heim",
+     "title": "California crazy and beyond",
+     "year": "2001",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/californiacrazyb0000heim",
+     "thumb": "https://archive.org/services/img/californiacrazyb0000heim",
+     "why": "Roadside vernacular"
+    },
+    {
+     "identifier": "1950splasticsdes0000wahl",
+     "title": "1950s plastics design: everyday elegance",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1950splasticsdes0000wahl",
+     "thumb": "https://archive.org/services/img/1950splasticsdes0000wahl",
+     "why": "Atomic-age product design"
+    },
+    {
+     "identifier": "BuildYourOwnLaserPhaserIonRayGunAndOtherWorkingSpaceAgeProjectsRobertE.Iannini",
+     "title": "Build Your Own Laser, Phaser, Ion Ray Gun...",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/BuildYourOwnLaserPhaserIonRayGunAndOtherWorkingSpaceAgeProjectsRobertE.Iannini",
+     "thumb": "https://archive.org/services/img/BuildYourOwnLaserPhaserIonRayGunAndOtherWorkingSpaceAgeProjectsRobertE.Iannini",
+     "why": "Space-age project book graphics"
+    },
+    {
+     "identifier": "midatlanticroads0000ande",
+     "title": "Mid-Atlantic roadside delights",
+     "year": "1991",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/midatlanticroads0000ande",
+     "thumb": "https://archive.org/services/img/midatlanticroads0000ande",
+     "why": "Roadside signage"
+    }
+   ]
+  },
+  {
+   "style": "Classic advertising",
+   "queries_used": [
+    "title:(art directors club)",
+    "title:(advertising annual)"
+   ],
+   "items": [
+    {
+     "identifier": "1947AdArtAnn26Page04",
+     "title": "1947 Advertising Art Annual scans",
+     "year": "1947",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1947AdArtAnn26Page04",
+     "thumb": "https://archive.org/services/img/1947AdArtAnn26Page04",
+     "why": "Period ad annual"
+    },
+    {
+     "identifier": "annualadvertisi00nygoog",
+     "title": "Annual of advertising, editorial & television art & design",
+     "year": "1968",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/annualadvertisi00nygoog",
+     "thumb": "https://archive.org/services/img/annualadvertisi00nygoog",
+     "why": "Art Directors Club NY annual"
+    },
+    {
+     "identifier": "nc-998.5.-n-8-c-660-1960",
+     "title": "The Communicating arts: 3rd annual exhibition Art Directors Club",
+     "year": "1960",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/nc-998.5.-n-8-c-660-1960",
+     "thumb": "https://archive.org/services/img/nc-998.5.-n-8-c-660-1960",
+     "why": "1960 ADC exhibition"
+    },
+    {
+     "identifier": "56thartdirectors0000unse",
+     "title": "56th Art Directors Club annual",
+     "year": "1977",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/56thartdirectors0000unse",
+     "thumb": "https://archive.org/services/img/56thartdirectors0000unse",
+     "why": "ADC annual"
+    },
+    {
+     "identifier": "59thartdirectors0000unse",
+     "title": "59th Art Directors annual",
+     "year": "1980",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/59thartdirectors0000unse",
+     "thumb": "https://archive.org/services/img/59thartdirectors0000unse",
+     "why": "ADC annual"
+    },
+    {
+     "identifier": "adboyvintageadve0000dotz",
+     "title": "Ad boy: vintage advertising with character",
+     "year": "2009",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/adboyvintageadve0000dotz",
+     "thumb": "https://archive.org/services/img/adboyvintageadve0000dotz",
+     "why": "Vintage ad mascot illustration"
+    },
+    {
+     "identifier": "isbn_3857091851",
+     "title": "Graphis annual 85/86",
+     "year": "1985",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/isbn_3857091851",
+     "thumb": "https://archive.org/services/img/isbn_3857091851",
+     "why": "International ad annual"
+    }
+   ]
+  },
+  {
+   "style": "70s sci-fi & adventure pulp",
+   "queries_used": [
+    "collection:pulpmagazinearchive",
+    "title:(omni)"
+   ],
+   "items": [
+    {
+     "identifier": "omni-archive",
+     "title": "OMNI Magazine Archive",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/omni-archive",
+     "thumb": "https://archive.org/services/img/omni-archive",
+     "why": "Omni issues, airbrush sci-fi art"
+    },
+    {
+     "identifier": "OMNI197908",
+     "title": "OMNI Magazine Collection",
+     "year": "1979",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/OMNI197908",
+     "thumb": "https://archive.org/services/img/OMNI197908",
+     "why": "Omni 1979 issue"
+    },
+    {
+     "identifier": "Astounding_Stories_of_Super_Science_1932",
+     "title": "Astounding Stories 1932",
+     "year": "1932",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Astounding_Stories_of_Super_Science_1932",
+     "thumb": "https://archive.org/services/img/Astounding_Stories_of_Super_Science_1932",
+     "why": "Classic pulp covers"
+    },
+    {
+     "identifier": "amazingstoriesmagazine",
+     "title": "Amazing Stories Magazine",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/amazingstoriesmagazine",
+     "thumb": "https://archive.org/services/img/amazingstoriesmagazine",
+     "why": "Pulp SF collection"
+    },
+    {
+     "identifier": "galaxymagazine",
+     "title": "Galaxy Magazine",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/galaxymagazine",
+     "thumb": "https://archive.org/services/img/galaxymagazine",
+     "why": "Galaxy SF collection"
+    },
+    {
+     "identifier": "ifmagazine",
+     "title": "IF Magazine",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/ifmagazine",
+     "thumb": "https://archive.org/services/img/ifmagazine",
+     "why": "SF magazine collection"
+    },
+    {
+     "identifier": "warren-vampirella",
+     "title": "Vampirella Magazine (Warren)",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/warren-vampirella",
+     "thumb": "https://archive.org/services/img/warren-vampirella",
+     "why": "70s horror/adventure covers"
+    },
+    {
+     "identifier": "famousmonstersmagazine",
+     "title": "Famous Monsters of Filmland",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/famousmonstersmagazine",
+     "thumb": "https://archive.org/services/img/famousmonstersmagazine",
+     "why": "Monster magazine covers"
+    },
+    {
+     "identifier": "pulp_misc_adventure",
+     "title": "Miscellaneous Pulp Adventure",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/pulp_misc_adventure",
+     "thumb": "https://archive.org/services/img/pulp_misc_adventure",
+     "why": "Adventure pulp covers"
+    }
+   ]
+  },
+  {
+   "style": "EC horror comics & horror pulp",
+   "queries_used": [
+    "title:(tales from the crypt)",
+    "collection:comics AND title:(horror)",
+    "title:(Weird Tales)"
+   ],
+   "items": [
+    {
+     "identifier": "ECComics",
+     "title": "Tales Of Terror / Tales from the Crypt",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ECComics",
+     "thumb": "https://archive.org/services/img/ECComics",
+     "why": "EC comics scans"
+    },
+    {
+     "identifier": "tales-from-the-crypt-17",
+     "title": "Tales From The Crypt 17",
+     "year": "1950",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/tales-from-the-crypt-17",
+     "thumb": "https://archive.org/services/img/tales-from-the-crypt-17",
+     "why": "EC issue"
+    },
+    {
+     "identifier": "3DTalesFromTheCrypt",
+     "title": "Three Dimensional Tales From The Crypt",
+     "year": "1954",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/3DTalesFromTheCrypt",
+     "thumb": "https://archive.org/services/img/3DTalesFromTheCrypt",
+     "why": "EC 3D issue"
+    },
+    {
+     "identifier": "ecarchives00alfe_0",
+     "title": "The vault of horror",
+     "year": "2007",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ecarchives00alfe_0",
+     "thumb": "https://archive.org/services/img/ecarchives00alfe_0",
+     "why": "EC archive reprint"
+    },
+    {
+     "identifier": "Pre-Code-graphic-horror",
+     "title": "Pre-Code Graphic Horror Comics",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Pre-Code-graphic-horror",
+     "thumb": "https://archive.org/services/img/Pre-Code-graphic-horror",
+     "why": "Pre-code horror comics"
+    },
+    {
+     "identifier": "shocking-mystery-cases-056-1953-10.-star-0225-c-2c.kozmo-cimmerian-32",
+     "title": "Classic Horror Comics",
+     "year": "1953",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/shocking-mystery-cases-056-1953-10.-star-0225-c-2c.kozmo-cimmerian-32",
+     "thumb": "https://archive.org/services/img/shocking-mystery-cases-056-1953-10.-star-0225-c-2c.kozmo-cimmerian-32",
+     "why": "Horror comic scan"
+    },
+    {
+     "identifier": "HorrorComics",
+     "title": "horror comics",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/HorrorComics",
+     "thumb": "https://archive.org/services/img/HorrorComics",
+     "why": "Horror comics compilation"
+    },
+    {
+     "identifier": "weirdtalesmagazine",
+     "title": "Weird Tales Magazine",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/weirdtalesmagazine",
+     "thumb": "https://archive.org/services/img/weirdtalesmagazine",
+     "why": "Horror pulp collection"
+    },
+    {
+     "identifier": "wt_1937_12",
+     "title": "Weird Tales, Dec 1937",
+     "year": "1937",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/wt_1937_12",
+     "thumb": "https://archive.org/services/img/wt_1937_12",
+     "why": "Pulp cover art"
+    },
+    {
+     "identifier": "pulp_misc_horror",
+     "title": "Miscellaneous Pulp Horror",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/pulp_misc_horror",
+     "thumb": "https://archive.org/services/img/pulp_misc_horror",
+     "why": "Horror pulp"
+    },
+    {
+     "identifier": "creepy_warren",
+     "title": "Creepy (Warren Publishing)",
+     "year": "",
+     "mediatype": "collection",
+     "url": "https://archive.org/details/creepy_warren",
+     "thumb": "https://archive.org/services/img/creepy_warren",
+     "why": "Warren horror comics"
+    }
+   ]
+  },
+  {
+   "style": "Microbiology / scientific illustration",
+   "queries_used": [
+    "title:(kunstformen der natur)",
+    "title:(radiolaria)",
+    "collection:biodiversity AND title:(plates)"
+   ],
+   "items": [
+    {
+     "identifier": "KunstformenderN00Haec",
+     "title": "Kunstformen der Natur (1899)",
+     "year": "1899",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/KunstformenderN00Haec",
+     "thumb": "https://archive.org/services/img/KunstformenderN00Haec",
+     "why": "Haeckel plates"
+    },
+    {
+     "identifier": "kunstformenderna00haec",
+     "title": "Kunstformen der Natur (1904)",
+     "year": "1904",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/kunstformenderna00haec",
+     "thumb": "https://archive.org/services/img/kunstformenderna00haec",
+     "why": "Haeckel plates"
+    },
+    {
+     "identifier": "kunstformenderna01haec",
+     "title": "Kunstformen der Natur vol. 1",
+     "year": "1904",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/kunstformenderna01haec",
+     "thumb": "https://archive.org/services/img/kunstformenderna01haec",
+     "why": "Haeckel plates"
+    },
+    {
+     "identifier": "reportonradiolar00haecrich",
+     "title": "Report on the Radiolaria, Challenger",
+     "year": "1887",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/reportonradiolar00haecrich",
+     "thumb": "https://archive.org/services/img/reportonradiolar00haecrich",
+     "why": "Haeckel radiolarian plates"
+    },
+    {
+     "identifier": "reportontheradio44527gut",
+     "title": "Report on the Radiolaria, Challenger (plates)",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/reportontheradio44527gut",
+     "thumb": "https://archive.org/services/img/reportontheradio44527gut",
+     "why": "Radiolaria plates"
+    },
+    {
+     "identifier": "handbookofplantf00clar",
+     "title": "Handbook of plant-form for students of design",
+     "year": "1905",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/handbookofplantf00clar",
+     "thumb": "https://archive.org/services/img/handbookofplantf00clar",
+     "why": "100 plates, design-oriented"
+    },
+    {
+     "identifier": "essaytowardsnat00owen",
+     "title": "Natural history of serpents",
+     "year": "1742",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/essaytowardsnat00owen",
+     "thumb": "https://archive.org/services/img/essaytowardsnat00owen",
+     "why": "Engraved plates"
+    },
+    {
+     "identifier": "mobot31753002620836",
+     "title": "A curious herbal",
+     "year": "1737",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/mobot31753002620836",
+     "thumb": "https://archive.org/services/img/mobot31753002620836",
+     "why": "Blackwell botanical engravings"
+    },
+    {
+     "identifier": "mobot31753003414270",
+     "title": "Illustrations of Himalayan plants",
+     "year": "1855",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/mobot31753003414270",
+     "thumb": "https://archive.org/services/img/mobot31753003414270",
+     "why": "Botanical plates"
+    },
+    {
+     "identifier": "natureprintedbri03john",
+     "title": "The nature-printed British sea-weeds",
+     "year": "1859",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/natureprintedbri03john",
+     "thumb": "https://archive.org/services/img/natureprintedbri03john",
+     "why": "Nature-printed algae plates"
+    }
+   ]
+  },
+  {
+   "style": "Infographic / vintage charts & diagrams",
+   "queries_used": [
+    "title:(isotype)",
+    "title:(graphic presentation)"
+   ],
+   "items": [
+    {
+     "identifier": "internationalpic00neur",
+     "title": "International Picture Language: First Rules of Isotype",
+     "year": "1936",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/internationalpic00neur",
+     "thumb": "https://archive.org/services/img/internationalpic00neur",
+     "why": "Neurath Isotype"
+    },
+    {
+     "identifier": "graphicpresentat00brinrich",
+     "title": "Graphic presentation (Brinton)",
+     "year": "1939",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/graphicpresentat00brinrich",
+     "thumb": "https://archive.org/services/img/graphicpresentat00brinrich",
+     "why": "Classic chart reference"
+    },
+    {
+     "identifier": "HandbookOfGraphicPresentation",
+     "title": "Handbook of Graphic Presentation",
+     "year": "1954",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/HandbookOfGraphicPresentation",
+     "thumb": "https://archive.org/services/img/HandbookOfGraphicPresentation",
+     "why": "Charts and diagrams"
+    },
+    {
+     "identifier": "graphicpresentat00lutzrich",
+     "title": "Graphic presentation simplified",
+     "year": "1949",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/graphicpresentat00lutzrich",
+     "thumb": "https://archive.org/services/img/graphicpresentat00lutzrich",
+     "why": "Chart examples"
+    },
+    {
+     "identifier": "dr_the-scheme-of-the-state-organization-of-the-ussr-to-accompany-ussr-s-13675008",
+     "title": "Scheme of state organization of the USSR",
+     "year": "1939",
+     "mediatype": "image",
+     "url": "https://archive.org/details/dr_the-scheme-of-the-state-organization-of-the-ussr-to-accompany-ussr-s-13675008",
+     "thumb": "https://archive.org/services/img/dr_the-scheme-of-the-state-organization-of-the-ussr-to-accompany-ussr-s-13675008",
+     "why": "Soviet infographic map"
+    },
+    {
+     "identifier": "dr_iron-and-steel-industry-to-accompany-ussr-soiuz-sovetskikh-sotsialistic-13675033",
+     "title": "Iron and steel industry (USSR)",
+     "year": "1939",
+     "mediatype": "image",
+     "url": "https://archive.org/details/dr_iron-and-steel-industry-to-accompany-ussr-soiuz-sovetskikh-sotsialistic-13675033",
+     "thumb": "https://archive.org/services/img/dr_iron-and-steel-industry-to-accompany-ussr-soiuz-sovetskikh-sotsialistic-13675033",
+     "why": "Soviet pictorial map"
+    }
+   ]
+  },
+  {
+   "style": "Mezzotint & engraving",
+   "queries_used": [
+    "title:(mezzotint)"
+   ],
+   "items": [
+    {
+     "identifier": "engravingsinmezz00wilsrich",
+     "title": "Engravings in mezzotint",
+     "year": "1912",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/engravingsinmezz00wilsrich",
+     "thumb": "https://archive.org/services/img/engravingsinmezz00wilsrich",
+     "why": "Mezzotint plates"
+    },
+    {
+     "identifier": "englishmezzotint02russ",
+     "title": "English mezzotint portraits",
+     "year": "1926",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/englishmezzotint02russ",
+     "thumb": "https://archive.org/services/img/englishmezzotint02russ",
+     "why": "Mezzotint portrait plates"
+    },
+    {
+     "identifier": "graphicartsofgre00sala",
+     "title": "The graphic arts of Great Britain",
+     "year": "1917",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/graphicartsofgre00sala",
+     "thumb": "https://archive.org/services/img/graphicartsofgre00sala",
+     "why": "Engraving/etching survey"
+    },
+    {
+     "identifier": "choicemezzotinte00chri",
+     "title": "Choice mezzotint engravings after Reynolds",
+     "year": "1893",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/choicemezzotinte00chri",
+     "thumb": "https://archive.org/services/img/choicemezzotinte00chri",
+     "why": "Mezzotint"
+    },
+    {
+     "identifier": "gri_33125008739464",
+     "title": "The art of engraving",
+     "year": "1844",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/gri_33125008739464",
+     "thumb": "https://archive.org/services/img/gri_33125008739464",
+     "why": "Engraving techniques"
+    }
+   ]
+  },
+  {
+   "style": "Cyanotype",
+   "queries_used": [
+    "title:(cyanotype)",
+    "title:(british algae)"
+   ],
+   "items": [
+    {
+     "identifier": "blueprintsnatura0000oelb",
+     "title": "Blue prints: the natural world in cyanotype photographs",
+     "year": "2002",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/blueprintsnatura0000oelb",
+     "thumb": "https://archive.org/services/img/blueprintsnatura0000oelb",
+     "why": "Cyanotype photo book"
+    },
+    {
+     "identifier": "cyanotypes_misc",
+     "title": "SHEP cyanotype process misc images",
+     "year": "2016",
+     "mediatype": "image",
+     "url": "https://archive.org/details/cyanotypes_misc",
+     "thumb": "https://archive.org/services/img/cyanotypes_misc",
+     "why": "Modern cyanotype"
+    },
+    {
+     "identifier": "HedgeMustardCyanotypes",
+     "title": "SHEP Hedge mustard cyanotypes",
+     "year": "2016",
+     "mediatype": "image",
+     "url": "https://archive.org/details/HedgeMustardCyanotypes",
+     "thumb": "https://archive.org/services/img/HedgeMustardCyanotypes",
+     "why": "Plant cyanotypes"
+    },
+    {
+     "identifier": "propix.493933140",
+     "title": "Cyanotype Proofs for Animal Locomotion",
+     "year": "2004",
+     "mediatype": "image",
+     "url": "https://archive.org/details/propix.493933140",
+     "thumb": "https://archive.org/services/img/propix.493933140",
+     "why": "Muybridge cyanotypes"
+    },
+    {
+     "identifier": "0693-001",
+     "title": "Cyanotype postcard",
+     "year": "1908",
+     "mediatype": "image",
+     "url": "https://archive.org/details/0693-001",
+     "thumb": "https://archive.org/services/img/0693-001",
+     "why": "Period cyanotype"
+    },
+    {
+     "identifier": "natureprintedbri02john",
+     "title": "Nature-printed British sea-weeds",
+     "year": "1859",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/natureprintedbri02john",
+     "thumb": "https://archive.org/services/img/natureprintedbri02john",
+     "why": "Nearest to Atkins; direct-print algae"
+    }
+   ]
+  },
+  {
+   "style": "Vintage packaging & labels",
+   "queries_used": [
+    "title:(crate label)",
+    "title:(luggage label)",
+    "title:(matchbox label)",
+    "title:(cigar labels)"
+   ],
+   "items": [
+    {
+     "identifier": "cigarboxlabels00olsc_0001",
+     "title": "Cigar Box Labels by O.L. Schwencke 1905",
+     "year": "2016",
+     "mediatype": "image",
+     "url": "https://archive.org/details/cigarboxlabels00olsc_0001",
+     "thumb": "https://archive.org/services/img/cigarboxlabels00olsc_0001",
+     "why": "Chromolithographic labels"
+    },
+    {
+     "identifier": "cigarboxlabels00olsc",
+     "title": "Cigar box labels",
+     "year": "1905",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/cigarboxlabels00olsc",
+     "thumb": "https://archive.org/services/img/cigarboxlabels00olsc",
+     "why": "Same, text scan"
+    },
+    {
+     "identifier": "FruitCrateLabel",
+     "title": "Fruit Crate Label",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/FruitCrateLabel",
+     "thumb": "https://archive.org/services/img/FruitCrateLabel",
+     "why": "Crate label"
+    },
+    {
+     "identifier": "Britevale",
+     "title": "Britevale Fruit Crate Label",
+     "year": "1940",
+     "mediatype": "image",
+     "url": "https://archive.org/details/Britevale",
+     "thumb": "https://archive.org/services/img/Britevale",
+     "why": "Crate label"
+    },
+    {
+     "identifier": "tulitikkuetiketti.-match-box-label.-anu-ja-mikko",
+     "title": "Matchbox labels (Finnish)",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/tulitikkuetiketti.-match-box-label.-anu-ja-mikko",
+     "thumb": "https://archive.org/services/img/tulitikkuetiketti.-match-box-label.-anu-ja-mikko",
+     "why": "Matchbox label collection"
+    },
+    {
+     "identifier": "mbp-fl-2419-swan-sweden-red-black-cream",
+     "title": "Swan Sweden - Vintage Matchbox Label",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-fl-2419-swan-sweden-red-black-cream",
+     "thumb": "https://archive.org/services/img/mbp-fl-2419-swan-sweden-red-black-cream",
+     "why": "Matchbox label"
+    },
+    {
+     "identifier": "mbp-fl-2172-girl-crescent-moon-blue-sky",
+     "title": "Girl Crescent Moon - Matchbox Label",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-fl-2172-girl-crescent-moon-blue-sky",
+     "thumb": "https://archive.org/services/img/mbp-fl-2172-girl-crescent-moon-blue-sky",
+     "why": "Matchbox label"
+    },
+    {
+     "identifier": "lfatravel0671",
+     "title": "Imperial Hotel Tokyo Luggage Label",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lfatravel0671",
+     "thumb": "https://archive.org/services/img/lfatravel0671",
+     "why": "Hotel luggage label (lfatravel series)"
+    },
+    {
+     "identifier": "lfatravel0688",
+     "title": "Hotel Negresco Luggage Label",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lfatravel0688",
+     "thumb": "https://archive.org/services/img/lfatravel0688",
+     "why": "Luggage label"
+    },
+    {
+     "identifier": "lfatravel0294",
+     "title": "Hotel Esplanade Luggage Label",
+     "year": "",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lfatravel0294",
+     "thumb": "https://archive.org/services/img/lfatravel0294",
+     "why": "Luggage label"
+    },
+    {
+     "identifier": "KaiserStuhlWineLabels",
+     "title": "Kaiser Stuhl Wine Labels",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/KaiserStuhlWineLabels",
+     "thumb": "https://archive.org/services/img/KaiserStuhlWineLabels",
+     "why": "Wine labels"
+    }
+   ]
+  },
+  {
+   "style": "Vintage stickers/decals",
+   "queries_used": [
+    "title:(stickers)",
+    "title:(decal)"
+   ],
+   "items": [
+    {
+     "identifier": "skateboard-stickers-collection-100",
+     "title": "Vintage Skateboard Stickers Collection",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/skateboard-stickers-collection-100",
+     "thumb": "https://archive.org/services/img/skateboard-stickers-collection-100",
+     "why": "Skate sticker scans"
+    },
+    {
+     "identifier": "2020-08-07-img-015",
+     "title": "1969 Smiley Stickers",
+     "year": "1969",
+     "mediatype": "image",
+     "url": "https://archive.org/details/2020-08-07-img-015",
+     "thumb": "https://archive.org/services/img/2020-08-07-img-015",
+     "why": "Period stickers"
+    },
+    {
+     "identifier": "1984-apple-mac-logo-stickers-01",
+     "title": "1984 Apple Mac Logo Stickers",
+     "year": "1984",
+     "mediatype": "image",
+     "url": "https://archive.org/details/1984-apple-mac-logo-stickers-01",
+     "thumb": "https://archive.org/services/img/1984-apple-mac-logo-stickers-01",
+     "why": "Period stickers"
+    },
+    {
+     "identifier": "vintage-bicycle-test-decal-sheet-printed-in-italy",
+     "title": "Vintage Bicycle Test Decal Sheet",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/vintage-bicycle-test-decal-sheet-printed-in-italy",
+     "thumb": "https://archive.org/services/img/vintage-bicycle-test-decal-sheet-printed-in-italy",
+     "why": "Decal sheet"
+    },
+    {
+     "identifier": "robotech-nebo-orguss-decal-sheet",
+     "title": "Robotech decal sheet",
+     "year": "1984",
+     "mediatype": "image",
+     "url": "https://archive.org/details/robotech-nebo-orguss-decal-sheet",
+     "thumb": "https://archive.org/services/img/robotech-nebo-orguss-decal-sheet",
+     "why": "Model decal sheet"
+    },
+    {
+     "identifier": "hypestickers",
+     "title": "Hype Stickers",
+     "year": "",
+     "mediatype": "image",
+     "url": "https://archive.org/details/hypestickers",
+     "thumb": "https://archive.org/services/img/hypestickers",
+     "why": "Sticker collection"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1495 @@
+{
+ "cluster": "Underground print & club culture",
+ "collections": [
+  {
+   "identifier": "zines_inbox",
+   "title": "Incoming and Unsorted Zines",
+   "url": "https://archive.org/details/zines_inbox",
+   "thumb": "https://archive.org/services/img/zines_inbox",
+   "why": "Huge catch-all of scanned zines across punk, rave, skate, art; best for random-walk browsing of xerox/cut-and-paste layouts."
+  },
+  {
+   "identifier": "ravezines",
+   "title": "Rave Zines",
+   "url": "https://archive.org/details/ravezines",
+   "thumb": "https://archive.org/services/img/ravezines",
+   "why": "Rave Zines: scans of Groove, Frontpage, Massive, Raveline etc.; 90s rave/techno magazine layouts, ads, flyer-style ads."
+  },
+  {
+   "identifier": "midwest-rave-culture-archive",
+   "title": "Midwest Rave Culture Archive",
+   "url": "https://archive.org/details/midwest-rave-culture-archive",
+   "thumb": "https://archive.org/services/img/midwest-rave-culture-archive",
+   "why": "Midwest Rave Culture Archive: individual scanned Chicago/Midwest rave flyers (1993-99), VHS, tape art; dense, high-res."
+  },
+  {
+   "identifier": "raggededgecollection",
+   "title": "The Ragged Edge Collection",
+   "url": "https://archive.org/details/raggededgecollection",
+   "thumb": "https://archive.org/services/img/raggededgecollection",
+   "why": "The Ragged Edge Collection: 1980s punk/hardcore/skate fanzines scanned whole (Skating In Chaos, Big City, Skate Scene)."
+  },
+  {
+   "identifier": "misczinespunk",
+   "title": "Miscellaneous Punk Zines",
+   "url": "https://archive.org/details/misczinespunk",
+   "thumb": "https://archive.org/services/img/misczinespunk",
+   "why": "Miscellaneous Punk Zines: large set of DIY punk zines, classic xerox/photocopy aesthetic."
+  },
+  {
+   "identifier": "maximumrnr",
+   "title": "Maximum Rock N' Roll",
+   "url": "https://archive.org/details/maximumrnr",
+   "thumb": "https://archive.org/services/img/maximumrnr",
+   "why": "Maximum Rock N' Roll: full run of the punk/hardcore zine, columns, ads, flyer reproductions."
+  },
+  {
+   "identifier": "punkplanet",
+   "title": "Punk Planet Archive",
+   "url": "https://archive.org/details/punkplanet",
+   "thumb": "https://archive.org/services/img/punkplanet",
+   "why": "Punk Planet Archive: full run 1994-2007 of the indie/punk magazine; DIY-era editorial and ad design."
+  },
+  {
+   "identifier": "digitalfanzinepreservationsociety",
+   "title": "Digital Fanzine Preservation Society",
+   "url": "https://archive.org/details/digitalfanzinepreservationsociety",
+   "thumb": "https://archive.org/services/img/digitalfanzinepreservationsociety",
+   "why": "Digital Fanzine Preservation Society: UK/Euro music fanzines, cut-and-paste band and club zines."
+  }
+ ],
+ "styles": [
+  {
+   "style": "90s Rave Flyers",
+   "queries_used": [
+    "title:(rave) AND flyers AND mediatype:image",
+    "subject:(rave) AND mediatype:image",
+    "collection:midwest-rave-culture-archive",
+    "title:(flyer for) Chicago"
+   ],
+   "items": [
+    {
+     "identifier": "Scan201701219",
+     "title": "1993 - Midwest Rave Flyers ",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/Scan201701219",
+     "thumb": "https://archive.org/services/img/Scan201701219",
+     "why": "1993 Midwest rave flyer scans; period day-glo graphics, airbrush and clip-art collage."
+    },
+    {
+     "identifier": "scan-20160730-52",
+     "title": "1994 - Midwest Rave Flyers",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/scan-20160730-52",
+     "thumb": "https://archive.org/services/img/scan-20160730-52",
+     "why": "1994 Midwest rave flyers; follow-up set, sticker-sheet and early-digital type."
+    },
+    {
+     "identifier": "florida-rave-flyers",
+     "title": "Florida Rave Flyers - 1998 - 2001",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/florida-rave-flyers",
+     "thumb": "https://archive.org/services/img/florida-rave-flyers",
+     "why": "Florida rave flyers 1998-2001; late-90s chrome, cyber and kandi palettes."
+    },
+    {
+     "identifier": "21926-22303-10112",
+     "title": "1500+ Rave flyers from the 1990's clubkid scene candy raver files raver flyer church of techno guru z3n8",
+     "year": "2025",
+     "mediatype": "image",
+     "url": "https://archive.org/details/21926-22303-10112",
+     "thumb": "https://archive.org/services/img/21926-22303-10112",
+     "why": "1500+ clubkid/candy raver flyers; huge variety of 90s layouts."
+    },
+    {
+     "identifier": "big-set-of-rave-flyers",
+     "title": "Big Set Of Rave Flyers",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/big-set-of-rave-flyers",
+     "thumb": "https://archive.org/services/img/big-set-of-rave-flyers",
+     "why": "Large mixed set of rave flyers; typographic and psychedelic variety."
+    },
+    {
+     "identifier": "flyer-for-babylon-chicago-il-on-7-1-1995",
+     "title": "Flyer For Babylon, Chicago, IL 7-1-1995",
+     "year": "1995",
+     "mediatype": "image",
+     "url": "https://archive.org/details/flyer-for-babylon-chicago-il-on-7-1-1995",
+     "thumb": "https://archive.org/services/img/flyer-for-babylon-chicago-il-on-7-1-1995",
+     "why": "Chicago 1995 rave flyer, Midwest Rave Culture Archive scan front/back."
+    },
+    {
+     "identifier": "flyer-for-top-secret-chicago-il-8-17-1996",
+     "title": "Flyer For Top Secret, Chicago, IL, 8-17-1996",
+     "year": "1996",
+     "mediatype": "image",
+     "url": "https://archive.org/details/flyer-for-top-secret-chicago-il-8-17-1996",
+     "thumb": "https://archive.org/services/img/flyer-for-top-secret-chicago-il-8-17-1996",
+     "why": "Chicago 1996 flyer; mid-90s collage and logo typography."
+    },
+    {
+     "identifier": "flyer-for-interstellar-outback-3-kentucky-08-16-17-18-1996",
+     "title": "Flyer For Interstellar Outback 3, Kentucky, 08 16 17 18 1996",
+     "year": "1996",
+     "mediatype": "image",
+     "url": "https://archive.org/details/flyer-for-interstellar-outback-3-kentucky-08-16-17-18-1996",
+     "thumb": "https://archive.org/services/img/flyer-for-interstellar-outback-3-kentucky-08-16-17-18-1996",
+     "why": "Interstellar Outback 3 campout flyer 1996; space/psychedelic illustration."
+    },
+    {
+     "identifier": "flyer-for-outasight-ca-on-12-14-1996",
+     "title": "Flyer For Outasight, CA, On 12 14 1996",
+     "year": "1996",
+     "mediatype": "image",
+     "url": "https://archive.org/details/flyer-for-outasight-ca-on-12-14-1996",
+     "thumb": "https://archive.org/services/img/flyer-for-outasight-ca-on-12-14-1996",
+     "why": "Outasight 1996 flyer; West-coast rave print."
+    },
+    {
+     "identifier": "flyer-for-even-furthur-techno-campout-wi-on-may-26-29-1995-front",
+     "title": "Flyer For Even Furthur, Techno Campout, WI On May 26 29, 1995, Front",
+     "year": "1995",
+     "mediatype": "image",
+     "url": "https://archive.org/details/flyer-for-even-furthur-techno-campout-wi-on-may-26-29-1995-front",
+     "thumb": "https://archive.org/services/img/flyer-for-even-furthur-techno-campout-wi-on-may-26-29-1995-front",
+     "why": "Even Furthur techno campout 1995; tie-dye/trippy illustration."
+    },
+    {
+     "identifier": "img-8104_202411",
+     "title": "Rave party flyer '93",
+     "year": "1993",
+     "mediatype": "image",
+     "url": "https://archive.org/details/img-8104_202411",
+     "thumb": "https://archive.org/services/img/img-8104_202411",
+     "why": "Rave party flyer 1993; single early-90s flyer."
+    },
+    {
+     "identifier": "eminem_rave_toronto_00",
+     "title": "Eminem Toronto Rave (April 22, 2000) Goin' Deep Productions \"LIFE\"",
+     "year": "2000",
+     "mediatype": "image",
+     "url": "https://archive.org/details/eminem_rave_toronto_00",
+     "thumb": "https://archive.org/services/img/eminem_rave_toronto_00",
+     "why": "Toronto rave flyer 2000; late-90s/Y2K rave graphics."
+    },
+    {
+     "identifier": "extensive-illegal-rave-16-aprile-1995",
+     "title": "Extensive illegal rave, 16 aprile 1995",
+     "year": "1995",
+     "mediatype": "image",
+     "url": "https://archive.org/details/extensive-illegal-rave-16-aprile-1995",
+     "thumb": "https://archive.org/services/img/extensive-illegal-rave-16-aprile-1995",
+     "why": "Italian illegal rave flyer 1995; European free-party design."
+    },
+    {
+     "identifier": "street-rave-parade-3-luglio-1999",
+     "title": "Street Rave Parade, 3 luglio 1999",
+     "year": "1999",
+     "mediatype": "image",
+     "url": "https://archive.org/details/street-rave-parade-3-luglio-1999",
+     "thumb": "https://archive.org/services/img/street-rave-parade-3-luglio-1999",
+     "why": "Italian Street Rave Parade 1999 flyer."
+    },
+    {
+     "identifier": "TFSunnamedRave",
+     "title": "8.14.98 - Unnamed Rave",
+     "year": "1998",
+     "mediatype": "image",
+     "url": "https://archive.org/details/TFSunnamedRave",
+     "thumb": "https://archive.org/services/img/TFSunnamedRave",
+     "why": "Unnamed rave flyer 1998."
+    },
+    {
+     "identifier": "pulisci-il-nazareno.-rave-zone-22-gennaio-1992",
+     "title": "Pulisci il nazareno. Rave zone, 1992",
+     "year": "1992",
+     "mediatype": "image",
+     "url": "https://archive.org/details/pulisci-il-nazareno.-rave-zone-22-gennaio-1992",
+     "thumb": "https://archive.org/services/img/pulisci-il-nazareno.-rave-zone-22-gennaio-1992",
+     "why": "Italian rave zone flyer 1992; early-90s photocopy style."
+    }
+   ]
+  },
+  {
+   "style": "Club / Acid House / Techno Flyers",
+   "queries_used": [
+    "title:(club flyer)",
+    "title:(techno) AND (flyer OR poster)",
+    "subject:(nightclub flyers)"
+   ],
+   "items": [
+    {
+     "identifier": "aura-orange-6-4-01-info",
+     "title": "Night club flyers from 90s-2000s (UK, Mids)",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/aura-orange-6-4-01-info",
+     "thumb": "https://archive.org/services/img/aura-orange-6-4-01-info",
+     "why": "UK Midlands night club flyers from the 90s-2000s; large scan set."
+    },
+    {
+     "identifier": "deephousepage.com-rarechicagoflyers",
+     "title": "Deep House Page (deephousepage.com) Rare Chicago Flyers",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/deephousepage.com-rarechicagoflyers",
+     "thumb": "https://archive.org/services/img/deephousepage.com-rarechicagoflyers",
+     "why": "Rare Chicago house music flyers (Deep House Page); 187 files, classic house-era design."
+    },
+    {
+     "identifier": "00-tresor-globus-1996-club-flyer-front",
+     "title": "Tresor Globus 1996 Club flyer",
+     "year": "1995",
+     "mediatype": "image",
+     "url": "https://archive.org/details/00-tresor-globus-1996-club-flyer-front",
+     "thumb": "https://archive.org/services/img/00-tresor-globus-1996-club-flyer-front",
+     "why": "Tresor Globus 1996 Berlin techno club flyer."
+    },
+    {
+     "identifier": "1995.11.10-voorhuit-i-love-techno",
+     "title": "1995.11.10 Voorhuit (I Love Techno)",
+     "year": "1995",
+     "mediatype": "image",
+     "url": "https://archive.org/details/1995.11.10-voorhuit-i-love-techno",
+     "thumb": "https://archive.org/services/img/1995.11.10-voorhuit-i-love-techno",
+     "why": "I Love Techno 1995 Belgian flyer."
+    },
+    {
+     "identifier": "1997.05.07-flanders-expo-i-love-techno",
+     "title": "1997.05.07 Flanders Expo (I Love Techno)",
+     "year": "1997",
+     "mediatype": "image",
+     "url": "https://archive.org/details/1997.05.07-flanders-expo-i-love-techno",
+     "thumb": "https://archive.org/services/img/1997.05.07-flanders-expo-i-love-techno",
+     "why": "I Love Techno 1997 flyer; Belgian techno branding."
+    },
+    {
+     "identifier": "1995.11.30-couleur-3-metissages-techno-house-festival-part-xiv",
+     "title": "1995.11.30 Couleur 3 (Metissages Techno - House Festival Part XIV)",
+     "year": "1995",
+     "mediatype": "image",
+     "url": "https://archive.org/details/1995.11.30-couleur-3-metissages-techno-house-festival-part-xiv",
+     "thumb": "https://archive.org/services/img/1995.11.30-couleur-3-metissages-techno-house-festival-part-xiv",
+     "why": "Techno/house festival flyer, 1995."
+    },
+    {
+     "identifier": "01_20250902_20250902_0949",
+     "title": "Psychic TV Techno Anarchy Flyer",
+     "year": "1992",
+     "mediatype": "image",
+     "url": "https://archive.org/details/01_20250902_20250902_0949",
+     "thumb": "https://archive.org/services/img/01_20250902_20250902_0949",
+     "why": "Psychic TV Techno Anarchy flyer 1992; acid-house-era occult graphics."
+    },
+    {
+     "identifier": "1995.10.28-rave-sir.cus-cybernaut-system-techno-travel",
+     "title": "1995.10.28 Rave Sir.Cus Cybernaut System: Techno Travel",
+     "year": "1995",
+     "mediatype": "image",
+     "url": "https://archive.org/details/1995.10.28-rave-sir.cus-cybernaut-system-techno-travel",
+     "thumb": "https://archive.org/services/img/1995.10.28-rave-sir.cus-cybernaut-system-techno-travel",
+     "why": "Cybernaut Sir.Cus rave flyer 1995."
+    },
+    {
+     "identifier": "flyer-for-babylon-chicago-il-on-7-1-1995",
+     "title": "Flyer For Babylon, Chicago, IL 7-1-1995",
+     "year": "1995",
+     "mediatype": "image",
+     "url": "https://archive.org/details/flyer-for-babylon-chicago-il-on-7-1-1995",
+     "thumb": "https://archive.org/services/img/flyer-for-babylon-chicago-il-on-7-1-1995",
+     "why": "Babylon Chicago 1995 club/rave flyer."
+    },
+    {
+     "identifier": "flyer-club-laga-1998-04-25",
+     "title": "Flyer: Club Laga - 1998-04-25",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/flyer-club-laga-1998-04-25",
+     "thumb": "https://archive.org/services/img/flyer-club-laga-1998-04-25",
+     "why": "Club Laga 1998 flyer."
+    },
+    {
+     "identifier": "air-liquide-sensor-club-flyer",
+     "title": "Air Liquide Sensor club flyer",
+     "year": "2001",
+     "mediatype": "image",
+     "url": "https://archive.org/details/air-liquide-sensor-club-flyer",
+     "thumb": "https://archive.org/services/img/air-liquide-sensor-club-flyer",
+     "why": "Air Liquide Sensor club flyer 2001; German electronic club print."
+    },
+    {
+     "identifier": "flyer-for-girls-on-top-1-6-96",
+     "title": "Flyer For Girls On Top, 1-6-1996",
+     "year": "1996",
+     "mediatype": "image",
+     "url": "https://archive.org/details/flyer-for-girls-on-top-1-6-96",
+     "thumb": "https://archive.org/services/img/flyer-for-girls-on-top-1-6-96",
+     "why": "Girls On Top 1996 flyer; house/club print."
+    },
+    {
+     "identifier": "Afterlife_10312003",
+     "title": "10.31.03 - Afterlife",
+     "year": "2003",
+     "mediatype": "image",
+     "url": "https://archive.org/details/Afterlife_10312003",
+     "thumb": "https://archive.org/services/img/Afterlife_10312003",
+     "why": "Afterlife 2003 NYC club flyer."
+    },
+    {
+     "identifier": "9-15-07-flashback",
+     "title": "9.15.07 Flashback",
+     "year": "2007",
+     "mediatype": "image",
+     "url": "https://archive.org/details/9-15-07-flashback",
+     "thumb": "https://archive.org/services/img/9-15-07-flashback",
+     "why": "Flashback 2007 club flyer."
+    },
+    {
+     "identifier": "1995.09.29-1995.10.19-daft-punk-flyer",
+     "title": "1995.09.29 - 1995.10.19 Daft Punk flyer",
+     "year": "1995",
+     "mediatype": "image",
+     "url": "https://archive.org/details/1995.09.29-1995.10.19-daft-punk-flyer",
+     "thumb": "https://archive.org/services/img/1995.09.29-1995.10.19-daft-punk-flyer",
+     "why": "Daft Punk 1995 flyer; early French house."
+    },
+    {
+     "identifier": "P-060",
+     "title": "NNC 9 (novi neočekivani ciklus)/ 11.07. House night/12.07. Techno night/ 18.07. Psytrance night/ 19.07. Psytrance night pt. 2",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/P-060",
+     "thumb": "https://archive.org/services/img/P-060",
+     "why": "NNC 9 house/techno night flyer (Serbian)."
+    }
+   ]
+  },
+  {
+   "style": "Record Store Flyers & 90s Music Zines",
+   "queries_used": [
+    "title:(record store) AND (catalog OR flyer)",
+    "collection:zines_various_music",
+    "collection:ravezines"
+   ],
+   "items": [
+    {
+     "identifier": "tin-man-records-ephemera-nigel-seamer-medway",
+     "title": "Tin Man Records - Ephemera from Nigel Seamer's Medway record label",
+     "year": "2003",
+     "mediatype": "image",
+     "url": "https://archive.org/details/tin-man-records-ephemera-nigel-seamer-medway",
+     "thumb": "https://archive.org/services/img/tin-man-records-ephemera-nigel-seamer-medway",
+     "why": "Tin Man Records ephemera: flyers/stickers from a UK DIY label."
+    },
+    {
+     "identifier": "dedicated-1995-record-label-catalogue-order-form",
+     "title": "Dedicated 1995 Record Label Catalogue & Order Form",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/dedicated-1995-record-label-catalogue-order-form",
+     "thumb": "https://archive.org/services/img/dedicated-1995-record-label-catalogue-order-form",
+     "why": "Dedicated Records 1995 catalogue and order form; indie label print."
+    },
+    {
+     "identifier": "1999-musem-unfine-arts",
+     "title": "Museum of Unfine Art & Record Store Postcard",
+     "year": "2005",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1999-musem-unfine-arts",
+     "thumb": "https://archive.org/services/img/1999-musem-unfine-arts",
+     "why": "Museum of Unfine Art & Record Store postcard."
+    },
+    {
+     "identifier": "record-store-day-2017-1",
+     "title": "Record Store Day 2017",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/record-store-day-2017-1",
+     "thumb": "https://archive.org/services/img/record-store-day-2017-1",
+     "why": "Record Store Day 2017 image set."
+    },
+    {
+     "identifier": "zines_various_music",
+     "title": "Various Zines: Music",
+     "year": null,
+     "mediatype": "collection",
+     "url": "https://archive.org/details/zines_various_music",
+     "thumb": "https://archive.org/services/img/zines_various_music",
+     "why": "Various Zines: Music; collection of music fanzines."
+    },
+    {
+     "identifier": "rz_Groove_81",
+     "title": " Groove #81",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/rz_Groove_81",
+     "thumb": "https://archive.org/services/img/rz_Groove_81",
+     "why": "Groove #81 rave zine scan; club ads and listings."
+    },
+    {
+     "identifier": "rz_Frontpage_1996-04",
+     "title": " Frontpage 1996 04",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/rz_Frontpage_1996-04",
+     "thumb": "https://archive.org/services/img/rz_Frontpage_1996-04",
+     "why": "Frontpage April 1996 rave/techno magazine."
+    },
+    {
+     "identifier": "zine_massive17",
+     "title": " massive17",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/zine_massive17",
+     "thumb": "https://archive.org/services/img/zine_massive17",
+     "why": "Massive #17 rave zine."
+    },
+    {
+     "identifier": "muzik-magazine-issue-001",
+     "title": "muzik Magazine Issue 001",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/muzik-magazine-issue-001",
+     "thumb": "https://archive.org/services/img/muzik-magazine-issue-001",
+     "why": "Muzik Magazine issue 1, 1995; UK dance magazine layout."
+    },
+    {
+     "identifier": "muzik-magazine-issue-005",
+     "title": "muzik Magazine Issue 005",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/muzik-magazine-issue-005",
+     "thumb": "https://archive.org/services/img/muzik-magazine-issue-005",
+     "why": "Muzik Magazine issue 5, 1995."
+    },
+    {
+     "identifier": "grand-royal-01-1993-dregs-ia",
+     "title": "Grand Royal 01 1993 (DREGS-IA)",
+     "year": "1993",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/grand-royal-01-1993-dregs-ia",
+     "thumb": "https://archive.org/services/img/grand-royal-01-1993-dregs-ia",
+     "why": "Grand Royal #1 (1993); Beastie Boys label magazine, ironic 90s graphic style."
+    },
+    {
+     "identifier": "grand-royal-02-1996-dregs-ia",
+     "title": "Grand Royal 02 1996 (DREGS-IA)",
+     "year": "1996",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/grand-royal-02-1996-dregs-ia",
+     "thumb": "https://archive.org/services/img/grand-royal-02-1996-dregs-ia",
+     "why": "Grand Royal #2 (1996)."
+    },
+    {
+     "identifier": "grand-royal-03-1996-dregs-ia",
+     "title": "Grand Royal 03 (1996) (DREGS-IA)",
+     "year": "1996",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/grand-royal-03-1996-dregs-ia",
+     "thumb": "https://archive.org/services/img/grand-royal-03-1996-dregs-ia",
+     "why": "Grand Royal #3 (1996)."
+    },
+    {
+     "identifier": "punk_planet_54",
+     "title": "Punk Planet 54 (2003 Mar-Apr)",
+     "year": "2003",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/punk_planet_54",
+     "thumb": "https://archive.org/services/img/punk_planet_54",
+     "why": "Punk Planet 54 (2003); indie zine-turned-magazine."
+    }
+   ]
+  },
+  {
+   "style": "Punk / DIY Zines (Xerox Aesthetic)",
+   "queries_used": [
+    "collection:misczinespunk",
+    "collection:raggededgecollection",
+    "title:(punk flyers)",
+    "title:(zine) AND xerox"
+   ],
+   "items": [
+    {
+     "identifier": "big-city-fanzine-number-7-new-york-ny",
+     "title": "Big City Fanzine; Number 7; New York, NY",
+     "year": "1984",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/big-city-fanzine-number-7-new-york-ny",
+     "thumb": "https://archive.org/services/img/big-city-fanzine-number-7-new-york-ny",
+     "why": "Big City Fanzine #7 (1984); classic photocopied hardcore zine."
+    },
+    {
+     "identifier": "BigCityFanzineNumber6NewYorkNY",
+     "title": "Big City Fanzine; Number 6; New York, NY",
+     "year": "1984",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/BigCityFanzineNumber6NewYorkNY",
+     "thumb": "https://archive.org/services/img/BigCityFanzineNumber6NewYorkNY",
+     "why": "Big City Fanzine #6 (1984)."
+    },
+    {
+     "identifier": "SchmockNumber2WildbergGermany",
+     "title": "Schmock; No. 2; Wildberg, West Germany",
+     "year": "1984",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/SchmockNumber2WildbergGermany",
+     "thumb": "https://archive.org/services/img/SchmockNumber2WildbergGermany",
+     "why": "Schmock #2, West Germany 1984; European punk xerox."
+    },
+    {
+     "identifier": "tvor-teste-vuote-ossa-rotte-issue-3-como-italy",
+     "title": "T.V.O.R., Teste Vuote Ossa Rotte, Issue 3, Como, Italy",
+     "year": "1983",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/tvor-teste-vuote-ossa-rotte-issue-3-como-italy",
+     "thumb": "https://archive.org/services/img/tvor-teste-vuote-ossa-rotte-issue-3-como-italy",
+     "why": "T.V.O.R. #3, Italian punk zine 1983; collage and stencil type."
+    },
+    {
+     "identifier": "GUILLOTINENumber8JacksonHeightsNY",
+     "title": "GUILLOTINE; Number 8; Jackson Heights; NY",
+     "year": "1984",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/GUILLOTINENumber8JacksonHeightsNY",
+     "thumb": "https://archive.org/services/img/GUILLOTINENumber8JacksonHeightsNY",
+     "why": "Guillotine #8 (1984)."
+    },
+    {
+     "identifier": "new-breed-number-3-charlotte-nc",
+     "title": "New Breed; Number 3; Charlotte, NC",
+     "year": "1983",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/new-breed-number-3-charlotte-nc",
+     "thumb": "https://archive.org/services/img/new-breed-number-3-charlotte-nc",
+     "why": "New Breed #3 (1983)."
+    },
+    {
+     "identifier": "HardTimesNumber4MaywoodNj",
+     "title": "Hard Times, Number 4, Maywood, NJ",
+     "year": "1984",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/HardTimesNumber4MaywoodNj",
+     "thumb": "https://archive.org/services/img/HardTimesNumber4MaywoodNj",
+     "why": "Hard Times #4 (1984)."
+    },
+    {
+     "identifier": "FleshBonesNumber4MiddlesexNJ",
+     "title": "Flesh & Bones; No. 4; Middlesex, NJ",
+     "year": "1984",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/FleshBonesNumber4MiddlesexNJ",
+     "thumb": "https://archive.org/services/img/FleshBonesNumber4MiddlesexNJ",
+     "why": "Flesh & Bones #4 (1984)."
+    },
+    {
+     "identifier": "NotesFromUndergroundNumber4PhoenixAZ2",
+     "title": "NOTES FROM UNDERGROUND; Number 4; Phoenix; AZ",
+     "year": "1984",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/NotesFromUndergroundNumber4PhoenixAZ2",
+     "thumb": "https://archive.org/services/img/NotesFromUndergroundNumber4PhoenixAZ2",
+     "why": "Notes From Underground #4, Phoenix (1984)."
+    },
+    {
+     "identifier": "DESORDENSOCIALNumber1TijuanaMexico",
+     "title": "DESORDEN SOCIAL; Number 1; Tijuana, México",
+     "year": "1984",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/DESORDENSOCIALNumber1TijuanaMexico",
+     "thumb": "https://archive.org/services/img/DESORDENSOCIALNumber1TijuanaMexico",
+     "why": "Desorden Social #1, Tijuana 1984."
+    },
+    {
+     "identifier": "scruffsvintagepunkrockflyers",
+     "title": "Scruffs Vintage Punk Rock Flyers",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/scruffsvintagepunkrockflyers",
+     "thumb": "https://archive.org/services/img/scruffsvintagepunkrockflyers",
+     "why": "Scruff's Vintage Punk Rock Flyers; high-res gig flyers, cut-and-paste."
+    },
+    {
+     "identifier": "Patrick_Scruff_Shaw_Punk_Rock_Flyers",
+     "title": "Vintage Detroit Punk Rock Flyers",
+     "year": "2020",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Patrick_Scruff_Shaw_Punk_Rock_Flyers",
+     "thumb": "https://archive.org/services/img/Patrick_Scruff_Shaw_Punk_Rock_Flyers",
+     "why": "Vintage Detroit punk flyers (Scruff); photocopy gig flyers."
+    },
+    {
+     "identifier": "1980s-tallahassee-punk-flyer-archive",
+     "title": "1980s Tallahassee Punk Flyer Archive",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/1980s-tallahassee-punk-flyer-archive",
+     "thumb": "https://archive.org/services/img/1980s-tallahassee-punk-flyer-archive",
+     "why": "1980s Tallahassee punk flyer archive."
+    },
+    {
+     "identifier": "1977CaliforniaPunkRockFlyers",
+     "title": "1977 California Punk Rock Flyers",
+     "year": "1977",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1977CaliforniaPunkRockFlyers",
+     "thumb": "https://archive.org/services/img/1977CaliforniaPunkRockFlyers",
+     "why": "1977 California punk flyers; earliest-wave cut-and-paste."
+    },
+    {
+     "identifier": "philly-hcpunk-90-s-flyers-51",
+     "title": "Philadelphia and surrounding area hardcore / punk flyers and random propaganda from the 1990s",
+     "year": "1990",
+     "mediatype": "image",
+     "url": "https://archive.org/details/philly-hcpunk-90-s-flyers-51",
+     "thumb": "https://archive.org/services/img/philly-hcpunk-90-s-flyers-51",
+     "why": "Philly 90s hardcore/punk flyers."
+    },
+    {
+     "identifier": "boston_punk_flyers",
+     "title": "Boston Punk Flyers 96 to 02",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/boston_punk_flyers",
+     "thumb": "https://archive.org/services/img/boston_punk_flyers",
+     "why": "Boston punk flyers 1996-2002."
+    },
+    {
+     "identifier": "BOCbitch",
+     "title": "San Diego Punk Flyers. Mid 2000's. ",
+     "year": "2000",
+     "mediatype": "image",
+     "url": "https://archive.org/details/BOCbitch",
+     "thumb": "https://archive.org/services/img/BOCbitch",
+     "why": "San Diego punk flyers, mid 2000s."
+    },
+    {
+     "identifier": "shredding-paper",
+     "title": "Shredding Paper Punk Flyer Archive",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/shredding-paper",
+     "thumb": "https://archive.org/services/img/shredding-paper",
+     "why": "Shredding Paper punk flyer archive."
+    },
+    {
+     "identifier": "krotch-5",
+     "title": "KROTCH Zine (Issue 5)",
+     "year": "2022",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/krotch-5",
+     "thumb": "https://archive.org/services/img/krotch-5",
+     "why": "KROTCH Zine #5; modern xerox/collage zine."
+    },
+    {
+     "identifier": "the-riot-grrrl-id-start-a-revolution-but-i-dont-have-time-split-zine",
+     "title": "The Riot Grrrl & I'd Start A Revolution But I Don't Have Time Split Zine",
+     "year": "2014",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/the-riot-grrrl-id-start-a-revolution-but-i-dont-have-time-split-zine",
+     "thumb": "https://archive.org/services/img/the-riot-grrrl-id-start-a-revolution-but-i-dont-have-time-split-zine",
+     "why": "Riot Grrrl split zine; cut-and-paste girl-zine layout."
+    }
+   ]
+  },
+  {
+   "style": "Mail Art",
+   "queries_used": [
+    "title:(mail art)",
+    "title:(artistamp)"
+   ],
+   "items": [
+    {
+     "identifier": "incunabula_originals",
+     "title": "Incunabula: Ong's Hat- Scans of the original mail art documents form the 80s and early 90s",
+     "year": "1989",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/incunabula_originals",
+     "thumb": "https://archive.org/services/img/incunabula_originals",
+     "why": "Incunabula: scans of original mail art documents (Ong's Hat, 1989); xeroxed occult-collage."
+    },
+    {
+     "identifier": "bile-fcover",
+     "title": "Bile and other mail art documentation",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bile-fcover",
+     "thumb": "https://archive.org/services/img/bile-fcover",
+     "why": "Bile and other mail art documentation."
+    },
+    {
+     "identifier": "mac2_22",
+     "title": "MAC 2 - mail art container",
+     "year": "1990",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/mac2_22",
+     "thumb": "https://archive.org/services/img/mac2_22",
+     "why": "MAC 2 mail art container (1990)."
+    },
+    {
+     "identifier": "ClubMoralStocklist032-EquinoxEvent",
+     "title": "Club Moral Stocklist 032 - Equinox Event",
+     "year": "1983",
+     "mediatype": "image",
+     "url": "https://archive.org/details/ClubMoralStocklist032-EquinoxEvent",
+     "thumb": "https://archive.org/services/img/ClubMoralStocklist032-EquinoxEvent",
+     "why": "Club Moral stocklist 032, 1983; Belgian mail-art/industrial network ephemera."
+    },
+    {
+     "identifier": "katya-sanna-mail-art-ebook",
+     "title": "Mail Art",
+     "year": "2020",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/katya-sanna-mail-art-ebook",
+     "thumb": "https://archive.org/services/img/katya-sanna-mail-art-ebook",
+     "why": "Mail Art ebook, 2020."
+    },
+    {
+     "identifier": "manualzilla-id-6461841",
+     "title": "Le Mail Art",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/manualzilla-id-6461841",
+     "thumb": "https://archive.org/services/img/manualzilla-id-6461841",
+     "why": "Le Mail Art; French overview with reproductions."
+    }
+   ]
+  },
+  {
+   "style": "Risograph / Small Press",
+   "queries_used": [
+    "subject:(risograph)",
+    "title:(zine) AND riso"
+   ],
+   "items": [
+    {
+     "identifier": "riso-obscura-zine",
+     "title": "riso-obscura-zine",
+     "year": "2024",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/riso-obscura-zine",
+     "thumb": "https://archive.org/services/img/riso-obscura-zine",
+     "why": "Riso Obscura zine (2024); risograph print sample."
+    },
+    {
+     "identifier": "plagacomix-malviajeissue",
+     "title": "Plaga Comix Malviaje Issue",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/plagacomix-malviajeissue",
+     "thumb": "https://archive.org/services/img/plagacomix-malviajeissue",
+     "why": "Plaga Comix Malviaje; riso/small-press comics."
+    },
+    {
+     "identifier": "plagacomix3psychedition",
+     "title": "Plaga Comix 3 Psych (edition)",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/plagacomix3psychedition",
+     "thumb": "https://archive.org/services/img/plagacomix3psychedition",
+     "why": "Plaga Comix 3 Psych edition."
+    },
+    {
+     "identifier": "zine-tzu",
+     "title": "Zine Tzu (2017)",
+     "year": "2017",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/zine-tzu",
+     "thumb": "https://archive.org/services/img/zine-tzu",
+     "why": "Zine Tzu (2017)."
+    },
+    {
+     "identifier": "lachaine02_22-11_recto",
+     "title": "LA CHAÎNE – #2, novembre 2022",
+     "year": "2022",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lachaine02_22-11_recto",
+     "thumb": "https://archive.org/services/img/lachaine02_22-11_recto",
+     "why": "La Chaine #2 (2022); French small-press zine."
+    },
+    {
+     "identifier": "lachaine04_23-01_recto",
+     "title": "LA CHAÎNE #4 – janvier 2023",
+     "year": "2023",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lachaine04_23-01_recto",
+     "thumb": "https://archive.org/services/img/lachaine04_23-01_recto",
+     "why": "La Chaine #4 (2023)."
+    },
+    {
+     "identifier": "bloomzine-online",
+     "title": "Every Time a Flower Blooms",
+     "year": "2024",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bloomzine-online",
+     "thumb": "https://archive.org/services/img/bloomzine-online",
+     "why": "Every Time a Flower Blooms zine, 2024."
+    },
+    {
+     "identifier": "bio-whale-book-1",
+     "title": "Bio Whale Book 1",
+     "year": "2015",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bio-whale-book-1",
+     "thumb": "https://archive.org/services/img/bio-whale-book-1",
+     "why": "Bio Whale Book 1 (riso)."
+    },
+    {
+     "identifier": "polemicalzine_colours_vol2",
+     "title": "Polemical Zine - Issue #8: Colours, Vol. 2",
+     "year": "2019",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/polemicalzine_colours_vol2",
+     "thumb": "https://archive.org/services/img/polemicalzine_colours_vol2",
+     "why": "Polemical Zine: Colours Vol. 2; small-press colour zine."
+    },
+    {
+     "identifier": "polemicalzine_ugly",
+     "title": "Polemical Zine - Issue #7: Ugly",
+     "year": "2019",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/polemicalzine_ugly",
+     "thumb": "https://archive.org/services/img/polemicalzine_ugly",
+     "why": "Polemical Zine #7: Ugly."
+    },
+    {
+     "identifier": "k15_digital",
+     "title": "KROTCH Zine (Issue 15)",
+     "year": "2024",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/k15_digital",
+     "thumb": "https://archive.org/services/img/k15_digital",
+     "why": "KROTCH Zine #15; modern DIY small press."
+    },
+    {
+     "identifier": "ChicagoAbcZine2",
+     "title": "Chicago ABC Zine #2",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ChicagoAbcZine2",
+     "thumb": "https://archive.org/services/img/ChicagoAbcZine2",
+     "why": "Chicago ABC Zine #2."
+    }
+   ]
+  },
+  {
+   "style": "Skate Zines & Magazines",
+   "queries_used": [
+    "subject:(skateboarding)",
+    "title:(skate zine)",
+    "title:(Big Brother)"
+   ],
+   "items": [
+    {
+     "identifier": "ThrasherMagazineYearOneIssue01",
+     "title": "Thrasher Magazine Year One: Issue 01",
+     "year": "1981",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ThrasherMagazineYearOneIssue01",
+     "thumb": "https://archive.org/services/img/ThrasherMagazineYearOneIssue01",
+     "why": "Thrasher Year One issue 1 (1981); the origin of skate-mag layout."
+    },
+    {
+     "identifier": "ThrasherMagazineYearOneIssue02",
+     "title": "Thrasher Magazine Year One: Issue 02",
+     "year": "1981",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ThrasherMagazineYearOneIssue02",
+     "thumb": "https://archive.org/services/img/ThrasherMagazineYearOneIssue02",
+     "why": "Thrasher Year One issue 2."
+    },
+    {
+     "identifier": "ThrasherMagazineYearOneIssue05",
+     "title": "Thrasher Magazine Year One: Issue 05",
+     "year": "1981",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ThrasherMagazineYearOneIssue05",
+     "thumb": "https://archive.org/services/img/ThrasherMagazineYearOneIssue05",
+     "why": "Thrasher Year One issue 5."
+    },
+    {
+     "identifier": "ThrasherMagazineYearOneIssue12",
+     "title": "Thrasher Magazine Year One: Issue 12",
+     "year": "1981",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ThrasherMagazineYearOneIssue12",
+     "thumb": "https://archive.org/services/img/ThrasherMagazineYearOneIssue12",
+     "why": "Thrasher Year One issue 12."
+    },
+    {
+     "identifier": "bigbrother1",
+     "title": "Big Brother Magazine # 1",
+     "year": "1992",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bigbrother1",
+     "thumb": "https://archive.org/services/img/bigbrother1",
+     "why": "Big Brother Magazine #1 (1992); irreverent 90s skate print."
+    },
+    {
+     "identifier": "bigbrother3",
+     "title": "Big Brother Magazine #3",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bigbrother3",
+     "thumb": "https://archive.org/services/img/bigbrother3",
+     "why": "Big Brother #3."
+    },
+    {
+     "identifier": "bigbrother7",
+     "title": "Big Brother Magazine #7",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bigbrother7",
+     "thumb": "https://archive.org/services/img/bigbrother7",
+     "why": "Big Brother #7."
+    },
+    {
+     "identifier": "bigbrother10",
+     "title": "Big Brother Magazine #10",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bigbrother10",
+     "thumb": "https://archive.org/services/img/bigbrother10",
+     "why": "Big Brother #10."
+    },
+    {
+     "identifier": "dirt-issue-1",
+     "title": "Dirt Magazine - Issue #1 (Spring 1992)",
+     "year": "1992",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/dirt-issue-1",
+     "thumb": "https://archive.org/services/img/dirt-issue-1",
+     "why": "Dirt Magazine #1 (1992); alt/skate lifestyle."
+    },
+    {
+     "identifier": "S.I.CSkatingInChaosVolume1Number1VirginiaBeachVA",
+     "title": "S.I.C.; Skating In Chaos; Vol 1, No.1; Virginia Beach, VA",
+     "year": "1984",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/S.I.CSkatingInChaosVolume1Number1VirginiaBeachVA",
+     "thumb": "https://archive.org/services/img/S.I.CSkatingInChaosVolume1Number1VirginiaBeachVA",
+     "why": "Skating In Chaos vol 1 no 1 (1984); skate-punk xerox zine."
+    },
+    {
+     "identifier": "skating-in-chaos-vol-1-no-2-virginia-beach-va",
+     "title": "S.I.C.; Skating In Chaos; Vol 1, No. 2; Virginia Beach, VA",
+     "year": "1985",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/skating-in-chaos-vol-1-no-2-virginia-beach-va",
+     "thumb": "https://archive.org/services/img/skating-in-chaos-vol-1-no-2-virginia-beach-va",
+     "why": "Skating In Chaos vol 1 no 2 (1985)."
+    },
+    {
+     "identifier": "SkateSceneNumber11SanJoseCA",
+     "title": "Skate Scene; Number 11; San Jose, CA",
+     "year": "1986",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/SkateSceneNumber11SanJoseCA",
+     "thumb": "https://archive.org/services/img/SkateSceneNumber11SanJoseCA",
+     "why": "Skate Scene #11 (1986)."
+    },
+    {
+     "identifier": "SpunkNumber3NewarkDE_201505",
+     "title": "Spunk Skate Zine; Number 3; Newark, DE",
+     "year": "1984",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/SpunkNumber3NewarkDE_201505",
+     "thumb": "https://archive.org/services/img/SpunkNumber3NewarkDE_201505",
+     "why": "Spunk Skate Zine #3 (1984)."
+    },
+    {
+     "identifier": "UnitedSkatesSkateboardRagazineNumber5ColumbusMS",
+     "title": " United Skates Skateboard Ragazine; Number 5; Columbus, MS",
+     "year": "1985",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/UnitedSkatesSkateboardRagazineNumber5ColumbusMS",
+     "thumb": "https://archive.org/services/img/UnitedSkatesSkateboardRagazineNumber5ColumbusMS",
+     "why": "United Skates #5 (1985)."
+    },
+    {
+     "identifier": "toejamskatezineno4santabarbara1990s06",
+     "title": "Toe Jam Skate Zine Santa Barbara 1990s",
+     "year": "1990",
+     "mediatype": "image",
+     "url": "https://archive.org/details/toejamskatezineno4santabarbara1990s06",
+     "thumb": "https://archive.org/services/img/toejamskatezineno4santabarbara1990s06",
+     "why": "Toe Jam skate zine #4, Santa Barbara 90s."
+    },
+    {
+     "identifier": "SoulSkateZineSeptember1990VirginiaBeachVA",
+     "title": "Soul Skate Zine, September 1990, Virginia Beach, VA",
+     "year": "1990",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/SoulSkateZineSeptember1990VirginiaBeachVA",
+     "thumb": "https://archive.org/services/img/SoulSkateZineSeptember1990VirginiaBeachVA",
+     "why": "Soul Skate Zine, 1990."
+    },
+    {
+     "identifier": "GrindSkateZine1986MarDelPlataArgentina",
+     "title": "Grind Skate Zine 1986 Mar Del Plata Argentina",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/GrindSkateZine1986MarDelPlataArgentina",
+     "thumb": "https://archive.org/services/img/GrindSkateZine1986MarDelPlataArgentina",
+     "why": "Grind Skate Zine 1986, Argentina."
+    },
+    {
+     "identifier": "skateboardaction1",
+     "title": "Skateboard Action 1 (Jan 1986)",
+     "year": "1986",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/skateboardaction1",
+     "thumb": "https://archive.org/services/img/skateboardaction1",
+     "why": "Skateboard Action #1 (1986)."
+    },
+    {
+     "identifier": "hookups-graphics",
+     "title": "Skateboard Graphics",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/hookups-graphics",
+     "thumb": "https://archive.org/services/img/hookups-graphics",
+     "why": "Hookups skateboard graphics; deck art images."
+    },
+    {
+     "identifier": "skateboard-stickers-collection-100",
+     "title": "Vintage Skateboard Stickers Collection low res",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/skateboard-stickers-collection-100",
+     "thumb": "https://archive.org/services/img/skateboard-stickers-collection-100",
+     "why": "Vintage skateboard stickers collection."
+    },
+    {
+     "identifier": "ccs-1996-summer",
+     "title": "CCS 1996 Summer",
+     "year": "1996",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ccs-1996-summer",
+     "thumb": "https://archive.org/services/img/ccs-1996-summer",
+     "why": "CCS Summer 1996 catalog; skate mail-order catalog graphics."
+    },
+    {
+     "identifier": "ccs-1998-winter",
+     "title": "CCS 1998 Winter",
+     "year": "1998",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ccs-1998-winter",
+     "thumb": "https://archive.org/services/img/ccs-1998-winter",
+     "why": "CCS Winter 1998 catalog."
+    },
+    {
+     "identifier": "ccs-2000-holiday",
+     "title": "CCS 2000 Holiday Catalog",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ccs-2000-holiday",
+     "thumb": "https://archive.org/services/img/ccs-2000-holiday",
+     "why": "CCS 2000 Holiday catalog."
+    }
+   ]
+  },
+  {
+   "style": "Graffiti / Wildstyle Zines",
+   "queries_used": [
+    "subject:(graffiti) AND mediatype:texts",
+    "title:(graffiti) AND zine"
+   ],
+   "items": [
+    {
+     "identifier": "Midnight_Graffiti_02_1988-Fall",
+     "title": " Midnight Graffiti #02 (1988 Fall)",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Midnight_Graffiti_02_1988-Fall",
+     "thumb": "https://archive.org/services/img/Midnight_Graffiti_02_1988-Fall",
+     "why": "Midnight Graffiti #2 (1988); poetry/art zine with graff-adjacent layout."
+    },
+    {
+     "identifier": "Midnight_Graffiti_004_1989-Fall",
+     "title": "Midnight Graffiti 004 (1989-Fall)",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Midnight_Graffiti_004_1989-Fall",
+     "thumb": "https://archive.org/services/img/Midnight_Graffiti_004_1989-Fall",
+     "why": "Midnight Graffiti #4 (1989)."
+    },
+    {
+     "identifier": "toxic_graffiti_6",
+     "title": "Toxic Graffiti 6 (1982) Toxic Graffity",
+     "year": "1982",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/toxic_graffiti_6",
+     "thumb": "https://archive.org/services/img/toxic_graffiti_6",
+     "why": "Toxic Graffiti #6 (1982)."
+    },
+    {
+     "identifier": "TheWallsAreAlive_279",
+     "title": "The Walls Are Alive!",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/TheWallsAreAlive_279",
+     "thumb": "https://archive.org/services/img/TheWallsAreAlive_279",
+     "why": "The Walls Are Alive!; graffiti publication."
+    },
+    {
+     "identifier": "massappeal3_24",
+     "title": "Mass Appeal Magazine 3",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/massappeal3_24",
+     "thumb": "https://archive.org/services/img/massappeal3_24",
+     "why": "Mass Appeal Magazine #3; early NYC hip-hop/graffiti magazine."
+    },
+    {
+     "identifier": "second-line-graffiti-magazine",
+     "title": "Second Line Graffiti Magazine",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/second-line-graffiti-magazine",
+     "thumb": "https://archive.org/services/img/second-line-graffiti-magazine",
+     "why": "Second Line Graffiti Magazine; image scans."
+    },
+    {
+     "identifier": "tagsandgraffiti",
+     "title": "Tags And Graffiti",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/tagsandgraffiti",
+     "thumb": "https://archive.org/services/img/tagsandgraffiti",
+     "why": "Tags and Graffiti."
+    },
+    {
+     "identifier": "ysinembargomagazine06",
+     "title": "Y SIN EMBARGO magazine #06 : graffito issue",
+     "year": "2005",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ysinembargomagazine06",
+     "thumb": "https://archive.org/services/img/ysinembargomagazine06",
+     "why": "Y Sin Embargo #6 graffito issue (2005)."
+    },
+    {
+     "identifier": "krkoos-graffiti",
+     "title": "Graffiti Scenes Throughout the Skateboarding Ramps of Woonasquatucket Bike Path",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/krkoos-graffiti",
+     "thumb": "https://archive.org/services/img/krkoos-graffiti",
+     "why": "Graffiti scenes in Providence skate ramps; photos."
+    },
+    {
+     "identifier": "hiphop-rapgraphgangs",
+     "title": "HIP HOP Rap graph gangs",
+     "year": "1992",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/hiphop-rapgraphgangs",
+     "thumb": "https://archive.org/services/img/hiphop-rapgraphgangs",
+     "why": "Hip Hop / Rap / Graph / Gangs (1992)."
+    },
+    {
+     "identifier": "Sorrowmagazine",
+     "title": "$oRRoW STaRR - Underground Art Zine (Graffiti/Streetwear / Visual Poetry)",
+     "year": "2025",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Sorrowmagazine",
+     "thumb": "https://archive.org/services/img/Sorrowmagazine",
+     "why": "$oRRoW STaRR underground art zine (graffiti/streetwear)."
+    },
+    {
+     "identifier": "hype-magazine-issue-19-1993-02",
+     "title": "Hype Magazine Issue 19 February 1993",
+     "year": "1993",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/hype-magazine-issue-19-1993-02",
+     "thumb": "https://archive.org/services/img/hype-magazine-issue-19-1993-02",
+     "why": "Hype #19 (1993); graffiti and hip-hop/skate."
+    },
+    {
+     "identifier": "hype-14-1992",
+     "title": "Hype 14 (March / April 1992)",
+     "year": "1992",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/hype-14-1992",
+     "thumb": "https://archive.org/services/img/hype-14-1992",
+     "why": "Hype #14 (1992)."
+    }
+   ]
+  },
+  {
+   "style": "Hip-Hop Flyers & Print",
+   "queries_used": [
+    "(rap OR hip hop) AND flyers",
+    "title:(hip hop) AND magazine",
+    "title:(The Source)"
+   ],
+   "items": [
+    {
+     "identifier": "source_40",
+     "title": "Source 40 (1993 Jan) 1992 Hip-Hop Year in Review",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/source_40",
+     "thumb": "https://archive.org/services/img/source_40",
+     "why": "The Source #40 (1993); 1992 hip-hop year in review."
+    },
+    {
+     "identifier": "source_28",
+     "title": "Source 28 (1992 Jan) 1991 Hip-Hop Year in Review",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/source_28",
+     "thumb": "https://archive.org/services/img/source_28",
+     "why": "The Source #28 (1992)."
+    },
+    {
+     "identifier": "massappeal3_24",
+     "title": "Mass Appeal Magazine 3",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/massappeal3_24",
+     "thumb": "https://archive.org/services/img/massappeal3_24",
+     "why": "Mass Appeal #3."
+    },
+    {
+     "identifier": "hype-magazine-issue-19-1993-02",
+     "title": "Hype Magazine Issue 19 February 1993",
+     "year": "1993",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/hype-magazine-issue-19-1993-02",
+     "thumb": "https://archive.org/services/img/hype-magazine-issue-19-1993-02",
+     "why": "Hype #19 (1993)."
+    },
+    {
+     "identifier": "eminem-hhc-june00",
+     "title": "Eminem in Hip-Hop Connection Magazine, June 2000",
+     "year": "2000",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/eminem-hhc-june00",
+     "thumb": "https://archive.org/services/img/eminem-hhc-june00",
+     "why": "Hip-Hop Connection June 2000 (UK)."
+    },
+    {
+     "identifier": "Eminem-HHCMagazine-1999",
+     "title": "Eminem Hip-Hop Connection Magazine 1999 Scratch",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Eminem-HHCMagazine-1999",
+     "thumb": "https://archive.org/services/img/Eminem-HHCMagazine-1999",
+     "why": "Hip-Hop Connection 1999."
+    },
+    {
+     "identifier": "UnityJuly31997Seattle",
+     "title": "Unity: Unifying People Of All Colors (Downtown Seattle, 1997)",
+     "year": "1997",
+     "mediatype": "image",
+     "url": "https://archive.org/details/UnityJuly31997Seattle",
+     "thumb": "https://archive.org/services/img/UnityJuly31997Seattle",
+     "why": "Unity 1997 Seattle hip-hop event flyer."
+    },
+    {
+     "identifier": "tds_review_19871106_front",
+     "title": "TDS_Review_19871106",
+     "year": "1987",
+     "mediatype": "image",
+     "url": "https://archive.org/details/tds_review_19871106_front",
+     "thumb": "https://archive.org/services/img/tds_review_19871106_front",
+     "why": "TDS Review 1987 flyer."
+    },
+    {
+     "identifier": "lou-x-e-ice-one-per-radio-onda-rossa-6-marzo-1996",
+     "title": "Lou X e Ice One per Radio Onda Rossa, 6 marzo 1996",
+     "year": "1996",
+     "mediatype": "image",
+     "url": "https://archive.org/details/lou-x-e-ice-one-per-radio-onda-rossa-6-marzo-1996",
+     "thumb": "https://archive.org/services/img/lou-x-e-ice-one-per-radio-onda-rossa-6-marzo-1996",
+     "why": "Italian hip-hop radio flyer, 1996."
+    },
+    {
+     "identifier": "hiphopfilesphoto0000coop",
+     "title": "Hip hop files : photographs, 1979-1984",
+     "year": "2004",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/hiphopfilesphoto0000coop",
+     "thumb": "https://archive.org/services/img/hiphopfilesphoto0000coop",
+     "why": "Hip Hop Files photographs 1979-84 (borrowable)."
+    },
+    {
+     "identifier": "payc119b",
+     "title": "Flyer [PAY_C_119]",
+     "year": "2002",
+     "mediatype": "image",
+     "url": "https://archive.org/details/payc119b",
+     "thumb": "https://archive.org/services/img/payc119b",
+     "why": "Hip-hop era flyer, 2002."
+    }
+   ]
+  },
+  {
+   "style": "90s/00s Indie Sleaze & Club Nightlife Ephemera",
+   "queries_used": [
+    "title:(nightlife)",
+    "title:(club) AND flyer",
+    "Grand Royal",
+    "Mondo 2000"
+   ],
+   "items": [
+    {
+     "identifier": "aura-orange-6-4-01-info",
+     "title": "Night club flyers from 90s-2000s (UK, Mids)",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/aura-orange-6-4-01-info",
+     "thumb": "https://archive.org/services/img/aura-orange-6-4-01-info",
+     "why": "Night club flyers 90s-2000s UK Midlands; 305 files."
+    },
+    {
+     "identifier": "deephousepage.com-rarechicagoflyers",
+     "title": "Deep House Page (deephousepage.com) Rare Chicago Flyers",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/deephousepage.com-rarechicagoflyers",
+     "thumb": "https://archive.org/services/img/deephousepage.com-rarechicagoflyers",
+     "why": "Rare Chicago house flyers."
+    },
+    {
+     "identifier": "Afterlife_10312003",
+     "title": "10.31.03 - Afterlife",
+     "year": "2003",
+     "mediatype": "image",
+     "url": "https://archive.org/details/Afterlife_10312003",
+     "thumb": "https://archive.org/services/img/Afterlife_10312003",
+     "why": "Afterlife 2003 flyer."
+    },
+    {
+     "identifier": "9-15-07-flashback",
+     "title": "9.15.07 Flashback",
+     "year": "2007",
+     "mediatype": "image",
+     "url": "https://archive.org/details/9-15-07-flashback",
+     "thumb": "https://archive.org/services/img/9-15-07-flashback",
+     "why": "Flashback 2007 flyer."
+    },
+    {
+     "identifier": "event_202501",
+     "title": "Dyskoteka Alcatraz",
+     "year": "2000",
+     "mediatype": "image",
+     "url": "https://archive.org/details/event_202501",
+     "thumb": "https://archive.org/services/img/event_202501",
+     "why": "Dyskoteka Alcatraz flyer, 2000."
+    },
+    {
+     "identifier": "grand-royal-02-1996-dregs-ia",
+     "title": "Grand Royal 02 1996 (DREGS-IA)",
+     "year": "1996",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/grand-royal-02-1996-dregs-ia",
+     "thumb": "https://archive.org/services/img/grand-royal-02-1996-dregs-ia",
+     "why": "Grand Royal #2; ironic mid-90s collage."
+    },
+    {
+     "identifier": "Mondo.2000.Issue.01.1989",
+     "title": "Mondo 2000 - Issue 01 (AKA Reality Hackers Issue 07)",
+     "year": "1989",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Mondo.2000.Issue.01.1989",
+     "thumb": "https://archive.org/services/img/Mondo.2000.Issue.01.1989",
+     "why": "Mondo 2000 #1 (1989); cyberpunk/rave-adjacent magazine layout."
+    },
+    {
+     "identifier": "Mondo.2000.Issue.14.1995",
+     "title": "Mondo 2000 - Issue 14 (1995)",
+     "year": "1995",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Mondo.2000.Issue.14.1995",
+     "thumb": "https://archive.org/services/img/Mondo.2000.Issue.14.1995",
+     "why": "Mondo 2000 #14 (1995)."
+    },
+    {
+     "identifier": "Mondo.2000.Issue.17.1997",
+     "title": "Mondo 2000 - Issue 17",
+     "year": "1997",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Mondo.2000.Issue.17.1997",
+     "thumb": "https://archive.org/services/img/Mondo.2000.Issue.17.1997",
+     "why": "Mondo 2000 #17 (1997)."
+    },
+    {
+     "identifier": "dirt-issue-1",
+     "title": "Dirt Magazine - Issue #1 (Spring 1992)",
+     "year": "1992",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/dirt-issue-1",
+     "thumb": "https://archive.org/services/img/dirt-issue-1",
+     "why": "Dirt #1 (1992)."
+    },
+    {
+     "identifier": "lotusmag",
+     "title": "Lotus Magazine Archive",
+     "year": "1994",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lotusmag",
+     "thumb": "https://archive.org/services/img/lotusmag",
+     "why": "Lotus Magazine Archive; 90s rave/underground magazine."
+    },
+    {
+     "identifier": "freeparty",
+     "title": "Free Party",
+     "year": "2002",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/freeparty",
+     "thumb": "https://archive.org/services/img/freeparty",
+     "why": "Free Party (2002); rave/free party book."
+    },
+    {
+     "identifier": "raveoff",
+     "title": "Rave Off",
+     "year": "1996",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/raveoff",
+     "thumb": "https://archive.org/services/img/raveoff",
+     "why": "Rave Off (1996)."
+    },
+    {
+     "identifier": "vintage-flyers-and-posters-from-newcastle-upon-tyne",
+     "title": "various underground music flyers and posters from Newcastle-upon-Tyne",
+     "year": "2024",
+     "mediatype": "image",
+     "url": "https://archive.org/details/vintage-flyers-and-posters-from-newcastle-upon-tyne",
+     "thumb": "https://archive.org/services/img/vintage-flyers-and-posters-from-newcastle-upon-tyne",
+     "why": "Newcastle underground music flyers and posters."
+    },
+    {
+     "identifier": "oraison-funebre-flyers-archive-incomplete",
+     "title": "Oraison Funèbre - flyers archive (incomplete)",
+     "year": "2004",
+     "mediatype": "image",
+     "url": "https://archive.org/details/oraison-funebre-flyers-archive-incomplete",
+     "thumb": "https://archive.org/services/img/oraison-funebre-flyers-archive-incomplete",
+     "why": "Oraison Funebre flyers archive, 2004."
+    },
+    {
+     "identifier": "scan0334_202103",
+     "title": "South bay flyers , posters, band promo etc",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/scan0334_202103",
+     "thumb": "https://archive.org/services/img/scan0334_202103",
+     "why": "South Bay flyers, posters, band promo."
+    },
+    {
+     "identifier": "flyerscc",
+     "title": "concrete cosmos flyers",
+     "year": "2016",
+     "mediatype": "image",
+     "url": "https://archive.org/details/flyerscc",
+     "thumb": "https://archive.org/services/img/flyerscc",
+     "why": "Concrete Cosmos flyers (2016)."
+    }
+   ]
+  }
+ ]
+}

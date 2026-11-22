@@ -1,0 +1,14 @@
+# your downloaded reference images and exported posters stay on your computer
+refs/images/
+posters/
+refs/inbox/
+
+# CARI asks that its images not be redistributed as assets: keep its data local-only
+refs/cari.json
+
+.DS_Store
+__pycache__/
+*.part
+
+# local tool config
+.claude/

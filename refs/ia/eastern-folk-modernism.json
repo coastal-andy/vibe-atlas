@@ -1,0 +1,1247 @@
+{
+ "cluster": "Eastern European & folk modernism",
+ "collections": [
+  {
+   "identifier": "matchboxpostersarchive",
+   "title": "Matchbox Posters Archive",
+   "url": "https://archive.org/details/matchboxpostersarchive",
+   "thumb": "https://archive.org/services/img/matchboxpostersarchive",
+   "why": "Huge image collection of vintage matchbox labels worldwide incl. Yugoslav and Soviet mid-century space/graphic labels"
+  },
+  {
+   "identifier": "sovetskoe_foto",
+   "title": "Sovetskoe Foto (Soviet Photography)",
+   "url": "https://archive.org/details/sovetskoe_foto",
+   "thumb": "https://archive.org/services/img/sovetskoe_foto",
+   "why": "Scans of the Soviet photography magazine: photo, layout and cover design"
+  },
+  {
+   "identifier": "murzilkamagazine",
+   "title": "Murzilka Magazine",
+   "url": "https://archive.org/details/murzilkamagazine",
+   "thumb": "https://archive.org/services/img/murzilkamagazine",
+   "why": "Soviet children's magazine 1924 onward, illustration and cover art"
+  },
+  {
+   "identifier": "magazines_russian",
+   "title": "Russian-Language Magazines",
+   "url": "https://archive.org/details/magazines_russian",
+   "thumb": "https://archive.org/services/img/magazines_russian",
+   "why": "Umbrella collection of Russian-language magazines (Ogonyok, Krokodil, design and tech titles)"
+  },
+  {
+   "identifier": "zarulem",
+   "title": "Za Rulem Magazine",
+   "url": "https://archive.org/details/zarulem",
+   "thumb": "https://archive.org/services/img/zarulem",
+   "why": "Soviet/Russian auto magazine, product and ad graphics"
+  },
+  {
+   "identifier": "letterformarchive",
+   "title": "Letterform Archive",
+   "url": "https://archive.org/details/letterformarchive",
+   "thumb": "https://archive.org/services/img/letterformarchive",
+   "why": "Typography/graphic design archive, includes Russian avant-garde and Eastern bloc material"
+  },
+  {
+   "identifier": "slovenecomputermagazines",
+   "title": "Slovene Computer Magazines",
+   "url": "https://archive.org/details/slovenecomputermagazines",
+   "thumb": "https://archive.org/services/img/slovenecomputermagazines",
+   "why": "Yugoslav-era Slovene computer magazines, ads for Iskra Delta and other Yugoslav electronics"
+  },
+  {
+   "identifier": "polishpublicdomain",
+   "title": "Polish Public Domain Works",
+   "url": "https://archive.org/details/polishpublicdomain",
+   "thumb": "https://archive.org/services/img/polishpublicdomain",
+   "why": "Polish public-domain books and prints"
+  }
+ ],
+ "styles": [
+  {
+   "style": "Iskra / Yugoslav Industrial & Ephemera",
+   "queries_used": [
+    "Iskra",
+    "Zastava Yugo brochure",
+    "Yugopapir",
+    "title:Yugoslavia matchbox"
+   ],
+   "items": [
+    {
+     "identifier": "101_20251231_20251231",
+     "title": "1973 Zastava 1100 Brochure. Netherlands. Fold-out.",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/101_20251231_20251231",
+     "thumb": "https://archive.org/services/img/101_20251231_20251231",
+     "why": "1973 Zastava 1100 fold-out brochure; Yugoslav car print design"
+    },
+    {
+     "identifier": "102_20251216",
+     "title": "1978 Zastava 750 Brochure. Dutch Language.",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/102_20251216",
+     "thumb": "https://archive.org/services/img/102_20251216",
+     "why": "1978 Zastava 750 brochure; Yugoslav industrial print"
+    },
+    {
+     "identifier": "101_20260630_20260630_1513",
+     "title": "1974 Zastava 101 Leaflet. Yugoslavia.",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/101_20260630_20260630_1513",
+     "thumb": "https://archive.org/services/img/101_20260630_20260630_1513",
+     "why": "1974 Zastava 101 leaflet from Yugoslavia"
+    },
+    {
+     "identifier": "1989-yugo-model-range-brochure.-netherlands.",
+     "title": "1989 Yugo Model Range Brochure. Netherlands",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1989-yugo-model-range-brochure.-netherlands.",
+     "thumb": "https://archive.org/services/img/1989-yugo-model-range-brochure.-netherlands.",
+     "why": "1989 Yugo range brochure, late-Yugoslav product graphics"
+    },
+    {
+     "identifier": "887124348-yugo-vodic-003",
+     "title": "Yugo Vodič 003 (Guide to Yugo № 003)",
+     "year": "1988",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/887124348-yugo-vodic-003",
+     "thumb": "https://archive.org/services/img/887124348-yugo-vodic-003",
+     "why": "Yugo Vodic 003 (1988), Yugoslav owner's guide"
+    },
+    {
+     "identifier": "triglavalitridentimages",
+     "title": "Triglav Ali Trident",
+     "year": "1985",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/triglavalitridentimages",
+     "thumb": "https://archive.org/services/img/triglavalitridentimages",
+     "why": "Iskra Delta Triglav computer images, 1985"
+    },
+    {
+     "identifier": "jatairways1967sheet",
+     "title": "JAT Airways Yugoslavia Timetable & Tariff Sheet 1967/1968",
+     "year": "1967",
+     "mediatype": "image",
+     "url": "https://archive.org/details/jatairways1967sheet",
+     "thumb": "https://archive.org/services/img/jatairways1967sheet",
+     "why": "JAT Airways 1967/68 timetable and tariff sheet, Yugoslav graphic design"
+    },
+    {
+     "identifier": "PosterFudbalskaReprezentacijaJugoslavije1974Yugopapir",
+     "title": "Poster Fudbalska Reprezentacija Jugoslavije 1974 Yugopapir",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/PosterFudbalskaReprezentacijaJugoslavije1974Yugopapir",
+     "thumb": "https://archive.org/services/img/PosterFudbalskaReprezentacijaJugoslavije1974Yugopapir",
+     "why": "Yugopapir 1974 football team poster, Yugoslav print"
+    },
+    {
+     "identifier": "Yugopapir25MajTitoIJovankaKalendar1969",
+     "title": "Yugopapir 25 Maj Tito I Jovanka Kalendar 1969",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/Yugopapir25MajTitoIJovankaKalendar1969",
+     "thumb": "https://archive.org/services/img/Yugopapir25MajTitoIJovankaKalendar1969",
+     "why": "Yugopapir 25 May calendar 1969, Tito era print"
+    },
+    {
+     "identifier": "RezonansaPosterMaj1976DraganSStefanovicRtvRevijaYugopapir",
+     "title": "Rezonansa Poster Maj 1976 Dragan S Stefanovic Rtv Revija Yugopapir",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/RezonansaPosterMaj1976DraganSStefanovicRtvRevijaYugopapir",
+     "thumb": "https://archive.org/services/img/RezonansaPosterMaj1976DraganSStefanovicRtvRevijaYugopapir",
+     "why": "Yugopapir/RTV Revija 1976 poster"
+    },
+    {
+     "identifier": "Liveaidrockposteravgust85",
+     "title": "Live Aid Rock magazin YU poster avgust 1985",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/Liveaidrockposteravgust85",
+     "thumb": "https://archive.org/services/img/Liveaidrockposteravgust85",
+     "why": "Rock magazin YU Live Aid poster 1985, Yugoslav pop graphics"
+    }
+   ]
+  },
+  {
+   "style": "Soviet books, magazines & design periodicals",
+   "queries_used": [
+    "Декоративное искусство СССР",
+    "Техническая эстетика",
+    "Техника молодёжи",
+    "Крокодил",
+    "Мурзилка",
+    "Огонёк"
+   ],
+   "items": [
+    {
+     "identifier": "tyekhnichyeskaya-estyetika",
+     "title": "Техническая эстетика / Technical aesthetics",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/tyekhnichyeskaya-estyetika",
+     "thumb": "https://archive.org/services/img/tyekhnichyeskaya-estyetika",
+     "why": "Technical Aesthetics (VNIITE) Soviet industrial design journal"
+    },
+    {
+     "identifier": "1979-05-258",
+     "title": "Декоративное Искусство СССР 1979",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1979-05-258",
+     "thumb": "https://archive.org/services/img/1979-05-258",
+     "why": "Dekorativnoe Iskusstvo SSSR 1979"
+    },
+    {
+     "identifier": "1985-03-328",
+     "title": "Декоративное Искусство СССР 1985",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1985-03-328",
+     "thumb": "https://archive.org/services/img/1985-03-328",
+     "why": "Dekorativnoe Iskusstvo SSSR 1985"
+    },
+    {
+     "identifier": "1978-10-251",
+     "title": "Декоративное Искусство СССР 1978",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1978-10-251",
+     "thumb": "https://archive.org/services/img/1978-10-251",
+     "why": "Dekorativnoe Iskusstvo SSSR 1978"
+    },
+    {
+     "identifier": "dekorativnoe-iskusstvo-sssr-1961-08",
+     "title": "Декоративное искусство СССР 1961-08",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/dekorativnoe-iskusstvo-sssr-1961-08",
+     "thumb": "https://archive.org/services/img/dekorativnoe-iskusstvo-sssr-1961-08",
+     "why": "Dekorativnoe Iskusstvo SSSR 1961-08"
+    },
+    {
+     "identifier": "tm-1933-02-03",
+     "title": "Техника Молодёжи 1933 all numbers",
+     "year": "1933",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/tm-1933-02-03",
+     "thumb": "https://archive.org/services/img/tm-1933-02-03",
+     "why": "Tekhnika Molodezhi 1933, early covers and layouts"
+    },
+    {
+     "identifier": "1989_20220108",
+     "title": "Основные Термины Дизайна. Краткий Словарь Справочник. Кузьмичев Л.А. (ред.). 1989",
+     "year": "1988",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1989_20220108",
+     "thumb": "https://archive.org/services/img/1989_20220108",
+     "why": "Soviet design terms dictionary (Kuzmichev)"
+    },
+    {
+     "identifier": "crocodile_1924_26",
+     "title": "Подшивка журналов Крокодил за 1924 - 1948 г.г.",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/crocodile_1924_26",
+     "thumb": "https://archive.org/services/img/crocodile_1924_26",
+     "why": "Krokodil bound volumes 1924-1948, satirical illustration"
+    },
+    {
+     "identifier": "pioner-196X-m--mmmmmm-m-mm",
+     "title": "Пионер",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/pioner-196X-m--mmmmmm-m-mm",
+     "thumb": "https://archive.org/services/img/pioner-196X-m--mmmmmm-m-mm",
+     "why": "Pioner magazine 1960s"
+    },
+    {
+     "identifier": "1965-07",
+     "title": "Огонек 1965 1-10",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1965-07",
+     "thumb": "https://archive.org/services/img/1965-07",
+     "why": "Ogonyok 1965 issues, photo-illustrated weekly"
+    },
+    {
+     "identifier": "rabotnitsa1952",
+     "title": "\"Работница\". Журнал. 1952. Выпуски 1-12",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/rabotnitsa1952",
+     "thumb": "https://archive.org/services/img/rabotnitsa1952",
+     "why": "Rabotnitsa 1952 full year"
+    }
+   ]
+  },
+  {
+   "style": "Soviet children's books & illustration",
+   "queries_used": [
+    "Маршак Лебедев",
+    "Soviet children's books",
+    "Russian folk tales Raduga"
+   ],
+   "items": [
+    {
+     "identifier": "img-20201209-0023",
+     "title": "Мои первые книжки. С. Маршак. Багаж. Рисунки В. Лебедева. Москва, Детская литература, 1987",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/img-20201209-0023",
+     "thumb": "https://archive.org/services/img/img-20201209-0023",
+     "why": "Marshak's Bagazh with Vladimir Lebedev's drawings, Detgiz"
+    },
+    {
+     "identifier": "marshak_samuil_stikhi_dlya_detey",
+     "title": "Маршак Самуил. Стихи для детей",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/marshak_samuil_stikhi_dlya_detey",
+     "thumb": "https://archive.org/services/img/marshak_samuil_stikhi_dlya_detey",
+     "why": "Marshak poems for children, illustrated"
+    },
+    {
+     "identifier": "1977_20230222",
+     "title": "Телефон. К. Чуковский 1977",
+     "year": "1977",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1977_20230222",
+     "thumb": "https://archive.org/services/img/1977_20230222",
+     "why": "Chukovsky's Telefon 1977, illustrated edition"
+    },
+    {
+     "identifier": "1973_20221111_202211",
+     "title": "Мистер Твистер. С. Маршак 1973",
+     "year": "1973",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1973_20221111_202211",
+     "thumb": "https://archive.org/services/img/1973_20221111_202211",
+     "why": "Marshak's Mister Twister 1973, illustrated edition"
+    },
+    {
+     "identifier": "kostumy-narodiv-srsr",
+     "title": "Костюмы народiв СРСР (для дiтей) / Folk Costumes of the USSR (for Children)",
+     "year": "1957",
+     "mediatype": "image",
+     "url": "https://archive.org/details/kostumy-narodiv-srsr",
+     "thumb": "https://archive.org/services/img/kostumy-narodiv-srsr",
+     "why": "Folk Costumes of the Peoples of the USSR, 1957 children's picture book"
+    },
+    {
+     "identifier": "sova-krichit-na-kholod",
+     "title": "Сова кричит на холод / Hear an owl, expect a chill",
+     "year": "1985",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/sova-krichit-na-kholod",
+     "thumb": "https://archive.org/services/img/sova-krichit-na-kholod",
+     "why": "Hear an owl, expect a chill, 1985 Soviet children's book"
+    },
+    {
+     "identifier": "tanasyichuk-a-picture-book-of-insects-raduga-1989",
+     "title": "A Picture Book Of Insects",
+     "year": "1989",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/tanasyichuk-a-picture-book-of-insects-raduga-1989",
+     "thumb": "https://archive.org/services/img/tanasyichuk-a-picture-book-of-insects-raduga-1989",
+     "why": "Raduga Publishers picture book of insects, 1989"
+    },
+    {
+     "identifier": "bilenko-ukranian-folk-tales-dnipro",
+     "title": "Ukrainian Folk Tales",
+     "year": "1974",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/bilenko-ukranian-folk-tales-dnipro",
+     "thumb": "https://archive.org/services/img/bilenko-ukranian-folk-tales-dnipro",
+     "why": "Ukrainian Folk Tales, Dnipro Publishers 1974, illustrated"
+    },
+    {
+     "identifier": "BabyAnimals-AmazingRussianChildrensBooksInEnglish",
+     "title": "BABY ANIMALS - AMAZING RUSSIAN CHILDREN'S BOOKS IN ENGLISH",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/BabyAnimals-AmazingRussianChildrensBooksInEnglish",
+     "thumb": "https://archive.org/services/img/BabyAnimals-AmazingRussianChildrensBooksInEnglish",
+     "why": "Russian children's books in English"
+    },
+    {
+     "identifier": "SovietChildrensBooksInMalayalam-Volume-1",
+     "title": "SOVIET CHILDREN'S BOOKS  IN MALAYALAM - VOLUME-1",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/SovietChildrensBooksInMalayalam-Volume-1",
+     "thumb": "https://archive.org/services/img/SovietChildrensBooksInMalayalam-Volume-1",
+     "why": "Soviet children's books (Malayalam editions), large colour-plate scans"
+    },
+    {
+     "identifier": "marshak-krugliy-god",
+     "title": "Книжка \"Маршак С.Я. - Круглый год\" (1988) [Scans,CBR]",
+     "year": "1988",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/marshak-krugliy-god",
+     "thumb": "https://archive.org/services/img/marshak-krugliy-god",
+     "why": "Marshak's Kruglyi god 1988 picture book scans"
+    }
+   ]
+  },
+  {
+   "style": "Soviet & Eastern bloc posters, Sots Art",
+   "queries_used": [
+    "Soviet posters",
+    "Sots art",
+    "Soviet Culture"
+   ],
+   "items": [
+    {
+     "identifier": "24_soviet_posters_19_25",
+     "title": "24 Soviet posters, 1919-1925",
+     "year": "1924",
+     "mediatype": "image",
+     "url": "https://archive.org/details/24_soviet_posters_19_25",
+     "thumb": "https://archive.org/services/img/24_soviet_posters_19_25",
+     "why": "24 Soviet posters 1919-1925"
+    },
+    {
+     "identifier": "24_soviet_posters_1920s_1940s",
+     "title": "24 Soviet posters, 1920s-1940s",
+     "year": "1925",
+     "mediatype": "image",
+     "url": "https://archive.org/details/24_soviet_posters_1920s_1940s",
+     "thumb": "https://archive.org/services/img/24_soviet_posters_1920s_1940s",
+     "why": "24 Soviet posters 1920s-1940s"
+    },
+    {
+     "identifier": "SovietCommunistPosters",
+     "title": "Soviet Communist Posters",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/SovietCommunistPosters",
+     "thumb": "https://archive.org/services/img/SovietCommunistPosters",
+     "why": "Soviet Communist Posters"
+    },
+    {
+     "identifier": "RussianAndSovietPosters",
+     "title": "Russian And Soviet Posters",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/RussianAndSovietPosters",
+     "thumb": "https://archive.org/services/img/RussianAndSovietPosters",
+     "why": "Russian and Soviet Posters"
+    },
+    {
+     "identifier": "sovietpostersfro0000unse",
+     "title": "Soviet posters : from the collection of Sergo Grigorian ",
+     "year": "2014",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/sovietpostersfro0000unse",
+     "thumb": "https://archive.org/services/img/sovietpostersfro0000unse",
+     "why": "Soviet Posters from the Sergo Grigorian collection"
+    },
+    {
+     "identifier": "uralsky_plakat_vremen_grazhdanskoy_voyny",
+     "title": "Уральский плакат времен Гражданской войны",
+     "year": "1968",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/uralsky_plakat_vremen_grazhdanskoy_voyny",
+     "thumb": "https://archive.org/services/img/uralsky_plakat_vremen_grazhdanskoy_voyny",
+     "why": "Urals civil-war posters"
+    },
+    {
+     "identifier": "sovietpolitical",
+     "title": "Soviet Political Posters And Cartoons",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/sovietpolitical",
+     "thumb": "https://archive.org/services/img/sovietpolitical",
+     "why": "Soviet political posters and cartoons"
+    },
+    {
+     "identifier": "totalitarianarti0000golo",
+     "title": "Totalitarian art : in the Soviet Union, the Third Reich, Fascist Italy and the People's Republic of China ",
+     "year": "2011",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/totalitarianarti0000golo",
+     "thumb": "https://archive.org/services/img/totalitarianarti0000golo",
+     "why": "Totalitarian Art in Soviet Union, Third Reich, Fascist Italy"
+    },
+    {
+     "identifier": "metropoliten_v_moskve",
+     "title": "Метрополитен в Москве: альбом иллюстраций",
+     "year": "1933",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/metropoliten_v_moskve",
+     "thumb": "https://archive.org/services/img/metropoliten_v_moskve",
+     "why": "Moscow Metro 1933 illustration album"
+    },
+    {
+     "identifier": "soviet_culture_review_1932",
+     "title": "Soviet Culture Review 1932 # 01-12",
+     "year": "1932",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/soviet_culture_review_1932",
+     "thumb": "https://archive.org/services/img/soviet_culture_review_1932",
+     "why": "Soviet Culture Review 1932"
+    }
+   ]
+  },
+  {
+   "style": "Suprematism / Russian avant-garde / Constructivism",
+   "queries_used": [
+    "Malevich",
+    "Lissitzky For the Voice",
+    "Vkhutemas",
+    "Russian constructivism"
+   ],
+   "items": [
+    {
+     "identifier": "lfarussia_0018",
+     "title": "About Two Squares: A Suprematist Tale of Two Squares in Six Constructions",
+     "year": "1922",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lfarussia_0018",
+     "thumb": "https://archive.org/services/img/lfarussia_0018",
+     "why": "El Lissitzky, About Two Squares (1922), Suprematist tale"
+    },
+    {
+     "identifier": "lfarussia0017",
+     "title": "For the Voice",
+     "year": "1923",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lfarussia0017",
+     "thumb": "https://archive.org/services/img/lfarussia0017",
+     "why": "Mayakovsky/Lissitzky For the Voice (1923), typographic classic"
+    },
+    {
+     "identifier": "kazimir00male",
+     "title": "Kazimir Malevich : suprematism",
+     "year": "2003",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/kazimir00male",
+     "thumb": "https://archive.org/services/img/kazimir00male",
+     "why": "Kazimir Malevich: suprematism"
+    },
+    {
+     "identifier": "russianconstruct0000lodd",
+     "title": "Russian constructivism",
+     "year": "1983",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/russianconstruct0000lodd",
+     "thumb": "https://archive.org/services/img/russianconstruct0000lodd",
+     "why": "Russian constructivism (Lodder)"
+    },
+    {
+     "identifier": "the-great-utopia.-the-russian-and-soviet-avant-garde-1915-1932",
+     "title": "The Great Utopia: The Russian and Soviet Avant-Garde, 1915-1932",
+     "year": "1992",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/the-great-utopia.-the-russian-and-soviet-avant-garde-1915-1932",
+     "thumb": "https://archive.org/services/img/the-great-utopia.-the-russian-and-soviet-avant-garde-1915-1932",
+     "why": "The Great Utopia exhibition catalogue"
+    },
+    {
+     "identifier": "arkhitektura_vkhutemasa",
+     "title": "Архитектура : Работы Архитектурного факультета Вхутемаса : 1920—1927",
+     "year": "1927",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/arkhitektura_vkhutemasa",
+     "thumb": "https://archive.org/services/img/arkhitektura_vkhutemasa",
+     "why": "Vkhutemas architecture faculty work 1920-27"
+    },
+    {
+     "identifier": "ellissitzky0000unse",
+     "title": "el lissitzky",
+     "year": "1967",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/ellissitzky0000unse",
+     "thumb": "https://archive.org/services/img/ellissitzky0000unse",
+     "why": "El Lissitzky monograph 1967"
+    },
+    {
+     "identifier": "lissitzky-el-russia-an-architecture-for-world-revolution-1970",
+     "title": "Lissitzky El Russia An Architecture For World Revolution 1970",
+     "year": "1970",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/lissitzky-el-russia-an-architecture-for-world-revolution-1970",
+     "thumb": "https://archive.org/services/img/lissitzky-el-russia-an-architecture-for-world-revolution-1970",
+     "why": "El Lissitzky: Russia, an Architecture for World Revolution"
+    },
+    {
+     "identifier": "plana00rowe",
+     "title": "The planar dimension : Europe, 1912-1932",
+     "year": "1979",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/plana00rowe",
+     "thumb": "https://archive.org/services/img/plana00rowe",
+     "why": "The Planar Dimension: Europe 1912-1932"
+    },
+    {
+     "identifier": "futuristy_rykayushchiy_parnas",
+     "title": "Футуристы. Рыкающий Парнас",
+     "year": "1914",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/futuristy_rykayushchiy_parnas",
+     "thumb": "https://archive.org/services/img/futuristy_rykayushchiy_parnas",
+     "why": "Futurists: Roaring Parnassus (1914)"
+    },
+    {
+     "identifier": "poschechinaobschestvennomuvkusudburlju72",
+     "title": "Пощечина общественному вкусу. Д. Бурлюк, Н. Бурлюк, А. Крученых, В. Кандинский, Б. Лившиц, В. Маяковский, В. Хлебников : [стихи, проза, стат",
+     "year": "1913",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/poschechinaobschestvennomuvkusudburlju72",
+     "thumb": "https://archive.org/services/img/poschechinaobschestvennomuvkusudburlju72",
+     "why": "A Slap in the Face of Public Taste (1913)"
+    },
+    {
+     "identifier": "kruchenyhaevzorvalspb191394",
+     "title": "Крученых А. Е. Взорваль. - СПб., 1913.",
+     "year": "1913",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/kruchenyhaevzorvalspb191394",
+     "thumb": "https://archive.org/services/img/kruchenyhaevzorvalspb191394",
+     "why": "Kruchenykh, Vzorval (1913), zaum book"
+    },
+    {
+     "identifier": "img202003030107",
+     "title": "Советское декоративное искусство. Материалы и документы. 1917-1932. Народные художественные промыслы. Москва, издательство Искусство, 1986. ",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/img202003030107",
+     "thumb": "https://archive.org/services/img/img202003030107",
+     "why": "Soviet decorative art 1917-1932 documents (Russian)"
+    },
+    {
+     "identifier": "kazimirmalevicha0000miln",
+     "title": "Kazimir Malevich and the art of geometry ",
+     "year": "1996",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/kazimirmalevicha0000miln",
+     "thumb": "https://archive.org/services/img/kazimirmalevicha0000miln",
+     "why": "Kazimir Malevich and the art of geometry"
+    },
+    {
+     "identifier": "blacksquaremalev0000shat",
+     "title": "Black square : Malevich and the origin of suprematism ",
+     "year": "2012",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/blacksquaremalev0000shat",
+     "thumb": "https://archive.org/services/img/blacksquaremalev0000shat",
+     "why": "Black Square: Malevich and the origin of suprematism"
+    }
+   ]
+  },
+  {
+   "style": "Polish poster school & Czech design",
+   "queries_used": [
+    "Polish poster",
+    "plakat",
+    "Czech design"
+   ],
+   "items": [
+    {
+     "identifier": "PolskiPlakatFilmowy",
+     "title": "Polski Plakat Filmowy",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/PolskiPlakatFilmowy",
+     "thumb": "https://archive.org/services/img/PolskiPlakatFilmowy",
+     "why": "Polish film posters"
+    },
+    {
+     "identifier": "PolskiPlakatPropagandowyDwudziestolecia",
+     "title": "Polski Plakat Propagandowy Dwudziestolecia",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/PolskiPlakatPropagandowyDwudziestolecia",
+     "thumb": "https://archive.org/services/img/PolskiPlakatPropagandowyDwudziestolecia",
+     "why": "Polish propaganda posters interwar"
+    },
+    {
+     "identifier": "designer-jan-lenica-polish-niebieski-ptak-the-1957",
+     "title": "Polish Poster Design Samples 1950-1959",
+     "year": "1950",
+     "mediatype": "image",
+     "url": "https://archive.org/details/designer-jan-lenica-polish-niebieski-ptak-the-1957",
+     "thumb": "https://archive.org/services/img/designer-jan-lenica-polish-niebieski-ptak-the-1957",
+     "why": "Polish Poster Design Samples 1950-59 (Lenica)"
+    },
+    {
+     "identifier": "designer-waldemar-swierzy-polish-ogolnopolska-wystawa-pamiatec-1967",
+     "title": "Polish Poster Design Samples 1960-1969",
+     "year": "1960",
+     "mediatype": "image",
+     "url": "https://archive.org/details/designer-waldemar-swierzy-polish-ogolnopolska-wystawa-pamiatec-1967",
+     "thumb": "https://archive.org/services/img/designer-waldemar-swierzy-polish-ogolnopolska-wystawa-pamiatec-1967",
+     "why": "Polish posters 1960-69 (Swierzy)"
+    },
+    {
+     "identifier": "poster-artist-chodorowski-zwyciezca-winner-1976",
+     "title": "Polish Poster Design Samples 1970-1979",
+     "year": "1970",
+     "mediatype": "image",
+     "url": "https://archive.org/details/poster-artist-chodorowski-zwyciezca-winner-1976",
+     "thumb": "https://archive.org/services/img/poster-artist-chodorowski-zwyciezca-winner-1976",
+     "why": "Polish posters 1970-79"
+    },
+    {
+     "identifier": "poster-artist-chodorowski-czas-dojrzewania-time-1984_202608",
+     "title": "Polish Poster Design Samples 1980-1989",
+     "year": "1980",
+     "mediatype": "image",
+     "url": "https://archive.org/details/poster-artist-chodorowski-czas-dojrzewania-time-1984_202608",
+     "thumb": "https://archive.org/services/img/poster-artist-chodorowski-czas-dojrzewania-time-1984_202608",
+     "why": "Polish posters 1980-89"
+    },
+    {
+     "identifier": "designer-andrzej-klimowski-polish-nashville-1941",
+     "title": "Polish Poster Design Samples 1940-1949",
+     "year": "1940",
+     "mediatype": "image",
+     "url": "https://archive.org/details/designer-andrzej-klimowski-polish-nashville-1941",
+     "thumb": "https://archive.org/services/img/designer-andrzej-klimowski-polish-nashville-1941",
+     "why": "Polish posters 1940-49"
+    },
+    {
+     "identifier": "projektpolishjou0000unse",
+     "title": "Projekt : the Polish journal of visual art and design ",
+     "year": "2011",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/projektpolishjou0000unse",
+     "thumb": "https://archive.org/services/img/projektpolishjou0000unse",
+     "why": "Projekt: the Polish journal of visual art and design"
+    },
+    {
+     "identifier": "grafikapolska1910000poli",
+     "title": "Grafika polska, 1918-1939 : ze zbiorów Biblioteki Polskiej w Montrealu ",
+     "year": "1999",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/grafikapolska1910000poli",
+     "thumb": "https://archive.org/services/img/grafikapolska1910000poli",
+     "why": "Grafika polska 1918-1939"
+    },
+    {
+     "identifier": "graphicartofczec00john",
+     "title": "Graphic art of Czechoslovakia",
+     "year": "1922",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/graphicartofczec00john",
+     "thumb": "https://archive.org/services/img/graphicartofczec00john",
+     "why": "Graphic Art of Czechoslovakia (1922)"
+    },
+    {
+     "identifier": "czech-fairytales",
+     "title": "Czech Fairytales",
+     "year": "2016",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/czech-fairytales",
+     "thumb": "https://archive.org/services/img/czech-fairytales",
+     "why": "Czech Fairytales (illustrated)"
+    },
+    {
+     "identifier": "pelisky-hnusna-manicka",
+     "title": "Pelíšky - Hnusná Mánička, Gagarinův bratr, plakát",
+     "year": "1968",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/pelisky-hnusna-manicka",
+     "thumb": "https://archive.org/services/img/pelisky-hnusna-manicka",
+     "why": "Czech 1960s poster from Pelisky"
+    }
+   ]
+  },
+  {
+   "style": "Slavic folk ornament, embroidery & pattern books",
+   "queries_used": [
+    "ornament Russian OR Czech",
+    "вышивка",
+    "Polish folk embroidery"
+   ],
+   "items": [
+    {
+     "identifier": "KosachHough2022UkrainianFolkEmbroideryPatterns",
+     "title": "Ukrainian Folk Embroidery Patterns",
+     "year": "2022",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/KosachHough2022UkrainianFolkEmbroideryPatterns",
+     "thumb": "https://archive.org/services/img/KosachHough2022UkrainianFolkEmbroideryPatterns",
+     "why": "Ukrainian Folk Embroidery Patterns"
+    },
+    {
+     "identifier": "polish-folk-embroidery-pdfdrive",
+     "title": "Polish Folk Embroidery ( PDFDrive )",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/polish-folk-embroidery-pdfdrive",
+     "thumb": "https://archive.org/services/img/polish-folk-embroidery-pdfdrive",
+     "why": "Polish Folk Embroidery"
+    },
+    {
+     "identifier": "polishfolkembroi0000turs",
+     "title": "Polish folk embroidery ",
+     "year": "1997",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/polishfolkembroi0000turs",
+     "thumb": "https://archive.org/services/img/polishfolkembroi0000turs",
+     "why": "Polish folk embroidery (1997)"
+    },
+    {
+     "identifier": "hungarianfolkdes0000szal",
+     "title": "Hungarian folk designs for embroiderers and craftsmen ",
+     "year": "1980",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/hungarianfolkdes0000szal",
+     "thumb": "https://archive.org/services/img/hungarianfolkdes0000szal",
+     "why": "Hungarian folk designs for embroiderers"
+    },
+    {
+     "identifier": "gri_33125015565639",
+     "title": "Russkīĭ ornament v starinnykh obrazt︠s︡akh khudozhestvenno-promyshlennago proizvodstva = L'ornement russe dans les anciens produits de l'a",
+     "year": "1882",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/gri_33125015565639",
+     "thumb": "https://archive.org/services/img/gri_33125015565639",
+     "why": "Russkij ornament v starinnykh obraztsakh (1882)"
+    },
+    {
+     "identifier": "russkijornament3",
+     "title": "Русский орнамент ",
+     "year": "1948",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/russkijornament3",
+     "thumb": "https://archive.org/services/img/russkijornament3",
+     "why": "Russkij ornament 1948"
+    },
+    {
+     "identifier": "geometricdesigno0000unse",
+     "title": "Russian geometric design and ornament : 374 illustrations for artists and designers",
+     "year": "1969",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/geometricdesigno0000unse",
+     "thumb": "https://archive.org/services/img/geometricdesigno0000unse",
+     "why": "Russian geometric design and ornament, 374 illustrations"
+    },
+    {
+     "identifier": "moravsky_ornament_rostlinny",
+     "title": "Moravský ornament rostlinný",
+     "year": "1904",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/moravsky_ornament_rostlinny",
+     "thumb": "https://archive.org/services/img/moravsky_ornament_rostlinny",
+     "why": "Moravsky ornament rostlinny (1904)"
+    },
+    {
+     "identifier": "pisch-1902-sbirka-predloh",
+     "title": "Sbírka předloh moravského a uhersko-slovenského ornament [Collection of Moravian and Hungarian-Slovak Patterns]",
+     "year": "1902",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/pisch-1902-sbirka-predloh",
+     "thumb": "https://archive.org/services/img/pisch-1902-sbirka-predloh",
+     "why": "Moravian and Slovak ornament pattern collection 1902"
+    },
+    {
+     "identifier": "sima-1897-slovacke-vysivani",
+     "title": "Slovácké vyšívání stehem křížikovým a vrkůčkovým [Slovak Embroidery With Cross Stitch and Crochet]",
+     "year": "1897",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/sima-1897-slovacke-vysivani",
+     "thumb": "https://archive.org/services/img/sima-1897-slovacke-vysivani",
+     "why": "Slovak embroidery patterns 1897"
+    },
+    {
+     "identifier": "sochan-1892-slovenske-narodnie-ornamenty-1-3",
+     "title": "Slovenské národnie ornamenty [Slovak folk designs], 1-3",
+     "year": "1892",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/sochan-1892-slovenske-narodnie-ornamenty-1-3",
+     "thumb": "https://archive.org/services/img/sochan-1892-slovenske-narodnie-ornamenty-1-3",
+     "why": "Slovak folk ornaments 1892"
+    },
+    {
+     "identifier": "belarusian-folk-ornament-1953",
+     "title": "Belarusian Folk Ornament",
+     "year": "1953",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/belarusian-folk-ornament-1953",
+     "thumb": "https://archive.org/services/img/belarusian-folk-ornament-1953",
+     "why": "Belarusian Folk Ornament 1953"
+    },
+    {
+     "identifier": "IMG201904140018_201904",
+     "title": "Крестьянская вышивка. Новгородский государственный объединённый музей-заповедник. Издательство Новгородская правда, 1980",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/IMG201904140018_201904",
+     "thumb": "https://archive.org/services/img/IMG201904140018_201904",
+     "why": "Peasant embroidery, Novgorod museum"
+    },
+    {
+     "identifier": "TraditionalBulgarianCostumesAndFolkArts",
+     "title": "Traditional Bulgarian Costumes and Folk Arts",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/TraditionalBulgarianCostumesAndFolkArts",
+     "thumb": "https://archive.org/services/img/TraditionalBulgarianCostumesAndFolkArts",
+     "why": "Traditional Bulgarian costumes and folk arts"
+    },
+    {
+     "identifier": "1937_20211105",
+     "title": "Русский народный лубок (1937)",
+     "year": "1937",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/1937_20211105",
+     "thumb": "https://archive.org/services/img/1937_20211105",
+     "why": "Russkij narodnyj lubok (1937)"
+    },
+    {
+     "identifier": "russkiy_risovanny_lubok_kontsa_18_nachala_20_vv",
+     "title": "Русский рисованный лубок конца XVIII — начала XX века: из собрания Государственного Исторического музея",
+     "year": "1992",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/russkiy_risovanny_lubok_kontsa_18_nachala_20_vv",
+     "thumb": "https://archive.org/services/img/russkiy_risovanny_lubok_kontsa_18_nachala_20_vv",
+     "why": "Russian hand-drawn lubok, 18th-20th c."
+    }
+   ]
+  },
+  {
+   "style": "Gzhel / Palekh / Russian folk ceramics & toys",
+   "queries_used": [
+    "Гжель",
+    "Палех",
+    "Русская народная игрушка"
+   ],
+   "items": [
+    {
+     "identifier": "IMG201902230031",
+     "title": "Гжель из собрания Государственного Русского музея, Ленинград. Издательство Аврора, Ленинград. 1984",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/IMG201902230031",
+     "thumb": "https://archive.org/services/img/IMG201902230031",
+     "why": "Gzhel from the Russian Museum collection, Leningrad"
+    },
+    {
+     "identifier": "skazochnaya_gzhel",
+     "title": "skazochnaya_gzhel",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/skazochnaya_gzhel",
+     "thumb": "https://archive.org/services/img/skazochnaya_gzhel",
+     "why": "Skazochnaya Gzhel"
+    },
+    {
+     "identifier": "atzkuu41",
+     "title": "lada lyumos gzhel",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/atzkuu41",
+     "thumb": "https://archive.org/services/img/atzkuu41",
+     "why": "Lada Lyumos Gzhel"
+    },
+    {
+     "identifier": "a-gzhel-samovar-endlos",
+     "title": "A Gzhel Samovar",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/a-gzhel-samovar-endlos",
+     "thumb": "https://archive.org/services/img/a-gzhel-samovar-endlos",
+     "why": "A Gzhel Samovar"
+    },
+    {
+     "identifier": "img201912160097",
+     "title": "Палех. Издательство Советская Россия, Москва, 1974",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/img201912160097",
+     "thumb": "https://archive.org/services/img/img201912160097",
+     "why": "Palekh, Sovetskaya Rossiya 1974"
+    },
+    {
+     "identifier": "russian-folk-toys",
+     "title": "Русская народная игрушка / Russian Folk Toys",
+     "year": "1962",
+     "mediatype": "image",
+     "url": "https://archive.org/details/russian-folk-toys",
+     "thumb": "https://archive.org/services/img/russian-folk-toys",
+     "why": "Russian Folk Toys 1962"
+    },
+    {
+     "identifier": "Diafilm_RGDB_Russkayanarodnayaigrushka",
+     "title": "Русская народная игрушка",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/Diafilm_RGDB_Russkayanarodnayaigrushka",
+     "thumb": "https://archive.org/services/img/Diafilm_RGDB_Russkayanarodnayaigrushka",
+     "why": "Russian folk toy filmstrip"
+    }
+   ]
+  },
+  {
+   "style": "Matchbox labels (Eastern bloc)",
+   "queries_used": [
+    "matchbox",
+    "collection:matchboxpostersarchive Yugoslavia / USSR"
+   ],
+   "items": [
+    {
+     "identifier": "mbp-1179986300-stylized-satellite-yugoslavia-mid-century",
+     "title": "Stylized Satellite Yugoslavia Mid-Century - Vintage Matchbox Label",
+     "year": "1940",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-1179986300-stylized-satellite-yugoslavia-mid-century",
+     "thumb": "https://archive.org/services/img/mbp-1179986300-stylized-satellite-yugoslavia-mid-century",
+     "why": "Yugoslav mid-century satellite matchbox label"
+    },
+    {
+     "identifier": "mbp-1179985994-illustration-of-a-radio-telescope-yugoslavia-1960s",
+     "title": "Illustration Of A Radio Telescope Yugoslavia 1960s-70s - Vintage Matchbox Label",
+     "year": "1960",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-1179985994-illustration-of-a-radio-telescope-yugoslavia-1960s",
+     "thumb": "https://archive.org/services/img/mbp-1179985994-illustration-of-a-radio-telescope-yugoslavia-1960s",
+     "why": "Yugoslav radio telescope label"
+    },
+    {
+     "identifier": "mbp-1193941231-black-silhouette-of-earth-yugoslavia-mid-century",
+     "title": "Black Silhouette Of Earth Yugoslavia Mid-Century - Vintage Matchbox Label",
+     "year": "1940",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-1193941231-black-silhouette-of-earth-yugoslavia-mid-century",
+     "thumb": "https://archive.org/services/img/mbp-1193941231-black-silhouette-of-earth-yugoslavia-mid-century",
+     "why": "Yugoslav Earth silhouette label"
+    },
+    {
+     "identifier": "mbp-1474028924-deer-head-yugoslavia-mid-century",
+     "title": "Deer Head Yugoslavia Mid-Century - Vintage Matchbox Label",
+     "year": "1940",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-1474028924-deer-head-yugoslavia-mid-century",
+     "thumb": "https://archive.org/services/img/mbp-1474028924-deer-head-yugoslavia-mid-century",
+     "why": "Yugoslav deer-head label"
+    },
+    {
+     "identifier": "mbp-1487875665-bee-yugoslavia-mid-century",
+     "title": "Bee Yugoslavia Mid-Century - Vintage Matchbox Label",
+     "year": "1940",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-1487875665-bee-yugoslavia-mid-century",
+     "thumb": "https://archive.org/services/img/mbp-1487875665-bee-yugoslavia-mid-century",
+     "why": "Yugoslav bee label"
+    },
+    {
+     "identifier": "mbp-fl-1313-coat-of-arms-flames-yugoslavia",
+     "title": "Coat of Arms Flames Yugoslavia - Vintage Matchbox Label",
+     "year": "mid-",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-fl-1313-coat-of-arms-flames-yugoslavia",
+     "thumb": "https://archive.org/services/img/mbp-fl-1313-coat-of-arms-flames-yugoslavia",
+     "why": "Yugoslav coat-of-arms label"
+    },
+    {
+     "identifier": "mbp-1486906287-vintage-astronaut-graphic",
+     "title": "Astronaut with Camera - Vintage Matchbox Label",
+     "year": "1960",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-1486906287-vintage-astronaut-graphic",
+     "thumb": "https://archive.org/services/img/mbp-1486906287-vintage-astronaut-graphic",
+     "why": "Soviet-style astronaut label"
+    },
+    {
+     "identifier": "mbp-1173074560-cosmonaut-with-camera",
+     "title": "Cosmonaut with Camera - Vintage Matchbox Label",
+     "year": "1960",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-1173074560-cosmonaut-with-camera",
+     "thumb": "https://archive.org/services/img/mbp-1173074560-cosmonaut-with-camera",
+     "why": "Cosmonaut with camera label"
+    },
+    {
+     "identifier": "mbp-1173118556-rocket-and-atomic-symbol",
+     "title": "Rocket and Atomic Symbol - Vintage Matchbox Label",
+     "year": "1960",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-1173118556-rocket-and-atomic-symbol",
+     "thumb": "https://archive.org/services/img/mbp-1173118556-rocket-and-atomic-symbol",
+     "why": "Rocket and atom label"
+    },
+    {
+     "identifier": "mbp-1488308281-prisoners-of-fascism",
+     "title": "Prisoners of Fascism - Vintage Matchbox Label",
+     "year": "1940",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-1488308281-prisoners-of-fascism",
+     "thumb": "https://archive.org/services/img/mbp-1488308281-prisoners-of-fascism",
+     "why": "Prisoners of Fascism label"
+    },
+    {
+     "identifier": "mbp-1186993403-altai-region-landscape",
+     "title": "Altai Region Landscape - Vintage Matchbox Label",
+     "year": "1960",
+     "mediatype": "image",
+     "url": "https://archive.org/details/mbp-1186993403-altai-region-landscape",
+     "thumb": "https://archive.org/services/img/mbp-1186993403-altai-region-landscape",
+     "why": "Altai region landscape label"
+    },
+    {
+     "identifier": "matchboxlabes0000unse",
+     "title": "Matchbox labels",
+     "year": "1968",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/matchboxlabes0000unse",
+     "thumb": "https://archive.org/services/img/matchboxlabes0000unse",
+     "why": "Matchbox labels (1968) book"
+    },
+    {
+     "identifier": "matchboxlabel0000rend",
+     "title": "The match, the box, and the label",
+     "year": "1983",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/matchboxlabel0000rend",
+     "thumb": "https://archive.org/services/img/matchboxlabel0000rend",
+     "why": "The match, the box, and the label (1983)"
+    }
+   ]
+  },
+  {
+   "style": "Vintage stamps (USSR / Yugoslavia)",
+   "queries_used": [
+    "USSR stamps",
+    "Yugoslavia stamps"
+   ],
+   "items": [
+    {
+     "identifier": "ussr-stamps-space",
+     "title": "USSR Stamps - Space",
+     "year": "1978",
+     "mediatype": "image",
+     "url": "https://archive.org/details/ussr-stamps-space",
+     "thumb": "https://archive.org/services/img/ussr-stamps-space",
+     "why": "USSR Stamps - Space"
+    },
+    {
+     "identifier": "15-years-of-space-age-soviet-stamps",
+     "title": "15 Years Of Space Age (Soviet Stamps)",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/15-years-of-space-age-soviet-stamps",
+     "thumb": "https://archive.org/services/img/15-years-of-space-age-soviet-stamps",
+     "why": "15 Years of Space Age Soviet stamps"
+    },
+    {
+     "identifier": "random-soviet-stamps",
+     "title": "soviet postage stamps",
+     "year": null,
+     "mediatype": "image",
+     "url": "https://archive.org/details/random-soviet-stamps",
+     "thumb": "https://archive.org/services/img/random-soviet-stamps",
+     "why": "Soviet postage stamps"
+    },
+    {
+     "identifier": "final-ss",
+     "title": "Soviet Stamps",
+     "year": "2020",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/final-ss",
+     "thumb": "https://archive.org/services/img/final-ss",
+     "why": "Soviet Stamps"
+    },
+    {
+     "identifier": "yugoslav-partisan-stamps",
+     "title": "Yugoslav partisan definitive stamps",
+     "year": "1945",
+     "mediatype": "image",
+     "url": "https://archive.org/details/yugoslav-partisan-stamps",
+     "thumb": "https://archive.org/services/img/yugoslav-partisan-stamps",
+     "why": "Yugoslav partisan definitive stamps 1945"
+    },
+    {
+     "identifier": "yugoslavia-1939-utrke-381",
+     "title": "Yugoslavia 1939 Belgrade racing stamps",
+     "year": "1939",
+     "mediatype": "image",
+     "url": "https://archive.org/details/yugoslavia-1939-utrke-381",
+     "thumb": "https://archive.org/services/img/yugoslavia-1939-utrke-381",
+     "why": "Yugoslavia 1939 Belgrade racing stamps"
+    },
+    {
+     "identifier": "yugoslavia-navy-day-stamps",
+     "title": "Yugoslavia navy day 1950 stamps",
+     "year": "1950",
+     "mediatype": "image",
+     "url": "https://archive.org/details/yugoslavia-navy-day-stamps",
+     "thumb": "https://archive.org/services/img/yugoslavia-navy-day-stamps",
+     "why": "Yugoslavia Navy Day 1950 stamps"
+    },
+    {
+     "identifier": "yugoslavia-1941-war-veteran-stamps",
+     "title": "Yugoslavia 1941 war veteran commemorative stamps",
+     "year": "1941",
+     "mediatype": "image",
+     "url": "https://archive.org/details/yugoslavia-1941-war-veteran-stamps",
+     "thumb": "https://archive.org/services/img/yugoslavia-1941-war-veteran-stamps",
+     "why": "Yugoslavia 1941 war veteran stamps"
+    },
+    {
+     "identifier": "yugoslavia-postage-due-stamps",
+     "title": "Yugoslavia postage due stamps",
+     "year": "1945",
+     "mediatype": "image",
+     "url": "https://archive.org/details/yugoslavia-postage-due-stamps",
+     "thumb": "https://archive.org/services/img/yugoslavia-postage-due-stamps",
+     "why": "Yugoslavia postage due stamps"
+    }
+   ]
+  },
+  {
+   "style": "Partisan / WWII Yugoslav graphics",
+   "queries_used": [
+    "partisan Yugoslavia",
+    "Edo Murtic",
+    "Yugoslav propaganda"
+   ],
+   "items": [
+    {
+     "identifier": "murtic",
+     "title": "Edo Murtić (1921 – 2005)",
+     "year": null,
+     "mediatype": "texts",
+     "url": "https://archive.org/details/murtic",
+     "thumb": "https://archive.org/services/img/murtic",
+     "why": "Edo Murtic (1921-2005) monograph"
+    },
+    {
+     "identifier": "yugoslav-partisan-stamps",
+     "title": "Yugoslav partisan definitive stamps",
+     "year": "1945",
+     "mediatype": "image",
+     "url": "https://archive.org/details/yugoslav-partisan-stamps",
+     "thumb": "https://archive.org/services/img/yugoslav-partisan-stamps",
+     "why": "Yugoslav partisan stamps 1945"
+    },
+    {
+     "identifier": "christie-lawrence-irregular-adventure",
+     "title": "Irregular Adventure",
+     "year": "1947",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/christie-lawrence-irregular-adventure",
+     "thumb": "https://archive.org/services/img/christie-lawrence-irregular-adventure",
+     "why": "Irregular Adventure (1947), partisan-era memoir"
+    },
+    {
+     "identifier": "cia-readingroom-document-cia-rdp83-00415r003200070003-5",
+     "title": "CIA Reading Room cia-rdp83-00415r003200070003-5: YUGOSLAV PROPAGANDA FOR ALBANIA",
+     "year": "1949",
+     "mediatype": "texts",
+     "url": "https://archive.org/details/cia-readingroom-document-cia-rdp83-00415r003200070003-5",
+     "thumb": "https://archive.org/services/img/cia-readingroom-document-cia-rdp83-00415r003200070003-5",
+     "why": "Yugoslav propaganda (CIA reading room, 1949)"
+    }
+   ]
+  }
+ ]
+}
